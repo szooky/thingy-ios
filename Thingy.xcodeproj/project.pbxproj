@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		274894FB2AA0F32DFD59FC82 /* Pods_ThingyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7408342CA01D5419321DA893 /* Pods_ThingyUITests.framework */; };
 		38EFC4CB1DAAB6370090E1DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EFC4CA1DAAB6370090E1DB /* AppDelegate.swift */; };
 		38EFC4CD1DAAB6370090E1DB /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EFC4CC1DAAB6370090E1DB /* FirstViewController.swift */; };
 		38EFC4CF1DAAB6370090E1DB /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EFC4CE1DAAB6370090E1DB /* SecondViewController.swift */; };
@@ -15,6 +16,8 @@
 		38EFC4D71DAAB6380090E1DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38EFC4D51DAAB6380090E1DB /* LaunchScreen.storyboard */; };
 		38EFC4E21DAAB6380090E1DB /* ThingyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EFC4E11DAAB6380090E1DB /* ThingyTests.swift */; };
 		38EFC4ED1DAAB6380090E1DB /* ThingyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EFC4EC1DAAB6380090E1DB /* ThingyUITests.swift */; };
+		50833C010CA8FB6826BA8EF1 /* Pods_ThingyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C934C0ED6EDA32A71DA650D8 /* Pods_ThingyTests.framework */; };
+		7FCA6247C67727D0529F63E4 /* Pods_Thingy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9AEC49298F6C08A966574E7 /* Pods_Thingy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13A21310649A9CEA912891FB /* Pods-ThingyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThingyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThingyTests/Pods-ThingyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2172858DB4F5206E569FE8B4 /* Pods-ThingyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThingyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThingyUITests/Pods-ThingyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		36B3CA731D200DA275D67AAB /* Pods-ThingyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThingyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThingyUITests/Pods-ThingyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		38EFC4C71DAAB6370090E1DB /* Thingy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thingy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38EFC4CA1DAAB6370090E1DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38EFC4CC1DAAB6370090E1DB /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +55,12 @@
 		38EFC4E81DAAB6380090E1DB /* ThingyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThingyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38EFC4EC1DAAB6380090E1DB /* ThingyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThingyUITests.swift; sourceTree = "<group>"; };
 		38EFC4EE1DAAB6380090E1DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		407FD10B0E4631A5B28DFA65 /* Pods-ThingyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThingyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThingyTests/Pods-ThingyTests.release.xcconfig"; sourceTree = "<group>"; };
+		7408342CA01D5419321DA893 /* Pods_ThingyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThingyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5FA5DEF0980D9B7D38C415F /* Pods-Thingy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thingy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Thingy/Pods-Thingy.debug.xcconfig"; sourceTree = "<group>"; };
+		B9AEC49298F6C08A966574E7 /* Pods_Thingy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Thingy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C934C0ED6EDA32A71DA650D8 /* Pods_ThingyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThingyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB23EF3F7CBE0173C6B02D63 /* Pods-Thingy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thingy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Thingy/Pods-Thingy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FCA6247C67727D0529F63E4 /* Pods_Thingy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50833C010CA8FB6826BA8EF1 /* Pods_ThingyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				274894FB2AA0F32DFD59FC82 /* Pods_ThingyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				38EFC4E01DAAB6380090E1DB /* ThingyTests */,
 				38EFC4EB1DAAB6380090E1DB /* ThingyUITests */,
 				38EFC4C81DAAB6370090E1DB /* Products */,
+				B36CEAF805BC4F26B7065D2D /* Pods */,
+				B2D38B5870A797FB21E3793D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +145,29 @@
 			path = ThingyUITests;
 			sourceTree = "<group>";
 		};
+		B2D38B5870A797FB21E3793D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9AEC49298F6C08A966574E7 /* Pods_Thingy.framework */,
+				C934C0ED6EDA32A71DA650D8 /* Pods_ThingyTests.framework */,
+				7408342CA01D5419321DA893 /* Pods_ThingyUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B36CEAF805BC4F26B7065D2D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5FA5DEF0980D9B7D38C415F /* Pods-Thingy.debug.xcconfig */,
+				CB23EF3F7CBE0173C6B02D63 /* Pods-Thingy.release.xcconfig */,
+				13A21310649A9CEA912891FB /* Pods-ThingyTests.debug.xcconfig */,
+				407FD10B0E4631A5B28DFA65 /* Pods-ThingyTests.release.xcconfig */,
+				36B3CA731D200DA275D67AAB /* Pods-ThingyUITests.debug.xcconfig */,
+				2172858DB4F5206E569FE8B4 /* Pods-ThingyUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +175,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 38EFC4F11DAAB6380090E1DB /* Build configuration list for PBXNativeTarget "Thingy" */;
 			buildPhases = (
+				7ED2A05CCCF676C6D4CF447F /* [CP] Check Pods Manifest.lock */,
 				38EFC4C31DAAB6370090E1DB /* Sources */,
 				38EFC4C41DAAB6370090E1DB /* Frameworks */,
 				38EFC4C51DAAB6370090E1DB /* Resources */,
+				B13B3BF0364493CDECF6DE02 /* [CP] Embed Pods Frameworks */,
+				91B7550EF807762EFFB67268 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 38EFC4F41DAAB6380090E1DB /* Build configuration list for PBXNativeTarget "ThingyTests" */;
 			buildPhases = (
+				8C227D1D25FB0FC4DDF36121 /* [CP] Check Pods Manifest.lock */,
 				38EFC4D91DAAB6380090E1DB /* Sources */,
 				38EFC4DA1DAAB6380090E1DB /* Frameworks */,
 				38EFC4DB1DAAB6380090E1DB /* Resources */,
+				A4ABC9CF8B120F9C51642B75 /* [CP] Embed Pods Frameworks */,
+				4FCE09F15569D35F6AED9DF2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 38EFC4F71DAAB6380090E1DB /* Build configuration list for PBXNativeTarget "ThingyUITests" */;
 			buildPhases = (
+				39F869EC540D3DD875D66807 /* [CP] Check Pods Manifest.lock */,
 				38EFC4E41DAAB6380090E1DB /* Sources */,
 				38EFC4E51DAAB6380090E1DB /* Frameworks */,
 				38EFC4E61DAAB6380090E1DB /* Resources */,
+				B455B05805338AF294B49ED8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -260,6 +308,129 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		39F869EC540D3DD875D66807 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4FCE09F15569D35F6AED9DF2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThingyTests/Pods-ThingyTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7ED2A05CCCF676C6D4CF447F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8C227D1D25FB0FC4DDF36121 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		91B7550EF807762EFFB67268 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Thingy/Pods-Thingy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4ABC9CF8B120F9C51642B75 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThingyTests/Pods-ThingyTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B13B3BF0364493CDECF6DE02 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Thingy/Pods-Thingy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B455B05805338AF294B49ED8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThingyUITests/Pods-ThingyUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		38EFC4C31DAAB6370090E1DB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -340,6 +511,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -389,6 +561,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -415,7 +588,9 @@
 		};
 		38EFC4F21DAAB6380090E1DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5FA5DEF0980D9B7D38C415F /* Pods-Thingy.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GN5RD5DNZH;
 				INFOPLIST_FILE = Thingy/Info.plist;
@@ -428,7 +603,9 @@
 		};
 		38EFC4F31DAAB6380090E1DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB23EF3F7CBE0173C6B02D63 /* Pods-Thingy.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GN5RD5DNZH;
 				INFOPLIST_FILE = Thingy/Info.plist;
@@ -441,6 +618,7 @@
 		};
 		38EFC4F51DAAB6380090E1DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13A21310649A9CEA912891FB /* Pods-ThingyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -456,6 +634,7 @@
 		};
 		38EFC4F61DAAB6380090E1DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 407FD10B0E4631A5B28DFA65 /* Pods-ThingyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +650,7 @@
 		};
 		38EFC4F81DAAB6380090E1DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36B3CA731D200DA275D67AAB /* Pods-ThingyUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = GN5RD5DNZH;
@@ -485,6 +665,7 @@
 		};
 		38EFC4F91DAAB6380090E1DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2172858DB4F5206E569FE8B4 /* Pods-ThingyUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = GN5RD5DNZH;
@@ -516,6 +697,7 @@
 				38EFC4F31DAAB6380090E1DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		38EFC4F41DAAB6380090E1DB /* Build configuration list for PBXNativeTarget "ThingyTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +706,7 @@
 				38EFC4F61DAAB6380090E1DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		38EFC4F71DAAB6380090E1DB /* Build configuration list for PBXNativeTarget "ThingyUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +715,7 @@
 				38EFC4F91DAAB6380090E1DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
