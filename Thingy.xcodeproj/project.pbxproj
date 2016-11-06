@@ -8,9 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		274894FB2AA0F32DFD59FC82 /* Pods_ThingyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7408342CA01D5419321DA893 /* Pods_ThingyUITests.framework */; };
+		3825DDC11DCFE2E400F6D8F8 /* Feed+API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3825DDBE1DCFE2E400F6D8F8 /* Feed+API.swift */; };
+		3825DDC21DCFE2E400F6D8F8 /* Thing+API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3825DDBF1DCFE2E400F6D8F8 /* Thing+API.swift */; };
+		3825DDC31DCFE2E400F6D8F8 /* User+API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3825DDC01DCFE2E400F6D8F8 /* User+API.swift */; };
+		3825DDC71DCFE2F400F6D8F8 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3825DDC51DCFE2F400F6D8F8 /* String+Extensions.swift */; };
+		3825DDC81DCFE2F400F6D8F8 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3825DDC61DCFE2F400F6D8F8 /* UIImageView+Extensions.swift */; };
+		3825DDCF1DCFE2FF00F6D8F8 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3825DDCA1DCFE2FF00F6D8F8 /* Comment.swift */; };
+		3825DDD01DCFE2FF00F6D8F8 /* FeedUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3825DDCB1DCFE2FF00F6D8F8 /* FeedUpdate.swift */; };
+		3825DDD11DCFE2FF00F6D8F8 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3825DDCC1DCFE2FF00F6D8F8 /* Story.swift */; };
+		3825DDD21DCFE2FF00F6D8F8 /* Thing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3825DDCD1DCFE2FF00F6D8F8 /* Thing.swift */; };
+		3825DDD31DCFE2FF00F6D8F8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3825DDCE1DCFE2FF00F6D8F8 /* User.swift */; };
+		3825DDDA1DCFE31100F6D8F8 /* ThingyColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3825DDD71DCFE31100F6D8F8 /* ThingyColors.swift */; };
+		3825DDE01DCFE4E500F6D8F8 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3825DDDE1DCFE4E500F6D8F8 /* FeedViewController.swift */; };
+		3825DDE11DCFE4E500F6D8F8 /* FeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3825DDDF1DCFE4E500F6D8F8 /* FeedViewController.xib */; };
 		38EFC4CB1DAAB6370090E1DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EFC4CA1DAAB6370090E1DB /* AppDelegate.swift */; };
-		38EFC4CD1DAAB6370090E1DB /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EFC4CC1DAAB6370090E1DB /* FirstViewController.swift */; };
-		38EFC4CF1DAAB6370090E1DB /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EFC4CE1DAAB6370090E1DB /* SecondViewController.swift */; };
 		38EFC4D21DAAB6370090E1DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38EFC4D01DAAB6370090E1DB /* Main.storyboard */; };
 		38EFC4D41DAAB6380090E1DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38EFC4D31DAAB6380090E1DB /* Assets.xcassets */; };
 		38EFC4D71DAAB6380090E1DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38EFC4D51DAAB6380090E1DB /* LaunchScreen.storyboard */; };
@@ -41,10 +52,21 @@
 		13A21310649A9CEA912891FB /* Pods-ThingyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThingyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThingyTests/Pods-ThingyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2172858DB4F5206E569FE8B4 /* Pods-ThingyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThingyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThingyUITests/Pods-ThingyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		36B3CA731D200DA275D67AAB /* Pods-ThingyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThingyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThingyUITests/Pods-ThingyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3825DDBE1DCFE2E400F6D8F8 /* Feed+API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Feed+API.swift"; sourceTree = "<group>"; };
+		3825DDBF1DCFE2E400F6D8F8 /* Thing+API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Thing+API.swift"; sourceTree = "<group>"; };
+		3825DDC01DCFE2E400F6D8F8 /* User+API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+API.swift"; sourceTree = "<group>"; };
+		3825DDC51DCFE2F400F6D8F8 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		3825DDC61DCFE2F400F6D8F8 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		3825DDCA1DCFE2FF00F6D8F8 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		3825DDCB1DCFE2FF00F6D8F8 /* FeedUpdate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedUpdate.swift; sourceTree = "<group>"; };
+		3825DDCC1DCFE2FF00F6D8F8 /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		3825DDCD1DCFE2FF00F6D8F8 /* Thing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Thing.swift; sourceTree = "<group>"; };
+		3825DDCE1DCFE2FF00F6D8F8 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3825DDD71DCFE31100F6D8F8 /* ThingyColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThingyColors.swift; sourceTree = "<group>"; };
+		3825DDDE1DCFE4E500F6D8F8 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		3825DDDF1DCFE4E500F6D8F8 /* FeedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedViewController.xib; sourceTree = "<group>"; };
 		38EFC4C71DAAB6370090E1DB /* Thingy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thingy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38EFC4CA1DAAB6370090E1DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		38EFC4CC1DAAB6370090E1DB /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		38EFC4CE1DAAB6370090E1DB /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		38EFC4D11DAAB6370090E1DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		38EFC4D31DAAB6380090E1DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38EFC4D61DAAB6380090E1DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -91,6 +113,68 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3825DDBD1DCFE2E400F6D8F8 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				3825DDBE1DCFE2E400F6D8F8 /* Feed+API.swift */,
+				3825DDBF1DCFE2E400F6D8F8 /* Thing+API.swift */,
+				3825DDC01DCFE2E400F6D8F8 /* User+API.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		3825DDC41DCFE2F400F6D8F8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3825DDC51DCFE2F400F6D8F8 /* String+Extensions.swift */,
+				3825DDC61DCFE2F400F6D8F8 /* UIImageView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3825DDC91DCFE2FF00F6D8F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3825DDCA1DCFE2FF00F6D8F8 /* Comment.swift */,
+				3825DDCB1DCFE2FF00F6D8F8 /* FeedUpdate.swift */,
+				3825DDCC1DCFE2FF00F6D8F8 /* Story.swift */,
+				3825DDCD1DCFE2FF00F6D8F8 /* Thing.swift */,
+				3825DDCE1DCFE2FF00F6D8F8 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3825DDD41DCFE31100F6D8F8 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3825DDD71DCFE31100F6D8F8 /* ThingyColors.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		3825DDDB1DCFE3C500F6D8F8 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		3825DDDC1DCFE3E500F6D8F8 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				3825DDDE1DCFE4E500F6D8F8 /* FeedViewController.swift */,
+				3825DDDF1DCFE4E500F6D8F8 /* FeedViewController.xib */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		3825DDDD1DCFE3ED00F6D8F8 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
 		38EFC4BE1DAAB6370090E1DB = {
 			isa = PBXGroup;
 			children = (
@@ -116,13 +200,18 @@
 		38EFC4C91DAAB6370090E1DB /* Thingy */ = {
 			isa = PBXGroup;
 			children = (
-				38EFC4CA1DAAB6370090E1DB /* AppDelegate.swift */,
-				38EFC4CC1DAAB6370090E1DB /* FirstViewController.swift */,
-				38EFC4CE1DAAB6370090E1DB /* SecondViewController.swift */,
-				38EFC4D01DAAB6370090E1DB /* Main.storyboard */,
-				38EFC4D31DAAB6380090E1DB /* Assets.xcassets */,
-				38EFC4D51DAAB6380090E1DB /* LaunchScreen.storyboard */,
 				38EFC4D81DAAB6380090E1DB /* Info.plist */,
+				38EFC4CA1DAAB6370090E1DB /* AppDelegate.swift */,
+				38EFC4D01DAAB6370090E1DB /* Main.storyboard */,
+				38EFC4D51DAAB6380090E1DB /* LaunchScreen.storyboard */,
+				38EFC4D31DAAB6380090E1DB /* Assets.xcassets */,
+				3825DDC91DCFE2FF00F6D8F8 /* Model */,
+				3825DDBD1DCFE2E400F6D8F8 /* API */,
+				3825DDDB1DCFE3C500F6D8F8 /* Onboarding */,
+				3825DDDC1DCFE3E500F6D8F8 /* Feed */,
+				3825DDDD1DCFE3ED00F6D8F8 /* Explore */,
+				3825DDD41DCFE31100F6D8F8 /* Utilities */,
+				3825DDC41DCFE2F400F6D8F8 /* Extensions */,
 			);
 			path = Thingy;
 			sourceTree = "<group>";
@@ -221,6 +310,7 @@
 				38EFC4E51DAAB6380090E1DB /* Frameworks */,
 				38EFC4E61DAAB6380090E1DB /* Resources */,
 				B455B05805338AF294B49ED8 /* [CP] Copy Pods Resources */,
+				B2DC1BFA0E163E5AD253A7D9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -239,7 +329,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Filip Szukala";
 				TargetAttributes = {
 					38EFC4C61DAAB6370090E1DB = {
@@ -288,6 +378,7 @@
 			files = (
 				38EFC4D71DAAB6380090E1DB /* LaunchScreen.storyboard in Resources */,
 				38EFC4D41DAAB6380090E1DB /* Assets.xcassets in Resources */,
+				3825DDE11DCFE4E500F6D8F8 /* FeedViewController.xib in Resources */,
 				38EFC4D21DAAB6370090E1DB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,7 +412,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		4FCE09F15569D35F6AED9DF2 /* [CP] Copy Pods Resources */ = {
@@ -351,7 +442,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		8C227D1D25FB0FC4DDF36121 /* [CP] Check Pods Manifest.lock */ = {
@@ -366,7 +457,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		91B7550EF807762EFFB67268 /* [CP] Copy Pods Resources */ = {
@@ -414,6 +505,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Thingy/Pods-Thingy-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B2DC1BFA0E163E5AD253A7D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThingyUITests/Pods-ThingyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B455B05805338AF294B49ED8 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -436,9 +542,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38EFC4CF1DAAB6370090E1DB /* SecondViewController.swift in Sources */,
+				3825DDD31DCFE2FF00F6D8F8 /* User.swift in Sources */,
+				3825DDC21DCFE2E400F6D8F8 /* Thing+API.swift in Sources */,
+				3825DDC71DCFE2F400F6D8F8 /* String+Extensions.swift in Sources */,
 				38EFC4CB1DAAB6370090E1DB /* AppDelegate.swift in Sources */,
-				38EFC4CD1DAAB6370090E1DB /* FirstViewController.swift in Sources */,
+				3825DDD21DCFE2FF00F6D8F8 /* Thing.swift in Sources */,
+				3825DDD01DCFE2FF00F6D8F8 /* FeedUpdate.swift in Sources */,
+				3825DDC11DCFE2E400F6D8F8 /* Feed+API.swift in Sources */,
+				3825DDC81DCFE2F400F6D8F8 /* UIImageView+Extensions.swift in Sources */,
+				3825DDCF1DCFE2FF00F6D8F8 /* Comment.swift in Sources */,
+				3825DDDA1DCFE31100F6D8F8 /* ThingyColors.swift in Sources */,
+				3825DDC31DCFE2E400F6D8F8 /* User+API.swift in Sources */,
+				3825DDE01DCFE4E500F6D8F8 /* FeedViewController.swift in Sources */,
+				3825DDD11DCFE2FF00F6D8F8 /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
