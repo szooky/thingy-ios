@@ -18,8 +18,9 @@ enum FeedUpdateType {
     case followedUser
 }
 
-class FeedUpdate {
+class FeedItem {
     var type: FeedUpdateType?
-    var who: User?
+    var user: User?
+    var thing: Thing?
     
 }
