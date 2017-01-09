@@ -20,4 +20,6 @@ class User {
     
     var things: [Thing]?
     var mostPopularStories: [Story]?
+    
+    var profileImageURL: String?
 }

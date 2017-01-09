@@ -19,7 +19,8 @@ extension FeedViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let feedCell = tableView.dequeueReusableCell(withIdentifier: FeedTableViewCell.cellId, for: indexPath) as! FeedTableViewCell
+        
+        let feedCell = self.tableViewFeed.dequeueReusableCell(withIdentifier: FeedTableViewCell.cellId) as! FeedTableViewCell
         
         feedCell.set(forItem: feedItems[indexPath.row])
         

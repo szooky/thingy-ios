@@ -16,4 +16,6 @@ class Thing {
     
     var stories: [Story]?
     var comments: [Comment]?
+    
+    var profileImageURL: String?
 }

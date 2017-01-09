@@ -20,7 +20,6 @@
 		3825DDD31DCFE2FF00F6D8F8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3825DDCE1DCFE2FF00F6D8F8 /* User.swift */; };
 		3825DDDA1DCFE31100F6D8F8 /* ThingyColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3825DDD71DCFE31100F6D8F8 /* ThingyColors.swift */; };
 		3825DDE01DCFE4E500F6D8F8 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3825DDDE1DCFE4E500F6D8F8 /* FeedViewController.swift */; };
-		3825DDE11DCFE4E500F6D8F8 /* FeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3825DDDF1DCFE4E500F6D8F8 /* FeedViewController.xib */; };
 		383397A11E20274F005C1EFA /* Story+API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383397A01E20274F005C1EFA /* Story+API.swift */; };
 		38A469A31DCFE6C8009CCF05 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38A469A21DCFE6C8009CCF05 /* Onboarding.storyboard */; };
 		38A469A51DCFEB34009CCF05 /* FeedViewController+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A469A41DCFEB34009CCF05 /* FeedViewController+UITableViewDelegate.swift */; };
@@ -70,7 +69,6 @@
 		3825DDCE1DCFE2FF00F6D8F8 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3825DDD71DCFE31100F6D8F8 /* ThingyColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThingyColors.swift; sourceTree = "<group>"; };
 		3825DDDE1DCFE4E500F6D8F8 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
-		3825DDDF1DCFE4E500F6D8F8 /* FeedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedViewController.xib; sourceTree = "<group>"; };
 		383397A01E20274F005C1EFA /* Story+API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Story+API.swift"; sourceTree = "<group>"; };
 		38A469A21DCFE6C8009CCF05 /* Onboarding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		38A469A41DCFEB34009CCF05 /* FeedViewController+UITableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FeedViewController+UITableViewDelegate.swift"; sourceTree = "<group>"; };
@@ -177,7 +175,6 @@
 			isa = PBXGroup;
 			children = (
 				3825DDDE1DCFE4E500F6D8F8 /* FeedViewController.swift */,
-				3825DDDF1DCFE4E500F6D8F8 /* FeedViewController.xib */,
 				38A469A41DCFEB34009CCF05 /* FeedViewController+UITableViewDelegate.swift */,
 				38A469A61DCFEB98009CCF05 /* FeedViewController+UITableViewDataSource.swift */,
 				38A469A81DCFED18009CCF05 /* FeedCell */,
@@ -355,7 +352,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Filip Szukala";
 				TargetAttributes = {
 					38EFC4C61DAAB6370090E1DB = {
@@ -406,7 +403,6 @@
 				38A469A31DCFE6C8009CCF05 /* Onboarding.storyboard in Resources */,
 				38EFC4D41DAAB6380090E1DB /* Assets.xcassets in Resources */,
 				38A469AC1DCFED2F009CCF05 /* FeedTableViewCell.xib in Resources */,
-				3825DDE11DCFE4E500F6D8F8 /* FeedViewController.xib in Resources */,
 				38EFC4D21DAAB6370090E1DB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
