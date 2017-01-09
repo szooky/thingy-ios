@@ -16,6 +16,10 @@ class Thing {
     
     var stories: [Story]?
     var comments: [Comment]?
+    var likes: Int?
+    
+    var storiesCount: Int?
+    var commentsCount: Int?
     
     var profileImageURL: String?
 }

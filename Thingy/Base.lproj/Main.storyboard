@@ -45,10 +45,10 @@
             </objects>
             <point key="canvasLocation" x="2017" y="-1034"/>
         </scene>
-        <!--explore-->
+        <!--Explore View Controller-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="ExploreViewController" customModule="Thingy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
@@ -57,25 +57,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="T9l-BL-jNj">
-                                <rect key="frame" x="0.0" y="152" width="375" height="466"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="T9l-BL-jNj">
+                                <rect key="frame" x="0.0" y="108" width="375" height="510"/>
+                                <color key="backgroundColor" red="0.1843019425868988" green="0.18432193994522095" blue="0.18428516387939453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableView>
-                            <searchBar contentMode="redraw" barStyle="black" searchBarStyle="prominent" showsScopeBar="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cyp-UQ-YTj">
-                                <rect key="frame" x="0.0" y="64" width="375" height="88"/>
+                            <searchBar contentMode="redraw" barStyle="black" searchBarStyle="prominent" translatesAutoresizingMaskIntoConstraints="NO" id="cyp-UQ-YTj">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
                                 <color key="tintColor" red="1" green="0.59460680369999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <scopeButtonTitles>
-                                    <string>things</string>
-                                    <string>stories</string>
-                                    <string>people</string>
-                                </scopeButtonTitles>
                                 <connections>
                                     <outlet property="delegate" destination="8rJ-Kc-sve" id="X61-B9-WxF"/>
                                 </connections>
                             </searchBar>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="cyp-UQ-YTj" secondAttribute="trailing" id="LJ6-iS-O3V"/>
                             <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="T9l-BL-jNj" secondAttribute="bottom" id="Ldf-C4-BS0"/>
@@ -86,9 +81,23 @@
                             <constraint firstItem="T9l-BL-jNj" firstAttribute="top" secondItem="cyp-UQ-YTj" secondAttribute="bottom" id="r49-CC-Rpb"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="explore" id="XsM-Ol-nm3"/>
+                    <navigationItem key="navigationItem" id="XsM-Ol-nm3">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="aZ4-nf-9tk">
+                            <rect key="frame" x="103" y="7" width="170" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="things"/>
+                                <segment title="stories"/>
+                                <segment title="people"/>
+                            </segments>
+                            <color key="tintColor" red="1" green="0.59460680369999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </segmentedControl>
+                    </navigationItem>
                     <connections>
                         <outlet property="searchDisplayController" destination="eAF-Y1-cna" id="ot4-Ad-KCJ"/>
+                        <outlet property="segmentControl" destination="aZ4-nf-9tk" id="5Z8-Dy-bW6"/>
+                        <outlet property="tableViewExplore" destination="T9l-BL-jNj" id="JZS-bM-eab"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
@@ -104,7 +113,7 @@
             </objects>
             <point key="canvasLocation" x="2017" y="-291"/>
         </scene>
-        <!--View Controller-->
+        <!--username-->
         <scene sceneID="SAX-Vm-esL">
             <objects>
                 <viewController id="dvu-eO-EYA" sceneMemberID="viewController">
@@ -115,9 +124,28 @@
                     <view key="view" contentMode="scaleToFill" id="tgT-Ss-Igm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kHA-Sc-emu">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="kHA-Sc-emu" secondAttribute="trailing" id="Skp-zd-Ujz"/>
+                            <constraint firstItem="kHA-Sc-emu" firstAttribute="top" secondItem="OTm-6h-eyW" secondAttribute="bottom" id="YVL-l0-VIs"/>
+                            <constraint firstItem="2Oy-o0-KDY" firstAttribute="top" secondItem="kHA-Sc-emu" secondAttribute="bottom" id="sZ5-69-Xvt"/>
+                            <constraint firstItem="kHA-Sc-emu" firstAttribute="leading" secondItem="tgT-Ss-Igm" secondAttribute="leading" id="zJn-aG-kWV"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="qiZ-eW-tYH"/>
+                    <navigationItem key="navigationItem" title="username" id="qiZ-eW-tYH">
+                        <barButtonItem key="leftBarButtonItem" title="edit" id="FKa-QL-EDC">
+                            <color key="tintColor" red="1" green="0.59460680369999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="logout" id="r2u-ty-JXO">
+                            <color key="tintColor" red="1" green="0.59460680369999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ym8-Zx-w2n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -148,7 +176,7 @@
         <scene sceneID="yl2-sM-qoP">
             <objects>
                 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" id="W28-zg-YXA">
+                    <tabBar key="tabBar" opaque="NO" contentMode="scaleToFill" barStyle="black" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
@@ -175,7 +203,7 @@
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" misplaced="YES" barStyle="black" id="a26-Dk-P1e">
+                    <navigationBar key="navigationBar" opaque="NO" contentMode="scaleToFill" misplaced="YES" barStyle="black" id="a26-Dk-P1e">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
