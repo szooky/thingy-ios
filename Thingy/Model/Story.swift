@@ -17,4 +17,9 @@ class Story {
     var text: String?
 
     var comments: [Comment]?
+    
+    var likesCount: Int?
+    var commentsCount: Int?
+    
+    var profileImageURL: String?
 }

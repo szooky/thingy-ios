@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="UserTableViewCell" customModule="Thingy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ido-TT-gtY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                    </imageView>
+                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rhn-8F-jbG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="fI0-TC-sgU">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </view>
+                        <blurEffect style="light"/>
+                    </visualEffectView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AaU-p9-t8H">
+                        <rect key="frame" x="130" y="10" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="j4f-PX-nl6"/>
+                            <constraint firstAttribute="width" constant="60" id="v9f-HN-yuR"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PE7-K2-3mm">
+                        <rect key="frame" x="10" y="72" width="300" height="21"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PE7-K2-3mm" firstAttribute="top" secondItem="AaU-p9-t8H" secondAttribute="bottom" constant="2" id="22T-TG-tGi"/>
+                    <constraint firstAttribute="trailing" secondItem="Rhn-8F-jbG" secondAttribute="trailing" id="4hH-zU-cFK"/>
+                    <constraint firstAttribute="trailing" secondItem="PE7-K2-3mm" secondAttribute="trailing" constant="10" id="7fh-v6-bSi"/>
+                    <constraint firstAttribute="bottom" secondItem="Rhn-8F-jbG" secondAttribute="bottom" id="FzQ-zo-hAJ"/>
+                    <constraint firstItem="ido-TT-gtY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="JDG-9b-cZ1"/>
+                    <constraint firstItem="AaU-p9-t8H" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Myn-el-gwu"/>
+                    <constraint firstAttribute="trailing" secondItem="ido-TT-gtY" secondAttribute="trailing" id="OJD-Ga-Z4Q"/>
+                    <constraint firstItem="Rhn-8F-jbG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="RPs-wF-tyn"/>
+                    <constraint firstItem="PE7-K2-3mm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="TBH-Pp-JdE"/>
+                    <constraint firstAttribute="bottom" secondItem="ido-TT-gtY" secondAttribute="bottom" id="dpm-tQ-pGE"/>
+                    <constraint firstItem="AaU-p9-t8H" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="-10" id="eMv-Z2-T4H"/>
+                    <constraint firstItem="PE7-K2-3mm" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="k6p-gO-bMn"/>
+                    <constraint firstItem="ido-TT-gtY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="sWx-fw-2rm"/>
+                    <constraint firstItem="Rhn-8F-jbG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="yAg-lZ-Lec"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageViewBackground" destination="ido-TT-gtY" id="nFd-Dn-fF5"/>
+                <outlet property="imageViewProfile" destination="AaU-p9-t8H" id="oWE-Pf-msY"/>
+                <outlet property="labelUsername" destination="PE7-K2-3mm" id="otS-tG-Zm1"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

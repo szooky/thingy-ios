@@ -16,6 +16,8 @@ class ExploreViewController: UIViewController {
     var refreshControl: UIRefreshControl!
 
     var things = [Thing]()
+    var users = [User]()
+    var stories = [Story]()
     
     
     override func viewDidLoad() {
@@ -27,6 +29,8 @@ class ExploreViewController: UIViewController {
         self.automaticallyAdjustsScrollViewInsets = false
         
         things = Thing.getAll()
+        users = User.getAll()
+        stories = Story.getAll()
     }
     
     func configureTableView() {
@@ -35,6 +39,8 @@ class ExploreViewController: UIViewController {
         tableViewExplore.rowHeight = 100.0
         
         tableViewExplore.register(UINib(nibName: ThingTableViewCell.cellId, bundle: nil), forCellReuseIdentifier: ThingTableViewCell.cellId)
+        tableViewExplore.register(UINib(nibName: UserTableViewCell.cellId, bundle: nil), forCellReuseIdentifier: UserTableViewCell.cellId)
+        tableViewExplore.register(UINib(nibName: StoryTableViewCell.cellId, bundle: nil), forCellReuseIdentifier: StoryTableViewCell.cellId)
     }
     
     func configurePullToRefresh() {
@@ -47,6 +53,9 @@ class ExploreViewController: UIViewController {
         refreshControl.endRefreshing()
     }
     
+    @IBAction func segmentControlValueChanged(_ sender: UISegmentedControl) {
+        tableViewExplore.reloadData()
+    }
 
 
 }

@@ -92,6 +92,9 @@
                                 <segment title="people"/>
                             </segments>
                             <color key="tintColor" red="1" green="0.59460680369999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="segmentControlValueChanged:" destination="8rJ-Kc-sve" eventType="valueChanged" id="4Jn-pP-9lE"/>
+                            </connections>
                         </segmentedControl>
                     </navigationItem>
                     <connections>

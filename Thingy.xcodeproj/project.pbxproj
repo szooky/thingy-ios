@@ -33,6 +33,10 @@
 		387A6CD71E24438300834164 /* Story+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387A6CD61E24438300834164 /* Story+Mock.swift */; };
 		387A6CD91E24439000834164 /* FeedItem+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387A6CD81E24439000834164 /* FeedItem+Mock.swift */; };
 		387A6CDB1E24439A00834164 /* User+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387A6CDA1E24439A00834164 /* User+Mock.swift */; };
+		387A6CDE1E244A5200834164 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387A6CDC1E244A5200834164 /* UserTableViewCell.swift */; };
+		387A6CDF1E244A5200834164 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 387A6CDD1E244A5200834164 /* UserTableViewCell.xib */; };
+		387A6CE21E245D8D00834164 /* StoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387A6CE01E245D8D00834164 /* StoryTableViewCell.swift */; };
+		387A6CE31E245D8D00834164 /* StoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 387A6CE11E245D8D00834164 /* StoryTableViewCell.xib */; };
 		38A469A31DCFE6C8009CCF05 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38A469A21DCFE6C8009CCF05 /* Onboarding.storyboard */; };
 		38A469A51DCFEB34009CCF05 /* FeedViewController+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A469A41DCFEB34009CCF05 /* FeedViewController+UITableViewDelegate.swift */; };
 		38A469A71DCFEB98009CCF05 /* FeedViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A469A61DCFEB98009CCF05 /* FeedViewController+UITableViewDataSource.swift */; };
@@ -93,6 +97,10 @@
 		387A6CD61E24438300834164 /* Story+Mock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Story+Mock.swift"; sourceTree = "<group>"; };
 		387A6CD81E24439000834164 /* FeedItem+Mock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FeedItem+Mock.swift"; sourceTree = "<group>"; };
 		387A6CDA1E24439A00834164 /* User+Mock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+Mock.swift"; sourceTree = "<group>"; };
+		387A6CDC1E244A5200834164 /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		387A6CDD1E244A5200834164 /* UserTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		387A6CE01E245D8D00834164 /* StoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryTableViewCell.swift; sourceTree = "<group>"; };
+		387A6CE11E245D8D00834164 /* StoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoryTableViewCell.xib; sourceTree = "<group>"; };
 		38A469A21DCFE6C8009CCF05 /* Onboarding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		38A469A41DCFEB34009CCF05 /* FeedViewController+UITableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FeedViewController+UITableViewDelegate.swift"; sourceTree = "<group>"; };
 		38A469A61DCFEB98009CCF05 /* FeedViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FeedViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
@@ -209,6 +217,8 @@
 			isa = PBXGroup;
 			children = (
 				387A6CC21E2418D000834164 /* UserProfileViewController.swift */,
+				387A6CDC1E244A5200834164 /* UserTableViewCell.swift */,
+				387A6CDD1E244A5200834164 /* UserTableViewCell.xib */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -223,6 +233,8 @@
 		387A6CC01E24180C00834164 /* Story */ = {
 			isa = PBXGroup;
 			children = (
+				387A6CE01E245D8D00834164 /* StoryTableViewCell.swift */,
+				387A6CE11E245D8D00834164 /* StoryTableViewCell.xib */,
 			);
 			path = Story;
 			sourceTree = "<group>";
@@ -475,6 +487,8 @@
 				387A6CC91E243DDD00834164 /* ThingTableViewCell.xib in Resources */,
 				38EFC4D71DAAB6380090E1DB /* LaunchScreen.storyboard in Resources */,
 				38A469A31DCFE6C8009CCF05 /* Onboarding.storyboard in Resources */,
+				387A6CE31E245D8D00834164 /* StoryTableViewCell.xib in Resources */,
+				387A6CDF1E244A5200834164 /* UserTableViewCell.xib in Resources */,
 				38A469AC1DCFED2F009CCF05 /* FeedTableViewCell.xib in Resources */,
 				38EFC4D21DAAB6370090E1DB /* Main.storyboard in Resources */,
 				387A6CC51E241D9B00834164 /* Assets.xcassets in Resources */,
@@ -649,6 +663,7 @@
 				3825DDC71DCFE2F400F6D8F8 /* String+Extensions.swift in Sources */,
 				387A6CCE1E2441E300834164 /* ExploreViewController.swift in Sources */,
 				38EFC4CB1DAAB6370090E1DB /* AppDelegate.swift in Sources */,
+				387A6CE21E245D8D00834164 /* StoryTableViewCell.swift in Sources */,
 				387A6CD01E2441F900834164 /* ExploreViewController+UITableViewDelegate.swift in Sources */,
 				3825DDD21DCFE2FF00F6D8F8 /* Thing.swift in Sources */,
 				3825DDD01DCFE2FF00F6D8F8 /* FeedItem.swift in Sources */,
@@ -656,6 +671,7 @@
 				387A6CD71E24438300834164 /* Story+Mock.swift in Sources */,
 				3825DDC11DCFE2E400F6D8F8 /* Feed+API.swift in Sources */,
 				38A469A71DCFEB98009CCF05 /* FeedViewController+UITableViewDataSource.swift in Sources */,
+				387A6CDE1E244A5200834164 /* UserTableViewCell.swift in Sources */,
 				38A469A51DCFEB34009CCF05 /* FeedViewController+UITableViewDelegate.swift in Sources */,
 				38A469AE1DCFFB5A009CCF05 /* FeedTableViewCell.swift in Sources */,
 				387A6CDB1E24439A00834164 /* User+Mock.swift in Sources */,

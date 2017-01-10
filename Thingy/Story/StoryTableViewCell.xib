@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="StoryTableViewCell" customModule="Thingy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iiv-qo-EiE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                    </imageView>
+                    <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ctE-WC-WeE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="SIf-ET-yKq">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </view>
+                        <blurEffect style="dark"/>
+                    </visualEffectView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STORY TITLE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="uMS-2j-Ehg">
+                        <rect key="frame" x="10" y="27" width="300" height="31"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="26"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 LIKES | 0 COMMENTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQ1-PT-Awp">
+                        <rect key="frame" x="10" y="60" width="300" height="15"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="12"/>
+                        <color key="textColor" red="1" green="0.59460680369999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="uMS-2j-Ehg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="2eL-i3-sL6"/>
+                    <constraint firstAttribute="trailing" secondItem="uMS-2j-Ehg" secondAttribute="trailing" constant="10" id="7RO-oQ-j8m"/>
+                    <constraint firstItem="iiv-qo-EiE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="JKe-Nz-hea"/>
+                    <constraint firstAttribute="trailing" secondItem="HQ1-PT-Awp" secondAttribute="trailing" constant="10" id="M6d-zp-gFX"/>
+                    <constraint firstItem="iiv-qo-EiE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="PFu-69-qfC"/>
+                    <constraint firstItem="uMS-2j-Ehg" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="-8" id="Q6f-nw-1Q2"/>
+                    <constraint firstAttribute="trailing" secondItem="ctE-WC-WeE" secondAttribute="trailing" id="RDz-JQ-umv"/>
+                    <constraint firstItem="HQ1-PT-Awp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Xjg-NH-OpS"/>
+                    <constraint firstItem="ctE-WC-WeE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Y7y-ww-zlh"/>
+                    <constraint firstAttribute="trailing" secondItem="iiv-qo-EiE" secondAttribute="trailing" id="YcD-fw-Gck"/>
+                    <constraint firstItem="ctE-WC-WeE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="clB-zq-xc7"/>
+                    <constraint firstItem="HQ1-PT-Awp" firstAttribute="top" secondItem="uMS-2j-Ehg" secondAttribute="bottom" constant="2" id="klM-kJ-DfX"/>
+                    <constraint firstAttribute="bottom" secondItem="ctE-WC-WeE" secondAttribute="bottom" id="sMH-sE-Z3y"/>
+                    <constraint firstAttribute="bottom" secondItem="iiv-qo-EiE" secondAttribute="bottom" id="uWP-A5-Rbh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageViewBackground" destination="iiv-qo-EiE" id="chy-kH-DoO"/>
+                <outlet property="labelDetails" destination="HQ1-PT-Awp" id="mhg-LN-TFW"/>
+                <outlet property="labelTitle" destination="uMS-2j-Ehg" id="vmb-OP-KjJ"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

@@ -31,4 +31,14 @@ extension User {
         return user
     }
     
+    class func getAll() -> [User] {
+        var users = [User]()
+        
+        for index in 1...3 {
+            users.append(User.get(variant: index))
+        }
+        
+        return users
+    }
+    
 }
