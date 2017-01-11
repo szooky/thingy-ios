@@ -19,14 +19,22 @@ class ExploreViewController: UIViewController {
     var users = [User]()
     var stories = [Story]()
     
+    var filteredThings = [Thing]()
+    var filteredUsers = [User]()
+    var filteredStories = [Story]()
+    
+    let searchController = UISearchController(searchResultsController: nil)
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.configureTableView()
         self.configurePullToRefresh()
+        self.configureSearch()
         
         self.automaticallyAdjustsScrollViewInsets = false
+        
         
         things = Thing.getAll()
         users = User.getAll()
@@ -49,6 +57,18 @@ class ExploreViewController: UIViewController {
         tableViewExplore.addSubview(refreshControl)
     }
     
+    func configureSearch() {
+        searchController.searchResultsUpdater = self
+        searchController.dimsBackgroundDuringPresentation = false
+        definesPresentationContext = true
+        tableViewExplore.tableHeaderView = searchController.searchBar
+        searchController.searchBar.barStyle = .blackTranslucent
+        searchController.searchBar.searchBarStyle = .minimal
+        searchController.searchBar.keyboardAppearance = .dark
+        searchController.searchBar.tintColor = UIColor.thingyOrange()
+     
+    }
+    
     func refresh(sender:AnyObject) {
         refreshControl.endRefreshing()
     }
@@ -56,6 +76,7 @@ class ExploreViewController: UIViewController {
     @IBAction func segmentControlValueChanged(_ sender: UISegmentedControl) {
         tableViewExplore.reloadData()
     }
+
 
 
 }

@@ -15,16 +15,28 @@ extension ExploreViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        switch segmentControl.selectedSegmentIndex {
-        case 0:
-            return things.count
-        case 1:
-            return stories.count
-        case 2:
-            return users.count
-        default:
-            return 0
+        if searchController.isActive && searchController.searchBar.text != "" {
+            switch segmentControl.selectedSegmentIndex {
+                case 0:
+                    return filteredThings.count
+                case 1:
+                    return filteredStories.count
+                case 2:
+                    return filteredUsers.count
+                default:
+                    return 0
+            }
+        } else {
+            switch segmentControl.selectedSegmentIndex {
+                case 0:
+                    return things.count
+                case 1:
+                    return stories.count
+                case 2:
+                    return users.count
+                default:
+                    return 0
+            }
         }
     }
     
@@ -34,21 +46,33 @@ extension ExploreViewController: UITableViewDataSource {
         case 0:
             let thingCell = self.tableViewExplore.dequeueReusableCell(withIdentifier: ThingTableViewCell.cellId) as! ThingTableViewCell
             
-            thingCell.set(thing: things[indexPath.row])
+            if searchController.isActive && searchController.searchBar.text != "" {
+                thingCell.set(thing: filteredThings[indexPath.row])
+            } else {
+                thingCell.set(thing: things[indexPath.row])
+            }
             
             return thingCell
             
         case 1:
             let storyCell = self.tableViewExplore.dequeueReusableCell(withIdentifier: StoryTableViewCell.cellId) as! StoryTableViewCell
             
-            storyCell.set(story: stories[indexPath.row])
-            
+            if searchController.isActive && searchController.searchBar.text != "" {
+                storyCell.set(story: filteredStories[indexPath.row])
+            } else {
+                storyCell.set(story: stories[indexPath.row])
+            }
+        
             return storyCell
             
         case 2:
             let userCell = self.tableViewExplore.dequeueReusableCell(withIdentifier: UserTableViewCell.cellId) as! UserTableViewCell
             
-            userCell.set(user: users[indexPath.row])
+            if searchController.isActive && searchController.searchBar.text != "" {
+                userCell.set(user: filteredUsers[indexPath.row])
+            } else {
+                userCell.set(user: users[indexPath.row])
+            }
             
             return userCell
             
@@ -57,7 +81,6 @@ extension ExploreViewController: UITableViewDataSource {
             
         }
         
-      
     }
     
 }
