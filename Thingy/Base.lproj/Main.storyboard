@@ -73,7 +73,7 @@
                     <navigationItem key="navigationItem" id="XsM-Ol-nm3">
                         <nil key="title"/>
                         <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="aZ4-nf-9tk">
-                            <rect key="frame" x="102.5" y="7" width="170" height="30"/>
+                            <rect key="frame" x="103" y="7" width="170" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <segments>
                                 <segment title="things"/>
@@ -98,7 +98,7 @@
         <!--username-->
         <scene sceneID="SAX-Vm-esL">
             <objects>
-                <viewController id="dvu-eO-EYA" sceneMemberID="viewController">
+                <viewController id="dvu-eO-EYA" customClass="UserProfileViewController" customModule="Thingy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OTm-6h-eyW"/>
                         <viewControllerLayoutGuide type="bottom" id="2Oy-o0-KDY"/>
@@ -107,9 +107,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kHA-Sc-emu">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kHA-Sc-emu">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.2085659812" green="0.20579402599999999" blue="0.21355341359999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -128,6 +128,9 @@
                             <color key="tintColor" red="1" green="0.59460680369999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableViewUserProfile" destination="kHA-Sc-emu" id="gmI-D6-J69"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ym8-Zx-w2n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

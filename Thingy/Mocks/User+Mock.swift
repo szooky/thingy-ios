@@ -17,14 +17,20 @@ extension User {
         case 1:
             user.username = "scarlettleithold"
             user.profileImageURL = "scarlett-selfie"
+            user.things = [Thing.get(variant: variant)]
             
         case 2:
             user.username = "randomchick"
             user.profileImageURL = "scarlett-sunglasses"
-            
+            user.followingCount = 3
+            user.followersCount = 4
+            user.things = Thing.getAll()
+            user.decription = "I'm intrested in fast cars and cameras 🚗😍"
+
         default:
             user.username = "anotherone3"
             user.profileImageURL = "scarlett-bw"
+            user.things = [Thing.get(variant: variant)]
             
         }
         

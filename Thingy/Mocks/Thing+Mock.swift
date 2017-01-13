@@ -16,19 +16,19 @@ extension Thing {
         switch variant {
         case 1:
             thing.name = "Blacked out C63 AMG Coupe"
-            thing.owner = User.get(variant: variant)
             thing.profileImageURL = "black_gold_amg"
+            thing.gallery = ["black_gold_amg","camo_rs6","black_hurracan"]
             
         case 2:
             thing.name = "Camo RS6 with Miltek Exhaust"
-            thing.owner = User.get(variant: variant)
             thing.profileImageURL = "camo_rs6"
+            thing.gallery = ["camo_rs6","black_gold_amg","black_hurracan"]
+
             
         default:
             thing.name = "Wide body, engine in the tail, chrome lips, V12"
-            thing.owner = User.get(variant: variant)
             thing.profileImageURL = "black_hurracan"
-            
+            thing.gallery = ["black_hurracan","black_gold_amg","camo_rs6"]
         }
         
         return thing

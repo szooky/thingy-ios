@@ -22,4 +22,6 @@ class User {
     var mostPopularStories: [Story]?
     
     var profileImageURL: String?
+    
+    var decription: String?
 }

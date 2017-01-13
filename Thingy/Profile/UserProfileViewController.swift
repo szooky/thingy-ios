@@ -10,21 +10,49 @@ import UIKit
 
 class UserProfileViewController: UIViewController {
 
+    @IBOutlet weak var tableViewUserProfile: UITableView!
+    
+    var user: User?
+    var refreshControl: UIRefreshControl!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        user = User.get(variant: 2)
+        
+        configureView()
+        configureTableView()
+        configurePullToRefresh()
+        
+        self.automaticallyAdjustsScrollViewInsets = false
+        
+    }
+    
+    func configureView() {
+        if let user = self.user, let username = user.username {
+            self.navigationItem.title = username
+        }
+    }
+    
+    func configureTableView() {
+        tableViewUserProfile.dataSource = self
+        tableViewUserProfile.delegate = self
+        tableViewUserProfile.rowHeight = 300.0
+        
+        tableViewUserProfile.register(UINib(nibName: UserDetailTableViewCell.cellId, bundle: nil), forCellReuseIdentifier: UserDetailTableViewCell.cellId)
+        tableViewUserProfile.register(UINib(nibName: ThingTableViewCell.cellId, bundle: nil), forCellReuseIdentifier: ThingTableViewCell.cellId)
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func configurePullToRefresh() {
+        refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(refresh(sender:)), for: .valueChanged)
+        tableViewUserProfile.addSubview(refreshControl)
     }
-    */
+    
+    func refresh(sender:AnyObject) {
+        refreshControl.endRefreshing()
+    }
+    
+
 
 }

@@ -22,4 +22,6 @@ class Thing {
     var commentsCount: Int?
     
     var profileImageURL: String?
+    
+    var gallery: [String]?
 }

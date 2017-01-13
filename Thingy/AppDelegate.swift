@@ -20,8 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if let font = UIFont(name: "HelveticaNeue-UltraLight", size: 25) {
             UINavigationBar.appearance().titleTextAttributes = [NSFontAttributeName: font]
         }
-        
-        
+    
         return true
     }
 

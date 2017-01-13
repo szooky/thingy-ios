@@ -35,7 +35,6 @@ class ExploreViewController: UIViewController {
         
         self.automaticallyAdjustsScrollViewInsets = false
         
-        
         things = Thing.getAll()
         users = User.getAll()
         stories = Story.getAll()
@@ -49,6 +48,7 @@ class ExploreViewController: UIViewController {
         tableViewExplore.register(UINib(nibName: ThingTableViewCell.cellId, bundle: nil), forCellReuseIdentifier: ThingTableViewCell.cellId)
         tableViewExplore.register(UINib(nibName: UserTableViewCell.cellId, bundle: nil), forCellReuseIdentifier: UserTableViewCell.cellId)
         tableViewExplore.register(UINib(nibName: StoryTableViewCell.cellId, bundle: nil), forCellReuseIdentifier: StoryTableViewCell.cellId)
+        
     }
     
     func configurePullToRefresh() {
@@ -64,6 +64,7 @@ class ExploreViewController: UIViewController {
         tableViewExplore.tableHeaderView = searchController.searchBar
         searchController.searchBar.barStyle = .blackTranslucent
         searchController.searchBar.searchBarStyle = .minimal
+        searchController.searchBar.prompt = nil
         searchController.searchBar.keyboardAppearance = .dark
         searchController.searchBar.tintColor = UIColor.thingyOrange()
      
