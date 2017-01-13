@@ -11,5 +11,9 @@ import UIKit
 extension ExploreViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        let thingStoryBoard = UIStoryboard(name: "ThingStoryboard", bundle: nil)
+        if let thingVC = thingStoryBoard.instantiateInitialViewController() {
+            self.navigationController?.pushViewController(thingVC, animated: true)
+        }
     }
 }

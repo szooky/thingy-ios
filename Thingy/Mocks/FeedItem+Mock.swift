@@ -7,3 +7,26 @@
 //
 
 import Foundation
+
+extension FeedItem {
+    
+    class func get(variant: Int) -> FeedItem {
+        let feedItem = FeedItem()
+        
+        feedItem.user = User.get(variant: variant)
+        feedItem.thing = Thing.get(variant: variant)
+        feedItem.type = .ThingAdd
+
+        return feedItem
+    }
+    
+    class func getAll() -> [FeedItem] {
+        var feedItems = [FeedItem]()
+        
+        for index in 1...3 {
+            feedItems.append(FeedItem.get(variant: index))
+        }
+        
+        return feedItems
+    }
+}

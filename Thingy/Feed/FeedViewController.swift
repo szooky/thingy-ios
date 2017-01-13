@@ -23,7 +23,9 @@ class FeedViewController: UIViewController {
   
         self.automaticallyAdjustsScrollViewInsets = false
         
-        mockFeed()
+        feedItems = FeedItem.getAll()
+        
+        tableViewFeed.reloadData()
     }
     
     func configureTableView() {

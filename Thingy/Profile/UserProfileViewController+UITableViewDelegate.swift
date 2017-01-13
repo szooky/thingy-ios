@@ -10,7 +10,10 @@ import UIKit
 
 extension UserProfileViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let thingStoryBoard = UIStoryboard(name: "ThingStoryboard", bundle: nil)
+        if let thingVC = thingStoryBoard.instantiateInitialViewController() {
+            self.navigationController?.pushViewController(thingVC, animated: true)
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
