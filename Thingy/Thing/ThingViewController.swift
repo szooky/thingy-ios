@@ -9,26 +9,60 @@
 import UIKit
 
 class ThingViewController: UIViewController {
+    
+    @IBOutlet weak var labelTitle: UILabel!
+    @IBOutlet weak var labelDetails: UILabel!
+    @IBOutlet weak var buttonLikes: UIButton!
+    @IBOutlet weak var tableViewStories: UITableView!
+    @IBOutlet weak var tableViewComments: UITableView!
+    @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var pageControl: UIPageControl!
 
+    @IBOutlet weak var constraintTableViewStoriesHeight: NSLayoutConstraint!
+    
+    var pageViewController: UIPageViewController?
     var thing: Thing?
+
+    var contentImages = [""]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         automaticallyAdjustsScrollViewInsets = false
+        
+        loadThingDetails()
         configurePageViewController()
         configurePageControl()
+        configureStoriesTableView()
+        setStoriesTableViewHeight()
     }
     
-    @IBOutlet weak var containerView: UIView!
-    var pageViewController: UIPageViewController?
+    private func loadThingDetails() {
+        if let thing = self.thing {
+            labelTitle.text = thing.name
+            labelDetails.text = thing.description
+            
+            if let gallery = thing.gallery {
+                contentImages = gallery
+            }
+        }
+    }
     
-    @IBOutlet weak var pageControl: UIPageControl!
+    func configureStoriesTableView() {
+        tableViewStories.dataSource = self
+        tableViewStories.delegate = self
+        tableViewStories.rowHeight = 100.0
+        
+        tableViewStories.register(UINib(nibName: StoryTableViewCell.cellId, bundle: nil), forCellReuseIdentifier: StoryTableViewCell.cellId)
+        
+    }
     
-    let contentImages = ["black_gold_amg",
-                            "black_gold_amg",
-                            "black_gold_amg",
-                            "black_gold_amg"]
+    func setStoriesTableViewHeight() {
+        if let thing = self.thing, let stories = thing.stories {
+            let totalHeight = CGFloat(stories.count) * 100.0
+            constraintTableViewStoriesHeight.constant = totalHeight
+        }
+    }
 
     private func configurePageViewController() {
         let storyboard = UIStoryboard(name: "ThingStoryboard", bundle: nil)

@@ -10,10 +10,13 @@ import UIKit
 
 extension FeedViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
         let thingStoryBoard = UIStoryboard(name: "ThingStoryboard", bundle: nil)
-        if let thingVC = thingStoryBoard.instantiateInitialViewController() {
+        if let thingVC = thingStoryBoard.instantiateInitialViewController() as? ThingViewController {
+            if let selectedThing = feedItems[indexPath.row].thing {
+                thingVC.thing = selectedThing
+            }
             self.navigationController?.pushViewController(thingVC, animated: true)
         }
     }
 }
+

@@ -30,6 +30,8 @@
 		385D6E6F1E282D9B00E8F1A5 /* ThingGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385D6E6E1E282D9B00E8F1A5 /* ThingGalleryViewController.swift */; };
 		385D6E711E2840AC00E8F1A5 /* ThingViewController+UIPageViewControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385D6E701E2840AC00E8F1A5 /* ThingViewController+UIPageViewControllerDataSource.swift */; };
 		385D6E731E28517A00E8F1A5 /* ThingViewController+UIPageViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385D6E721E28517A00E8F1A5 /* ThingViewController+UIPageViewControllerDelegate.swift */; };
+		385D6E751E28676000E8F1A5 /* ThingViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385D6E741E28676000E8F1A5 /* ThingViewController+UITableViewDataSource.swift */; };
+		385D6E771E2867D100E8F1A5 /* ThingViewController+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385D6E761E2867D100E8F1A5 /* ThingViewController+UITableViewDelegate.swift */; };
 		387A6CC31E2418D000834164 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387A6CC21E2418D000834164 /* UserProfileViewController.swift */; };
 		387A6CC51E241D9B00834164 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 387A6CC41E241D9B00834164 /* Assets.xcassets */; };
 		387A6CC81E243DDD00834164 /* ThingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387A6CC61E243DDD00834164 /* ThingTableViewCell.swift */; };
@@ -105,6 +107,8 @@
 		385D6E6E1E282D9B00E8F1A5 /* ThingGalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThingGalleryViewController.swift; sourceTree = "<group>"; };
 		385D6E701E2840AC00E8F1A5 /* ThingViewController+UIPageViewControllerDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ThingViewController+UIPageViewControllerDataSource.swift"; sourceTree = "<group>"; };
 		385D6E721E28517A00E8F1A5 /* ThingViewController+UIPageViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ThingViewController+UIPageViewControllerDelegate.swift"; sourceTree = "<group>"; };
+		385D6E741E28676000E8F1A5 /* ThingViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ThingViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
+		385D6E761E2867D100E8F1A5 /* ThingViewController+UITableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ThingViewController+UITableViewDelegate.swift"; sourceTree = "<group>"; };
 		387A6CC21E2418D000834164 /* UserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		387A6CC41E241D9B00834164 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		387A6CC61E243DDD00834164 /* ThingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThingTableViewCell.swift; sourceTree = "<group>"; };
@@ -274,6 +278,8 @@
 				385D6E6E1E282D9B00E8F1A5 /* ThingGalleryViewController.swift */,
 				385D6E701E2840AC00E8F1A5 /* ThingViewController+UIPageViewControllerDataSource.swift */,
 				385D6E721E28517A00E8F1A5 /* ThingViewController+UIPageViewControllerDelegate.swift */,
+				385D6E741E28676000E8F1A5 /* ThingViewController+UITableViewDataSource.swift */,
+				385D6E761E2867D100E8F1A5 /* ThingViewController+UITableViewDelegate.swift */,
 			);
 			path = Thing;
 			sourceTree = "<group>";
@@ -697,12 +703,14 @@
 				387A6CC31E2418D000834164 /* UserProfileViewController.swift in Sources */,
 				383397A11E20274F005C1EFA /* Story+API.swift in Sources */,
 				3825DDC71DCFE2F400F6D8F8 /* String+Extensions.swift in Sources */,
+				385D6E771E2867D100E8F1A5 /* ThingViewController+UITableViewDelegate.swift in Sources */,
 				385D6E671E26A98700E8F1A5 /* UserProfileViewController+UITableViewDataSource.swift in Sources */,
 				387A6CCE1E2441E300834164 /* ExploreViewController.swift in Sources */,
 				38EFC4CB1DAAB6370090E1DB /* AppDelegate.swift in Sources */,
 				387A6CE21E245D8D00834164 /* StoryTableViewCell.swift in Sources */,
 				387A6CD01E2441F900834164 /* ExploreViewController+UITableViewDelegate.swift in Sources */,
 				385D6E6A1E26B7C900E8F1A5 /* ThingViewController.swift in Sources */,
+				385D6E751E28676000E8F1A5 /* ThingViewController+UITableViewDataSource.swift in Sources */,
 				3825DDD21DCFE2FF00F6D8F8 /* Thing.swift in Sources */,
 				3825DDD01DCFE2FF00F6D8F8 /* FeedItem.swift in Sources */,
 				387A6CC81E243DDD00834164 /* ThingTableViewCell.swift in Sources */,
