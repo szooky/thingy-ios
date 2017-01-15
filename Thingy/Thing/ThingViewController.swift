@@ -43,7 +43,12 @@ class ThingViewController: UIViewController {
         setStoriesTableViewHeight()
         
         configureCommentsTableView()
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         setCommentsTableViewHeight()
+
     }
     
     private func loadThingDetails() {
@@ -70,7 +75,6 @@ class ThingViewController: UIViewController {
         tableViewComments.rowHeight = 100.0
         tableViewComments.register(UINib(nibName: CommentTableViewCell.cellId, bundle: nil), forCellReuseIdentifier: CommentTableViewCell.cellId)
     }
-    
     
     func setStoriesTableViewHeight() {
         if let thing = self.thing, let stories = thing.stories {
