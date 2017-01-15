@@ -14,7 +14,7 @@ extension FeedItem {
         let feedItem = FeedItem()
         
         feedItem.user = User.get(variant: variant)
-        feedItem.thing = Thing.get(variant: variant)
+        feedItem.thing = feedItem.user?.things?.first
         feedItem.type = .ThingAdd
 
         return feedItem

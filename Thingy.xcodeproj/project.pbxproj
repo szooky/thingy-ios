@@ -32,6 +32,10 @@
 		385D6E731E28517A00E8F1A5 /* ThingViewController+UIPageViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385D6E721E28517A00E8F1A5 /* ThingViewController+UIPageViewControllerDelegate.swift */; };
 		385D6E751E28676000E8F1A5 /* ThingViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385D6E741E28676000E8F1A5 /* ThingViewController+UITableViewDataSource.swift */; };
 		385D6E771E2867D100E8F1A5 /* ThingViewController+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385D6E761E2867D100E8F1A5 /* ThingViewController+UITableViewDelegate.swift */; };
+		385D6E7C1E2ADCF100E8F1A5 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385D6E7A1E2ADCF100E8F1A5 /* CommentTableViewCell.swift */; };
+		385D6E7D1E2ADCF100E8F1A5 /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 385D6E7B1E2ADCF100E8F1A5 /* CommentTableViewCell.xib */; };
+		385D6E7F1E2AE49D00E8F1A5 /* Comment+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385D6E7E1E2AE49D00E8F1A5 /* Comment+Mock.swift */; };
+		385D6E811E2AF07E00E8F1A5 /* Database+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385D6E801E2AF07E00E8F1A5 /* Database+Mock.swift */; };
 		387A6CC31E2418D000834164 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387A6CC21E2418D000834164 /* UserProfileViewController.swift */; };
 		387A6CC51E241D9B00834164 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 387A6CC41E241D9B00834164 /* Assets.xcassets */; };
 		387A6CC81E243DDD00834164 /* ThingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387A6CC61E243DDD00834164 /* ThingTableViewCell.swift */; };
@@ -109,6 +113,10 @@
 		385D6E721E28517A00E8F1A5 /* ThingViewController+UIPageViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ThingViewController+UIPageViewControllerDelegate.swift"; sourceTree = "<group>"; };
 		385D6E741E28676000E8F1A5 /* ThingViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ThingViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
 		385D6E761E2867D100E8F1A5 /* ThingViewController+UITableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ThingViewController+UITableViewDelegate.swift"; sourceTree = "<group>"; };
+		385D6E7A1E2ADCF100E8F1A5 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		385D6E7B1E2ADCF100E8F1A5 /* CommentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
+		385D6E7E1E2AE49D00E8F1A5 /* Comment+Mock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Comment+Mock.swift"; sourceTree = "<group>"; };
+		385D6E801E2AF07E00E8F1A5 /* Database+Mock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Database+Mock.swift"; sourceTree = "<group>"; };
 		387A6CC21E2418D000834164 /* UserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		387A6CC41E241D9B00834164 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		387A6CC61E243DDD00834164 /* ThingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThingTableViewCell.swift; sourceTree = "<group>"; };
@@ -238,6 +246,23 @@
 			path = Feed;
 			sourceTree = "<group>";
 		};
+		385D6E781E2ADCAF00E8F1A5 /* Comments */ = {
+			isa = PBXGroup;
+			children = (
+				385D6E791E2ADCD200E8F1A5 /* CommentCell */,
+			);
+			path = Comments;
+			sourceTree = "<group>";
+		};
+		385D6E791E2ADCD200E8F1A5 /* CommentCell */ = {
+			isa = PBXGroup;
+			children = (
+				385D6E7A1E2ADCF100E8F1A5 /* CommentTableViewCell.swift */,
+				385D6E7B1E2ADCF100E8F1A5 /* CommentTableViewCell.xib */,
+			);
+			path = CommentCell;
+			sourceTree = "<group>";
+		};
 		387A6CBE1E2417E500834164 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -272,9 +297,9 @@
 			isa = PBXGroup;
 			children = (
 				385D6E6C1E2802E800E8F1A5 /* ThingStoryboard.storyboard */,
+				385D6E681E26B7C900E8F1A5 /* ThingViewController.swift */,
 				387A6CC61E243DDD00834164 /* ThingTableViewCell.swift */,
 				387A6CC71E243DDD00834164 /* ThingTableViewCell.xib */,
-				385D6E681E26B7C900E8F1A5 /* ThingViewController.swift */,
 				385D6E6E1E282D9B00E8F1A5 /* ThingGalleryViewController.swift */,
 				385D6E701E2840AC00E8F1A5 /* ThingViewController+UIPageViewControllerDataSource.swift */,
 				385D6E721E28517A00E8F1A5 /* ThingViewController+UIPageViewControllerDelegate.swift */,
@@ -304,6 +329,8 @@
 				387A6CD61E24438300834164 /* Story+Mock.swift */,
 				387A6CD81E24439000834164 /* FeedItem+Mock.swift */,
 				387A6CDA1E24439A00834164 /* User+Mock.swift */,
+				385D6E7E1E2AE49D00E8F1A5 /* Comment+Mock.swift */,
+				385D6E801E2AF07E00E8F1A5 /* Database+Mock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -356,6 +383,7 @@
 				387A6CBF1E2417F300834164 /* Add */,
 				387A6CC01E24180C00834164 /* Story */,
 				387A6CC11E24181300834164 /* Thing */,
+				385D6E781E2ADCAF00E8F1A5 /* Comments */,
 				3825DDD41DCFE31100F6D8F8 /* Utilities */,
 				387A6CD31E2442D700834164 /* Mocks */,
 				3825DDC41DCFE2F400F6D8F8 /* Extensions */,
@@ -531,6 +559,7 @@
 				387A6CE31E245D8D00834164 /* StoryTableViewCell.xib in Resources */,
 				387A6CDF1E244A5200834164 /* UserTableViewCell.xib in Resources */,
 				38A469AC1DCFED2F009CCF05 /* FeedTableViewCell.xib in Resources */,
+				385D6E7D1E2ADCF100E8F1A5 /* CommentTableViewCell.xib in Resources */,
 				38EFC4D21DAAB6370090E1DB /* Main.storyboard in Resources */,
 				387A6CC51E241D9B00834164 /* Assets.xcassets in Resources */,
 			);
@@ -701,6 +730,7 @@
 				387A6CD91E24439000834164 /* FeedItem+Mock.swift in Sources */,
 				387A6CD51E24437600834164 /* Thing+Mock.swift in Sources */,
 				387A6CC31E2418D000834164 /* UserProfileViewController.swift in Sources */,
+				385D6E811E2AF07E00E8F1A5 /* Database+Mock.swift in Sources */,
 				383397A11E20274F005C1EFA /* Story+API.swift in Sources */,
 				3825DDC71DCFE2F400F6D8F8 /* String+Extensions.swift in Sources */,
 				385D6E771E2867D100E8F1A5 /* ThingViewController+UITableViewDelegate.swift in Sources */,
@@ -720,6 +750,7 @@
 				3825DDC11DCFE2E400F6D8F8 /* Feed+API.swift in Sources */,
 				38A469A71DCFEB98009CCF05 /* FeedViewController+UITableViewDataSource.swift in Sources */,
 				387A6CDE1E244A5200834164 /* UserTableViewCell.swift in Sources */,
+				385D6E7C1E2ADCF100E8F1A5 /* CommentTableViewCell.swift in Sources */,
 				38A469A51DCFEB34009CCF05 /* FeedViewController+UITableViewDelegate.swift in Sources */,
 				385D6E711E2840AC00E8F1A5 /* ThingViewController+UIPageViewControllerDataSource.swift in Sources */,
 				38A469AE1DCFFB5A009CCF05 /* FeedTableViewCell.swift in Sources */,
@@ -727,6 +758,7 @@
 				385D6E6F1E282D9B00E8F1A5 /* ThingGalleryViewController.swift in Sources */,
 				3825DDC81DCFE2F400F6D8F8 /* UIImageView+Extensions.swift in Sources */,
 				3825DDCF1DCFE2FF00F6D8F8 /* Comment.swift in Sources */,
+				385D6E7F1E2AE49D00E8F1A5 /* Comment+Mock.swift in Sources */,
 				3825DDDA1DCFE31100F6D8F8 /* ThingyColors.swift in Sources */,
 				385D6E731E28517A00E8F1A5 /* ThingViewController+UIPageViewControllerDelegate.swift in Sources */,
 				387A6CE91E246EC700834164 /* ExploreViewController+UISearchResultsUpdating.swift in Sources */,

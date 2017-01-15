@@ -12,13 +12,17 @@ class ThingViewController: UIViewController {
     
     @IBOutlet weak var labelTitle: UILabel!
     @IBOutlet weak var labelDetails: UILabel!
+    
     @IBOutlet weak var buttonLikes: UIButton!
+    
     @IBOutlet weak var tableViewStories: UITableView!
     @IBOutlet weak var tableViewComments: UITableView!
+    
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var pageControl: UIPageControl!
 
     @IBOutlet weak var constraintTableViewStoriesHeight: NSLayoutConstraint!
+    @IBOutlet weak var constraintTableViewCommentsHeight: NSLayoutConstraint!
     
     var pageViewController: UIPageViewController?
     var thing: Thing?
@@ -31,10 +35,15 @@ class ThingViewController: UIViewController {
         automaticallyAdjustsScrollViewInsets = false
         
         loadThingDetails()
+        
         configurePageViewController()
         configurePageControl()
+        
         configureStoriesTableView()
         setStoriesTableViewHeight()
+        
+        configureCommentsTableView()
+        setCommentsTableViewHeight()
     }
     
     private func loadThingDetails() {
@@ -52,16 +61,27 @@ class ThingViewController: UIViewController {
         tableViewStories.dataSource = self
         tableViewStories.delegate = self
         tableViewStories.rowHeight = 100.0
-        
         tableViewStories.register(UINib(nibName: StoryTableViewCell.cellId, bundle: nil), forCellReuseIdentifier: StoryTableViewCell.cellId)
-        
     }
+    
+    func configureCommentsTableView() {
+        tableViewComments.dataSource = self
+        tableViewComments.delegate = self
+        tableViewComments.rowHeight = 100.0
+        tableViewComments.register(UINib(nibName: CommentTableViewCell.cellId, bundle: nil), forCellReuseIdentifier: CommentTableViewCell.cellId)
+    }
+    
     
     func setStoriesTableViewHeight() {
         if let thing = self.thing, let stories = thing.stories {
             let totalHeight = CGFloat(stories.count) * 100.0
             constraintTableViewStoriesHeight.constant = totalHeight
         }
+    }
+    
+    func setCommentsTableViewHeight() {
+        tableViewComments.sizeToFit()
+        constraintTableViewCommentsHeight.constant = tableViewComments.contentSize.height
     }
 
     private func configurePageViewController() {

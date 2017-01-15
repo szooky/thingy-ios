@@ -85,11 +85,11 @@ Multiline</string>
                                             <color key="titleColor" red="1" green="0.59460680369999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                     </button>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kxb-Og-nmD">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kxb-Og-nmD">
                                         <rect key="frame" x="0.0" y="741" width="375" height="128"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="128" id="jFC-wW-vfA"/>
+                                            <constraint firstAttribute="height" priority="100" constant="128" id="jFC-wW-vfA"/>
                                         </constraints>
                                     </tableView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COMMENTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7D-BU-F81">
@@ -145,6 +145,7 @@ Multiline</string>
                     <size key="freeformSize" width="375" height="1000"/>
                     <connections>
                         <outlet property="buttonLikes" destination="aS9-j4-CmI" id="Qmj-2N-v07"/>
+                        <outlet property="constraintTableViewCommentsHeight" destination="jFC-wW-vfA" id="cFJ-PO-Roj"/>
                         <outlet property="constraintTableViewStoriesHeight" destination="JXs-Sq-Bh2" id="eA8-tL-oL6"/>
                         <outlet property="containerView" destination="J9Z-Mx-Cfj" id="k5G-Fo-Urt"/>
                         <outlet property="labelDetails" destination="odI-Ie-2EU" id="4t1-gB-ncL"/>
