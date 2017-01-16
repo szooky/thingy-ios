@@ -13,8 +13,10 @@ extension FeedItem {
     class func get(variant: Int) -> FeedItem {
         let feedItem = FeedItem()
         
-        feedItem.user = User.get(variant: variant)
-        feedItem.thing = feedItem.user?.things?.first
+        let users = Database.sharedInstance.users!
+        
+        feedItem.user = users[Int().randomNumberFromZero(to: users.count)]
+        feedItem.thing = feedItem.user!.things?.first
         feedItem.type = .ThingAdd
 
         return feedItem

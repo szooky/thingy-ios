@@ -25,6 +25,7 @@ class CommentTableViewCell: UITableViewCell {
             }
             if let imageName = author.profileImageURL {
                 imageViewProfile.image = UIImage(named: imageName)
+                imageViewProfile.round()
             }
         }
         if let message = comment.message {
@@ -34,5 +35,6 @@ class CommentTableViewCell: UITableViewCell {
 
     
     @IBAction func buttonUsernameClick(_ sender: Any) {
+        
     }
 }

@@ -72,7 +72,9 @@ class ThingViewController: UIViewController {
     func configureCommentsTableView() {
         tableViewComments.dataSource = self
         tableViewComments.delegate = self
-        tableViewComments.rowHeight = 100.0
+        tableViewComments.rowHeight = UITableViewAutomaticDimension
+        tableViewComments.estimatedRowHeight = 100.0
+        
         tableViewComments.register(UINib(nibName: CommentTableViewCell.cellId, bundle: nil), forCellReuseIdentifier: CommentTableViewCell.cellId)
     }
     

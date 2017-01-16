@@ -31,6 +31,26 @@ class Database {
         return allThings
     }
     
+    private func getStories() -> [Story] {
+        var allStories = [Story]()
+        
+        for user in users! {
+            if let userThings = user.things {
+                for thing in userThings {
+                    if let stories = thing.stories {
+                        allStories.append(contentsOf: stories)
+                    }
+                }
+            }
+        }
+        
+        return allStories
+    }
+    
+    private func getUsers() -> [User] {
+        return self.users!
+    }
+    
     private func attachAuthorsToComments() {
         if let users = self.users {
             for user in users {

@@ -20,15 +20,18 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HG7-ah-kiV">
-                        <rect key="frame" x="8" y="8" width="50" height="50"/>
+                        <rect key="frame" x="18" y="8" width="40" height="40"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="50" id="NM0-2b-dF2"/>
-                            <constraint firstAttribute="width" constant="50" id="QZv-9h-pcU"/>
+                            <constraint firstAttribute="height" constant="40" id="NM0-2b-dF2"/>
+                            <constraint firstAttribute="width" constant="40" id="QZv-9h-pcU"/>
                         </constraints>
                     </imageView>
                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="500" verticalHuggingPriority="500" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ntr-Xg-6wc">
-                        <rect key="frame" x="76" y="8" width="71" height="33"/>
-                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                        <rect key="frame" x="63" y="8" width="73" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Och-Ck-xyi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                         <state key="normal" title="username">
                             <color key="titleColor" red="1" green="0.59460680369999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </state>
@@ -36,11 +39,11 @@
                             <action selector="buttonUsernameClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="VfU-dH-Rch"/>
                         </connections>
                     </button>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0j-mJ-s4t">
-                        <rect key="frame" x="76" y="41" width="296" height="82"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0j-mJ-s4t">
+                        <rect key="frame" x="63" y="28" width="309" height="95"/>
                         <string key="text">Multiline
 comment.</string>
-                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -48,12 +51,12 @@ comment.</string>
                 <constraints>
                     <constraint firstAttribute="bottomMargin" secondItem="k0j-mJ-s4t" secondAttribute="bottom" id="11H-cI-mEH"/>
                     <constraint firstAttribute="topMargin" secondItem="HG7-ah-kiV" secondAttribute="top" id="2Af-gA-iKJ"/>
+                    <constraint firstItem="ntr-Xg-6wc" firstAttribute="top" secondItem="HG7-ah-kiV" secondAttribute="top" id="Ifp-uc-tHF"/>
                     <constraint firstAttribute="trailingMargin" secondItem="k0j-mJ-s4t" secondAttribute="trailing" id="MDA-s1-urG"/>
-                    <constraint firstAttribute="leadingMargin" secondItem="HG7-ah-kiV" secondAttribute="leading" id="MQf-BH-mYb"/>
-                    <constraint firstAttribute="topMargin" secondItem="ntr-Xg-6wc" secondAttribute="top" id="a87-ds-QeK"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="HG7-ah-kiV" secondAttribute="leading" constant="-10" id="MQf-BH-mYb"/>
                     <constraint firstItem="k0j-mJ-s4t" firstAttribute="top" secondItem="ntr-Xg-6wc" secondAttribute="bottom" id="bGF-8R-pgG"/>
                     <constraint firstItem="k0j-mJ-s4t" firstAttribute="leading" secondItem="ntr-Xg-6wc" secondAttribute="leading" id="g1E-pC-Emd"/>
-                    <constraint firstItem="ntr-Xg-6wc" firstAttribute="leading" secondItem="HG7-ah-kiV" secondAttribute="trailing" constant="18" id="n06-mr-cpS"/>
+                    <constraint firstItem="ntr-Xg-6wc" firstAttribute="leading" secondItem="HG7-ah-kiV" secondAttribute="trailing" constant="5" id="n06-mr-cpS"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
