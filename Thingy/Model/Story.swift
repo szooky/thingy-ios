@@ -22,4 +22,5 @@ class Story {
     var commentsCount: Int?
     
     var profileImageURL: String?
+    var storyImages: [String]?
 }

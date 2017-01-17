@@ -12,7 +12,7 @@ extension ThingViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch tableView {
             case tableViewStories:
-                self.openStory()
+                self.openStory(row: indexPath.row)
             case tableViewComments:
                 self.setCommentsTableViewHeight()
             default:
@@ -21,10 +21,11 @@ extension ThingViewController: UITableViewDelegate {
    
     }
     
-    private func openStory() {
-        let thingStoryBoard = UIStoryboard(name: "ThingStoryboard", bundle: nil)
-        if let thingVC = thingStoryBoard.instantiateInitialViewController() {
-            self.navigationController?.pushViewController(thingVC, animated: true)
+    private func openStory(row: Int) {
+        let storyStoryBoard = UIStoryboard(name: "StoryStoryboard", bundle: nil)
+        if let storyVC = storyStoryBoard.instantiateInitialViewController() as? StoryViewController {
+            storyVC.story = thing?.stories?[row]
+            self.navigationController?.pushViewController(storyVC, animated: true)
         }
     }
     
