@@ -12,6 +12,7 @@ class Story {
     var id: String?
     var thingID: String?
     var ownerID: String?
+    var author: User?
     
     var title: String?
     var text: String?

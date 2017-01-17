@@ -22,10 +22,11 @@ class StoryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //automaticallyAdjustsScrollViewInsets = false
+        automaticallyAdjustsScrollViewInsets = false
         
         loadStory()
         addImagesToText()
+        storyTextView.sizeToFit()
     }
     
     func loadStory() {
@@ -34,25 +35,43 @@ class StoryViewController: UIViewController {
                 labelStoryTitle.text = title
             }
             if let text = story.text {
-                //storyTextView.text = text
+                storyTextView.text = text
             }
             if let imageName = story.profileImageURL {
                 imageViewStoryBackground.image = UIImage(named: imageName)
+            }
+            if let author = story.author {
+                if let authorImage = author.profileImageURL {
+                    imageViewUserProfile.image = UIImage(named: authorImage)
+                    imageViewUserProfile.round()
+                }
+                if let username = author.username {
+                    buttonUsername.setTitle(username, for: .normal)
+                }
             }
         }
     }
     
     func addImagesToText() {
-        let attributedString = NSMutableAttributedString(string: "like after")
-        
-        let textAttachment = NSTextAttachment()
-        textAttachment.image = UIImage(named: "garage")?.scaledTo(width: self.view.frame.width)
-        let attrStringWithImage = NSAttributedString(attachment: textAttachment)
-        attributedString.replaceCharacters(in: NSMakeRange(4, 1), with: attrStringWithImage)
-        
+        let attributedString = NSMutableAttributedString(string: storyTextView.text)
+
+        if let story = self.story, let images = story.storyImages {
+            for image in images {
+                let textAttachment = NSTextAttachment()
+                textAttachment.image = UIImage(named: image)!.scaledTo(width: self.view.frame.width)
+                let attrStringWithImage = NSAttributedString(attachment: textAttachment)
+                
+                
+                let range = (attributedString.string as NSString).range(of: "#PHOTO")
+                attributedString.replaceCharacters(in: range, with: attrStringWithImage)
+
+            }
+            
+        }
+  
         
         storyTextView.attributedText = attributedString
     }
-
+  
 
 }
