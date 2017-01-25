@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		274894FB2AA0F32DFD59FC82 /* Pods_ThingyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7408342CA01D5419321DA893 /* Pods_ThingyUITests.framework */; };
+		381CC45D1E381D7500D87FA0 /* AllCommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381CC45B1E381D7500D87FA0 /* AllCommentsViewController.swift */; };
+		381CC45E1E381D7500D87FA0 /* AllCommentsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 381CC45C1E381D7500D87FA0 /* AllCommentsViewController.xib */; };
+		381CC4601E381ECC00D87FA0 /* AllCommentsViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381CC45F1E381ECC00D87FA0 /* AllCommentsViewController+UITableViewDataSource.swift */; };
+		381CC4621E381EE400D87FA0 /* AllCommentsViewController+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381CC4611E381EE400D87FA0 /* AllCommentsViewController+UITableViewDelegate.swift */; };
 		3825DDC11DCFE2E400F6D8F8 /* Feed+API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3825DDBE1DCFE2E400F6D8F8 /* Feed+API.swift */; };
 		3825DDC21DCFE2E400F6D8F8 /* Thing+API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3825DDBF1DCFE2E400F6D8F8 /* Thing+API.swift */; };
 		3825DDC31DCFE2E400F6D8F8 /* User+API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3825DDC01DCFE2E400F6D8F8 /* User+API.swift */; };
@@ -93,6 +97,10 @@
 		13A21310649A9CEA912891FB /* Pods-ThingyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThingyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThingyTests/Pods-ThingyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2172858DB4F5206E569FE8B4 /* Pods-ThingyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThingyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThingyUITests/Pods-ThingyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		36B3CA731D200DA275D67AAB /* Pods-ThingyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThingyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThingyUITests/Pods-ThingyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		381CC45B1E381D7500D87FA0 /* AllCommentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllCommentsViewController.swift; sourceTree = "<group>"; };
+		381CC45C1E381D7500D87FA0 /* AllCommentsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AllCommentsViewController.xib; sourceTree = "<group>"; };
+		381CC45F1E381ECC00D87FA0 /* AllCommentsViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AllCommentsViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
+		381CC4611E381EE400D87FA0 /* AllCommentsViewController+UITableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AllCommentsViewController+UITableViewDelegate.swift"; sourceTree = "<group>"; };
 		3825DDBE1DCFE2E400F6D8F8 /* Feed+API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Feed+API.swift"; sourceTree = "<group>"; };
 		3825DDBF1DCFE2E400F6D8F8 /* Thing+API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Thing+API.swift"; sourceTree = "<group>"; };
 		3825DDC01DCFE2E400F6D8F8 /* User+API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+API.swift"; sourceTree = "<group>"; };
@@ -260,6 +268,10 @@
 			isa = PBXGroup;
 			children = (
 				385D6E791E2ADCD200E8F1A5 /* CommentCell */,
+				381CC45B1E381D7500D87FA0 /* AllCommentsViewController.swift */,
+				381CC45C1E381D7500D87FA0 /* AllCommentsViewController.xib */,
+				381CC45F1E381ECC00D87FA0 /* AllCommentsViewController+UITableViewDataSource.swift */,
+				381CC4611E381EE400D87FA0 /* AllCommentsViewController+UITableViewDelegate.swift */,
 			);
 			path = Comments;
 			sourceTree = "<group>";
@@ -570,6 +582,7 @@
 				38EFC4D71DAAB6380090E1DB /* LaunchScreen.storyboard in Resources */,
 				38A469A31DCFE6C8009CCF05 /* Onboarding.storyboard in Resources */,
 				387A6CE31E245D8D00834164 /* StoryTableViewCell.xib in Resources */,
+				381CC45E1E381D7500D87FA0 /* AllCommentsViewController.xib in Resources */,
 				387A6CDF1E244A5200834164 /* UserTableViewCell.xib in Resources */,
 				38A469AC1DCFED2F009CCF05 /* FeedTableViewCell.xib in Resources */,
 				385D6E7D1E2ADCF100E8F1A5 /* CommentTableViewCell.xib in Resources */,
@@ -742,6 +755,7 @@
 				3825DDC21DCFE2E400F6D8F8 /* Thing+API.swift in Sources */,
 				387A6CD91E24439000834164 /* FeedItem+Mock.swift in Sources */,
 				387A6CD51E24437600834164 /* Thing+Mock.swift in Sources */,
+				381CC4601E381ECC00D87FA0 /* AllCommentsViewController+UITableViewDataSource.swift in Sources */,
 				387A6CC31E2418D000834164 /* UserProfileViewController.swift in Sources */,
 				385D6E811E2AF07E00E8F1A5 /* Database+Mock.swift in Sources */,
 				383397A11E20274F005C1EFA /* Story+API.swift in Sources */,
@@ -769,6 +783,7 @@
 				385D6E831E2C4E1F00E8F1A5 /* Int+Extensions.swift in Sources */,
 				385D6E861E2C5C4100E8F1A5 /* StoryViewController.swift in Sources */,
 				38A469AE1DCFFB5A009CCF05 /* FeedTableViewCell.swift in Sources */,
+				381CC4621E381EE400D87FA0 /* AllCommentsViewController+UITableViewDelegate.swift in Sources */,
 				387A6CDB1E24439A00834164 /* User+Mock.swift in Sources */,
 				385D6E6F1E282D9B00E8F1A5 /* ThingGalleryViewController.swift in Sources */,
 				3825DDC81DCFE2F400F6D8F8 /* UIImageView+Extensions.swift in Sources */,
@@ -780,6 +795,7 @@
 				387A6CE91E246EC700834164 /* ExploreViewController+UISearchResultsUpdating.swift in Sources */,
 				3825DDC31DCFE2E400F6D8F8 /* User+API.swift in Sources */,
 				387A6CE71E2468BD00834164 /* ExploreViewController+UISearchBarDelegate.swift in Sources */,
+				381CC45D1E381D7500D87FA0 /* AllCommentsViewController.swift in Sources */,
 				3825DDE01DCFE4E500F6D8F8 /* FeedViewController.swift in Sources */,
 				3825DDD11DCFE2FF00F6D8F8 /* Story.swift in Sources */,
 				387A6CD21E24420C00834164 /* ExploreViewController+UITableViewDataSource.swift in Sources */,

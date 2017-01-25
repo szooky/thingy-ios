@@ -33,7 +33,7 @@ class StoryViewController: UIViewController {
         if let story = self.story {
             if let title = story.title {
                 labelStoryTitle.text = title
-            }
+             
             if let text = story.text {
                 storyTextView.text = text
             }
@@ -49,6 +49,7 @@ class StoryViewController: UIViewController {
                     buttonUsername.setTitle(username, for: .normal)
                 }
             }
+            }
         }
     }
     
@@ -61,17 +62,14 @@ class StoryViewController: UIViewController {
                 textAttachment.image = UIImage(named: image)!.scaledTo(width: self.view.frame.width)
                 let attrStringWithImage = NSAttributedString(attachment: textAttachment)
                 
-                
+                storyTextView.textContainer.lineFragmentPadding = 0
+
                 let range = (attributedString.string as NSString).range(of: "#PHOTO")
                 attributedString.replaceCharacters(in: range, with: attrStringWithImage)
-
             }
-            
         }
-  
-        
         storyTextView.attributedText = attributedString
-    }
+        }
   
 
 }

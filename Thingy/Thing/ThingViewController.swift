@@ -116,4 +116,17 @@ class ThingViewController: UIViewController {
         pageControl.currentPage = 0
     }
     
+    @IBAction func buttonSeeAllCommentsClicked(_ sender: UIButton) {
+        let vcAllComments = AllCommentsViewController(nibName: "AllCommentsViewController", bundle: nil)
+        self.navigationController?.pushViewController(vcAllComments, animated: true)
+        
+    }
 }
+
+
+
+
+
+
+
+

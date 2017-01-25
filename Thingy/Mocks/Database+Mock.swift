@@ -19,7 +19,7 @@ class Database {
         attachAuthorsToComments()
     }
     
-    private func getThings() -> [Thing] {
+    func getThings() -> [Thing] {
         var allThings = [Thing]()
         
         for user in users! {
@@ -31,7 +31,11 @@ class Database {
         return allThings
     }
     
-    private func getStories() -> [Story] {
+    func getSomeComments() -> [Comment]? {
+        return users?.first?.things?.first?.comments
+    }
+    
+    func getStories() -> [Story] {
         var allStories = [Story]()
         
         for user in users! {
@@ -47,7 +51,7 @@ class Database {
         return allStories
     }
     
-    private func getUsers() -> [User] {
+    func getUsers() -> [User] {
         return self.users!
     }
     

@@ -15,7 +15,7 @@ extension FeedItem {
         
         let users = Database.sharedInstance.users!
         
-        feedItem.user = users[Int().randomNumberFromZero(to: users.count)]
+        feedItem.user = users[variant - 1]
         feedItem.thing = feedItem.user!.things?.first
         feedItem.type = .ThingAdd
 
