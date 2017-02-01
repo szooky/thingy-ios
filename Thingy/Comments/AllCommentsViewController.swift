@@ -10,10 +10,11 @@ import UIKit
 
 class AllCommentsViewController: UIViewController {
 
+    let PLACEHOLDER_TEXT = "Write something nice 🤗"
+    
     @IBOutlet weak var viewNewComment: UIView!
     @IBOutlet weak var textViewNewComment: UITextView!
     @IBOutlet weak var tableViewComments: UITableView!
-    @IBOutlet weak var buttonPost: UIButton!
     
     @IBOutlet weak var constraintViewNewCommentHeight: NSLayoutConstraint!
     @IBOutlet weak var constraintViewNewCommentBottom: NSLayoutConstraint!
@@ -31,8 +32,6 @@ class AllCommentsViewController: UIViewController {
         
         self.navigationItem.title = "\(comments.count) comments"
         
-        print(self.bottomLayoutGuide.length)
-
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -67,7 +66,6 @@ class AllCommentsViewController: UIViewController {
         tapGesture.cancelsTouchesInView = false
         self.tableViewComments.addGestureRecognizer(tapGesture)
         
-        textViewNewComment.layer.borderWidth = 1
         textViewNewComment.layer.cornerRadius = 5
         textViewNewComment.delegate = self
         
@@ -79,15 +77,20 @@ class AllCommentsViewController: UIViewController {
         textViewNewComment.isUserInteractionEnabled = true
         textViewNewComment.translatesAutoresizingMaskIntoConstraints = false
         
+        textViewNewComment.keyboardAppearance = .dark
+        textViewNewComment.enablesReturnKeyAutomatically = true
         
+        setTextViewAboveTabBar()
+    }
+    
+    func setTextViewAboveTabBar() {
+        if let tabbarHeight = self.tabBarController?.tabBar.frame.height {
+            self.constraintViewNewCommentBottom.constant = tabbarHeight
+        }
     }
     
     func singleTapedd(sender: UITapGestureRecognizer) {
         self.view.endEditing(true)
-    }
-
-    @IBAction func buttonPostClicked(_ sender: UIButton) {
-        
     }
     
     func keyboardWillShow(_ notification: NSNotification) {
@@ -111,53 +114,23 @@ class AllCommentsViewController: UIViewController {
         let userInfo = notification.userInfo! as NSDictionary
         let duration = userInfo.value(forKey: UIKeyboardAnimationDurationUserInfoKey) as! NSNumber
         
-        self.constraintViewNewCommentBottom.constant = 0
+        setTextViewAboveTabBar()
+        
         UIView.animate(withDuration: duration.doubleValue) {
             self.view.layoutIfNeeded()
         }
         
     }
-
-}
-
-extension AllCommentsViewController: UITextViewDelegate {
-    func textViewDidChange(_ textView: UITextView) {
-        
-        let textViewStartingHeight: CGFloat = 30
-
-        
-        let fixedWidth = textView.frame.size.width
-        textView.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat.greatestFiniteMagnitude))
-        var newSize = textView.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat.greatestFiniteMagnitude))
-        
-        if newSize.height < textViewStartingHeight {
-            newSize = CGSize(width: fixedWidth, height: textViewStartingHeight)
-        }
-        
-        var newFrame = textView.frame
-        newFrame.size = CGSize(width: max(newSize.width, fixedWidth), height: newSize.height)
-        
-        let numLines = (textView.contentSize.height - CGFloat(8)) / textView.font!.lineHeight
-        
-        
-        if newFrame.height >= textViewStartingHeight && numLines < 5 {
-            self.textViewNewComment.frame = newFrame
-            self.constraintTextViewNewCommentHeight.constant = newFrame.height
-            self.constraintViewNewCommentHeight.constant = newFrame.height + 20
-            self.textViewNewComment.setContentOffset(.zero, animated: false)
-            self.textViewNewComment.setNeedsDisplay()
-        }
-        
-        let text = textView.text ?? ""
-        if text.characters.count > 0 {
-            buttonPost.isEnabled = true
-        } else {
-            buttonPost.isEnabled = false
-        }
-        
-    }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
+    func postComment(message: String) {
+        let newComment = Comment()
+        newComment.author = User.get(variant: 1)
+        newComment.message = message
+        
+        comments.append(newComment)
+        tableViewComments.reloadData()
     }
+
+
 }
+

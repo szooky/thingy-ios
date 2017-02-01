@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AllCommentsViewController" customModule="Thingy" customModuleProvider="target">
             <connections>
-                <outlet property="buttonPost" destination="lCG-hL-4D0" id="7tw-g1-MDv"/>
                 <outlet property="constraintTextViewNewCommentHeight" destination="MJL-1m-o0Q" id="n3R-W9-v49"/>
-                <outlet property="constraintViewNewCommentBottom" destination="S4W-ar-yus" id="Zv2-oA-lUh"/>
+                <outlet property="constraintViewNewCommentBottom" destination="hVe-bb-k1Q" id="5YD-gj-4i2"/>
                 <outlet property="constraintViewNewCommentHeight" destination="rDq-az-bbe" id="HbN-s8-O4u"/>
                 <outlet property="tableViewComments" destination="TIC-Rd-8i8" id="yHY-YI-JJl"/>
                 <outlet property="textViewNewComment" destination="eEV-ll-lya" id="ltC-xh-xOy"/>
@@ -26,42 +26,43 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TIC-Rd-8i8">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="567"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TIC-Rd-8i8">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="559"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="efy-RH-9RV">
-                    <rect key="frame" x="0.0" y="567" width="375" height="100"/>
+                    <rect key="frame" x="0.0" y="559" width="375" height="50"/>
                     <subviews>
+                        <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TvW-ba-pdP">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="FVF-lj-2dc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </view>
+                            <blurEffect style="dark"/>
+                        </visualEffectView>
                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Write something nice 🤗" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eEV-ll-lya">
-                            <rect key="frame" x="20" y="10" width="275" height="80"/>
+                            <rect key="frame" x="10" y="10" width="355" height="30"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="80" id="MJL-1m-o0Q"/>
+                                <constraint firstAttribute="height" constant="30" id="MJL-1m-o0Q"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="send"/>
                         </textView>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCG-hL-4D0">
-                            <rect key="frame" x="305" y="35" width="50" height="30"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="50" id="kIb-mb-c9U"/>
-                            </constraints>
-                            <state key="normal" title="post"/>
-                            <connections>
-                                <action selector="buttonPostClicked:" destination="-1" eventType="touchUpInside" id="EKx-lE-0Xv"/>
-                            </connections>
-                        </button>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstItem="eEV-ll-lya" firstAttribute="top" secondItem="efy-RH-9RV" secondAttribute="top" constant="10" id="0ci-fq-G3Z"/>
-                        <constraint firstItem="eEV-ll-lya" firstAttribute="leading" secondItem="efy-RH-9RV" secondAttribute="leading" constant="20" id="BRh-xh-HZa"/>
-                        <constraint firstItem="lCG-hL-4D0" firstAttribute="centerY" secondItem="efy-RH-9RV" secondAttribute="centerY" id="Ie3-8p-FsU"/>
+                        <constraint firstItem="eEV-ll-lya" firstAttribute="leading" secondItem="efy-RH-9RV" secondAttribute="leading" constant="10" id="BRh-xh-HZa"/>
                         <constraint firstAttribute="bottom" secondItem="eEV-ll-lya" secondAttribute="bottom" constant="10" id="MXh-ob-z6J"/>
-                        <constraint firstAttribute="trailing" secondItem="lCG-hL-4D0" secondAttribute="trailing" constant="20" id="T02-jk-gDq"/>
-                        <constraint firstItem="lCG-hL-4D0" firstAttribute="leading" secondItem="eEV-ll-lya" secondAttribute="trailing" constant="10" id="pYM-PA-swj"/>
-                        <constraint firstAttribute="height" constant="100" id="rDq-az-bbe"/>
+                        <constraint firstAttribute="trailing" secondItem="eEV-ll-lya" secondAttribute="trailing" constant="10" id="VSU-3y-iGq"/>
+                        <constraint firstAttribute="bottom" secondItem="TvW-ba-pdP" secondAttribute="bottom" id="b9M-i5-e3R"/>
+                        <constraint firstItem="TvW-ba-pdP" firstAttribute="top" secondItem="efy-RH-9RV" secondAttribute="top" id="dIv-23-40d"/>
+                        <constraint firstItem="TvW-ba-pdP" firstAttribute="leading" secondItem="efy-RH-9RV" secondAttribute="leading" id="fwt-yR-w17"/>
+                        <constraint firstAttribute="height" constant="50" id="rDq-az-bbe"/>
+                        <constraint firstAttribute="trailing" secondItem="TvW-ba-pdP" secondAttribute="trailing" id="sQi-cw-pxp"/>
                     </constraints>
                 </view>
             </subviews>
@@ -69,8 +70,8 @@
             <constraints>
                 <constraint firstItem="TIC-Rd-8i8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9bF-69-re3"/>
                 <constraint firstItem="TIC-Rd-8i8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Qnj-Ac-cyG"/>
-                <constraint firstAttribute="bottom" secondItem="efy-RH-9RV" secondAttribute="bottom" id="S4W-ar-yus"/>
                 <constraint firstItem="efy-RH-9RV" firstAttribute="top" secondItem="TIC-Rd-8i8" secondAttribute="bottom" id="bHw-3L-5Y8"/>
+                <constraint firstAttribute="bottomMargin" secondItem="efy-RH-9RV" secondAttribute="bottom" constant="50" id="hVe-bb-k1Q"/>
                 <constraint firstItem="efy-RH-9RV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jSK-Wa-Yoa"/>
                 <constraint firstAttribute="trailing" secondItem="efy-RH-9RV" secondAttribute="trailing" id="oLW-Ey-vN2"/>
                 <constraint firstAttribute="trailing" secondItem="TIC-Rd-8i8" secondAttribute="trailing" id="sa9-Fe-VME"/>
