@@ -116,11 +116,7 @@ class AllCommentsViewController: UIViewController {
             self.view.layoutIfNeeded()
         }
         
-        
-        
     }
-    
-
 
 }
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -73,7 +73,7 @@
                     <navigationItem key="navigationItem" id="XsM-Ol-nm3">
                         <nil key="title"/>
                         <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="aZ4-nf-9tk">
-                            <rect key="frame" x="103" y="7" width="170" height="30"/>
+                            <rect key="frame" x="102.5" y="7" width="170" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <segments>
                                 <segment title="things"/>
@@ -94,47 +94,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2017" y="-291"/>
-        </scene>
-        <!--username-->
-        <scene sceneID="SAX-Vm-esL">
-            <objects>
-                <viewController id="dvu-eO-EYA" customClass="UserProfileViewController" customModule="Thingy" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="OTm-6h-eyW"/>
-                        <viewControllerLayoutGuide type="bottom" id="2Oy-o0-KDY"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="tgT-Ss-Igm">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kHA-Sc-emu">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                                <color key="backgroundColor" red="0.2085659812" green="0.20579402599999999" blue="0.21355341359999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="kHA-Sc-emu" secondAttribute="trailing" id="Skp-zd-Ujz"/>
-                            <constraint firstItem="kHA-Sc-emu" firstAttribute="top" secondItem="OTm-6h-eyW" secondAttribute="bottom" id="YVL-l0-VIs"/>
-                            <constraint firstItem="2Oy-o0-KDY" firstAttribute="top" secondItem="kHA-Sc-emu" secondAttribute="bottom" id="sZ5-69-Xvt"/>
-                            <constraint firstItem="kHA-Sc-emu" firstAttribute="leading" secondItem="tgT-Ss-Igm" secondAttribute="leading" id="zJn-aG-kWV"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="username" id="qiZ-eW-tYH">
-                        <barButtonItem key="leftBarButtonItem" title="edit" id="FKa-QL-EDC">
-                            <color key="tintColor" red="1" green="0.59460680369999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="logout" id="r2u-ty-JXO">
-                            <color key="tintColor" red="1" green="0.59460680369999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="tableViewUserProfile" destination="kHA-Sc-emu" id="gmI-D6-J69"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ym8-Zx-w2n" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2017" y="499"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="vwt-fN-6wf">
@@ -236,12 +195,22 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="dvu-eO-EYA" kind="relationship" relationship="rootViewController" id="JGl-ZE-07D"/>
+                        <segue destination="UoB-cM-V96" kind="relationship" relationship="rootViewController" id="25k-RV-WNc"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WAH-ss-PQX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1078" y="499"/>
+        </scene>
+        <!--UserStoryboard-->
+        <scene sceneID="sWZ-Gf-EKv">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="UserStoryboard" storyboardName="UserStoryboard" id="UoB-cM-V96" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Fkh-wU-7Fg"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ubd-h5-wpR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1713" y="498"/>
         </scene>
     </scenes>
     <resources>

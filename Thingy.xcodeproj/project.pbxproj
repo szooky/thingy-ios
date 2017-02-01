@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		274894FB2AA0F32DFD59FC82 /* Pods_ThingyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7408342CA01D5419321DA893 /* Pods_ThingyUITests.framework */; };
+		38019B581E422E44003AFFE6 /* UserStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38019B571E422E44003AFFE6 /* UserStoryboard.storyboard */; };
 		381CC45D1E381D7500D87FA0 /* AllCommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381CC45B1E381D7500D87FA0 /* AllCommentsViewController.swift */; };
 		381CC45E1E381D7500D87FA0 /* AllCommentsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 381CC45C1E381D7500D87FA0 /* AllCommentsViewController.xib */; };
 		381CC4601E381ECC00D87FA0 /* AllCommentsViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381CC45F1E381ECC00D87FA0 /* AllCommentsViewController+UITableViewDataSource.swift */; };
@@ -59,7 +60,6 @@
 		387A6CDF1E244A5200834164 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 387A6CDD1E244A5200834164 /* UserTableViewCell.xib */; };
 		387A6CE21E245D8D00834164 /* StoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387A6CE01E245D8D00834164 /* StoryTableViewCell.swift */; };
 		387A6CE31E245D8D00834164 /* StoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 387A6CE11E245D8D00834164 /* StoryTableViewCell.xib */; };
-		387A6CE51E24653200834164 /* ExploreViewController+UISearchControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387A6CE41E24653200834164 /* ExploreViewController+UISearchControllerDelegate.swift */; };
 		387A6CE71E2468BD00834164 /* ExploreViewController+UISearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387A6CE61E2468BD00834164 /* ExploreViewController+UISearchBarDelegate.swift */; };
 		387A6CE91E246EC700834164 /* ExploreViewController+UISearchResultsUpdating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387A6CE81E246EC700834164 /* ExploreViewController+UISearchResultsUpdating.swift */; };
 		38A469A31DCFE6C8009CCF05 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38A469A21DCFE6C8009CCF05 /* Onboarding.storyboard */; };
@@ -97,6 +97,7 @@
 		13A21310649A9CEA912891FB /* Pods-ThingyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThingyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThingyTests/Pods-ThingyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2172858DB4F5206E569FE8B4 /* Pods-ThingyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThingyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThingyUITests/Pods-ThingyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		36B3CA731D200DA275D67AAB /* Pods-ThingyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThingyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThingyUITests/Pods-ThingyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		38019B571E422E44003AFFE6 /* UserStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserStoryboard.storyboard; sourceTree = "<group>"; };
 		381CC45B1E381D7500D87FA0 /* AllCommentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllCommentsViewController.swift; sourceTree = "<group>"; };
 		381CC45C1E381D7500D87FA0 /* AllCommentsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AllCommentsViewController.xib; sourceTree = "<group>"; };
 		381CC45F1E381ECC00D87FA0 /* AllCommentsViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AllCommentsViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
@@ -148,7 +149,6 @@
 		387A6CDD1E244A5200834164 /* UserTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
 		387A6CE01E245D8D00834164 /* StoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryTableViewCell.swift; sourceTree = "<group>"; };
 		387A6CE11E245D8D00834164 /* StoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoryTableViewCell.xib; sourceTree = "<group>"; };
-		387A6CE41E24653200834164 /* ExploreViewController+UISearchControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExploreViewController+UISearchControllerDelegate.swift"; sourceTree = "<group>"; };
 		387A6CE61E2468BD00834164 /* ExploreViewController+UISearchBarDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExploreViewController+UISearchBarDelegate.swift"; sourceTree = "<group>"; };
 		387A6CE81E246EC700834164 /* ExploreViewController+UISearchResultsUpdating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExploreViewController+UISearchResultsUpdating.swift"; sourceTree = "<group>"; };
 		38A469A21DCFE6C8009CCF05 /* Onboarding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
@@ -295,6 +295,7 @@
 				385D6E601E26A35300E8F1A5 /* UserDetailTableViewCell.swift */,
 				387A6CDC1E244A5200834164 /* UserTableViewCell.swift */,
 				387A6CDD1E244A5200834164 /* UserTableViewCell.xib */,
+				38019B571E422E44003AFFE6 /* UserStoryboard.storyboard */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -339,7 +340,6 @@
 				387A6CCD1E2441E300834164 /* ExploreViewController.swift */,
 				387A6CCF1E2441F900834164 /* ExploreViewController+UITableViewDelegate.swift */,
 				387A6CD11E24420C00834164 /* ExploreViewController+UITableViewDataSource.swift */,
-				387A6CE41E24653200834164 /* ExploreViewController+UISearchControllerDelegate.swift */,
 				387A6CE61E2468BD00834164 /* ExploreViewController+UISearchBarDelegate.swift */,
 				387A6CE81E246EC700834164 /* ExploreViewController+UISearchResultsUpdating.swift */,
 			);
@@ -585,6 +585,7 @@
 				381CC45E1E381D7500D87FA0 /* AllCommentsViewController.xib in Resources */,
 				387A6CDF1E244A5200834164 /* UserTableViewCell.xib in Resources */,
 				38A469AC1DCFED2F009CCF05 /* FeedTableViewCell.xib in Resources */,
+				38019B581E422E44003AFFE6 /* UserStoryboard.storyboard in Resources */,
 				385D6E7D1E2ADCF100E8F1A5 /* CommentTableViewCell.xib in Resources */,
 				38EFC4D21DAAB6370090E1DB /* Main.storyboard in Resources */,
 				387A6CC51E241D9B00834164 /* Assets.xcassets in Resources */,
@@ -773,7 +774,6 @@
 				387A6CC81E243DDD00834164 /* ThingTableViewCell.swift in Sources */,
 				387A6CD71E24438300834164 /* Story+Mock.swift in Sources */,
 				385D6E651E26A96700E8F1A5 /* UserProfileViewController+UITableViewDelegate.swift in Sources */,
-				387A6CE51E24653200834164 /* ExploreViewController+UISearchControllerDelegate.swift in Sources */,
 				3825DDC11DCFE2E400F6D8F8 /* Feed+API.swift in Sources */,
 				38A469A71DCFEB98009CCF05 /* FeedViewController+UITableViewDataSource.swift in Sources */,
 				387A6CDE1E244A5200834164 /* UserTableViewCell.swift in Sources */,

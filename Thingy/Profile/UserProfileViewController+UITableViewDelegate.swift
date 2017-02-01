@@ -11,7 +11,8 @@ import UIKit
 extension UserProfileViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let thingStoryBoard = UIStoryboard(name: "ThingStoryboard", bundle: nil)
-        if let thingVC = thingStoryBoard.instantiateInitialViewController() {
+        if let thingVC = thingStoryBoard.instantiateInitialViewController() as? ThingViewController {
+            thingVC.thing = user?.things?[indexPath.row]
             self.navigationController?.pushViewController(thingVC, animated: true)
         }
     }
