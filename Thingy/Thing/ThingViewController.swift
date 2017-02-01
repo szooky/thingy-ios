@@ -14,6 +14,7 @@ class ThingViewController: UIViewController {
     @IBOutlet weak var labelDetails: UILabel!
     
     @IBOutlet weak var buttonLikes: UIButton!
+    @IBOutlet weak var buttonSeeAllComments: UIButton!
     
     @IBOutlet weak var tableViewStories: UITableView!
     @IBOutlet weak var tableViewComments: UITableView!
@@ -76,6 +77,11 @@ class ThingViewController: UIViewController {
         tableViewComments.estimatedRowHeight = 100.0
         
         tableViewComments.register(UINib(nibName: CommentTableViewCell.cellId, bundle: nil), forCellReuseIdentifier: CommentTableViewCell.cellId)
+        
+        if let thing = self.thing, let comments = thing.comments {
+        buttonSeeAllComments.setTitle("See all(\(comments.count))", for: .normal)
+        }
+        
     }
     
     func setStoriesTableViewHeight() {
