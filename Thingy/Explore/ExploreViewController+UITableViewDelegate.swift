@@ -11,6 +11,8 @@ import UIKit
 extension ExploreViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        tableView.deselectRow(at: indexPath, animated: true)
+        
         switch segmentControl.selectedSegmentIndex {
         case 0:
             let thingStoryBoard = UIStoryboard(name: "ThingStoryboard", bundle: nil)

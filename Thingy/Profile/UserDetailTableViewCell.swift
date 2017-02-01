@@ -26,6 +26,8 @@ class UserDetailTableViewCell: UITableViewCell {
     
     func set(forUser user: User) {
         
+        self.selectionStyle = .none
+        
         if let imageName = user.profileImageURL {
             imageViewBackground.image = UIImage(named: imageName)
             imageViewProfile.image = UIImage(named: imageName)
