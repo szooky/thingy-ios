@@ -63,6 +63,7 @@
 		387A6CE71E2468BD00834164 /* ExploreViewController+UISearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387A6CE61E2468BD00834164 /* ExploreViewController+UISearchBarDelegate.swift */; };
 		387A6CE91E246EC700834164 /* ExploreViewController+UISearchResultsUpdating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387A6CE81E246EC700834164 /* ExploreViewController+UISearchResultsUpdating.swift */; };
 		388D63F81E4258CE00B4D28F /* AllCommentsViewController+UITextViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388D63F71E4258CE00B4D28F /* AllCommentsViewController+UITextViewDelegate.swift */; };
+		388D63FA1E426F0600B4D28F /* AllCommentsViewController+ShowUserProfileDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388D63F91E426F0600B4D28F /* AllCommentsViewController+ShowUserProfileDelegate.swift */; };
 		38A469A31DCFE6C8009CCF05 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38A469A21DCFE6C8009CCF05 /* Onboarding.storyboard */; };
 		38A469A51DCFEB34009CCF05 /* FeedViewController+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A469A41DCFEB34009CCF05 /* FeedViewController+UITableViewDelegate.swift */; };
 		38A469A71DCFEB98009CCF05 /* FeedViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A469A61DCFEB98009CCF05 /* FeedViewController+UITableViewDataSource.swift */; };
@@ -153,6 +154,7 @@
 		387A6CE61E2468BD00834164 /* ExploreViewController+UISearchBarDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExploreViewController+UISearchBarDelegate.swift"; sourceTree = "<group>"; };
 		387A6CE81E246EC700834164 /* ExploreViewController+UISearchResultsUpdating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExploreViewController+UISearchResultsUpdating.swift"; sourceTree = "<group>"; };
 		388D63F71E4258CE00B4D28F /* AllCommentsViewController+UITextViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AllCommentsViewController+UITextViewDelegate.swift"; sourceTree = "<group>"; };
+		388D63F91E426F0600B4D28F /* AllCommentsViewController+ShowUserProfileDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AllCommentsViewController+ShowUserProfileDelegate.swift"; sourceTree = "<group>"; };
 		38A469A21DCFE6C8009CCF05 /* Onboarding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		38A469A41DCFEB34009CCF05 /* FeedViewController+UITableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FeedViewController+UITableViewDelegate.swift"; sourceTree = "<group>"; };
 		38A469A61DCFEB98009CCF05 /* FeedViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FeedViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
@@ -275,6 +277,7 @@
 				381CC45F1E381ECC00D87FA0 /* AllCommentsViewController+UITableViewDataSource.swift */,
 				381CC4611E381EE400D87FA0 /* AllCommentsViewController+UITableViewDelegate.swift */,
 				388D63F71E4258CE00B4D28F /* AllCommentsViewController+UITextViewDelegate.swift */,
+				388D63F91E426F0600B4D28F /* AllCommentsViewController+ShowUserProfileDelegate.swift */,
 			);
 			path = Comments;
 			sourceTree = "<group>";
@@ -755,6 +758,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3825DDD31DCFE2FF00F6D8F8 /* User.swift in Sources */,
+				388D63FA1E426F0600B4D28F /* AllCommentsViewController+ShowUserProfileDelegate.swift in Sources */,
 				385D6E621E26A35300E8F1A5 /* UserDetailTableViewCell.swift in Sources */,
 				3825DDC21DCFE2E400F6D8F8 /* Thing+API.swift in Sources */,
 				387A6CD91E24439000834164 /* FeedItem+Mock.swift in Sources */,

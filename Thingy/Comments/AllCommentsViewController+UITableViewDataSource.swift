@@ -23,6 +23,7 @@ extension AllCommentsViewController: UITableViewDataSource {
         let commentCell = self.tableViewComments.dequeueReusableCell(withIdentifier: CommentTableViewCell.cellId) as! CommentTableViewCell
         
         commentCell.set(comment: comments[indexPath.row])
+        commentCell.showUserProfileDelegate = self
         
         return commentCell
         

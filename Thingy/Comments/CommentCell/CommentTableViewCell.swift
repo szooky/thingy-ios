@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol ShowUserProfileDelegate: class {
+    func show(user: User)
+}
+
 class CommentTableViewCell: UITableViewCell {
 
     @IBOutlet weak var imageViewProfile: UIImageView!
@@ -18,7 +22,12 @@ class CommentTableViewCell: UITableViewCell {
         return "CommentTableViewCell"
     }
     
+    var comment: Comment?
+    weak var showUserProfileDelegate: ShowUserProfileDelegate?
+    
     func set(comment: Comment) {
+        self.comment = comment
+        
         if let author = comment.author {
             if let username = author.username {
                 buttonUsername.setTitle(username, for: .normal)
@@ -28,13 +37,33 @@ class CommentTableViewCell: UITableViewCell {
                 imageViewProfile.round()
             }
         }
+        
         if let message = comment.message {
             labelMessage.text = message
         }
+        
+        addTapGestureToUserImageView()
+    }
+    
+    private func addTapGestureToUserImageView() {
+        let tapGestureRecognizer = UITapGestureRecognizer(target:self, action:#selector(imageViewProfileClicked(imageView:)))
+        imageViewProfile.isUserInteractionEnabled = true
+        imageViewProfile.addGestureRecognizer(tapGestureRecognizer)
+
+    }
+    
+    func imageViewProfileClicked(imageView: UIImageView) {
+        showAuthorProfile()
     }
 
-    
     @IBAction func buttonUsernameClick(_ sender: Any) {
-        
+        showAuthorProfile()
     }
+
+    private func showAuthorProfile() {
+        if let author = self.comment?.author {
+            self.showUserProfileDelegate?.show(user: author)
+        }
+    }
+
 }
