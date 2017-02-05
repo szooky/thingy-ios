@@ -79,7 +79,7 @@ class ThingViewController: UIViewController {
         tableViewComments.register(UINib(nibName: CommentTableViewCell.cellId, bundle: nil), forCellReuseIdentifier: CommentTableViewCell.cellId)
         
         if let thing = self.thing, let comments = thing.comments {
-        buttonSeeAllComments.setTitle("See all(\(comments.count))", for: .normal)
+        buttonSeeAllComments.setTitle("See all(\(   comments.count))", for: .normal)
         }
         
     }

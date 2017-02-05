@@ -69,6 +69,12 @@
 		38A469A71DCFEB98009CCF05 /* FeedViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A469A61DCFEB98009CCF05 /* FeedViewController+UITableViewDataSource.swift */; };
 		38A469AC1DCFED2F009CCF05 /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38A469AA1DCFED2F009CCF05 /* FeedTableViewCell.xib */; };
 		38A469AE1DCFFB5A009CCF05 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A469AD1DCFFB5A009CCF05 /* FeedTableViewCell.swift */; };
+		38D40ECA1E472EB000AA7E55 /* AddStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38D40EC91E472EB000AA7E55 /* AddStoryboard.storyboard */; };
+		38D40ECC1E472F4C00AA7E55 /* AddPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D40ECB1E472F4C00AA7E55 /* AddPageViewController.swift */; };
+		38D40ECE1E4733B200AA7E55 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D40ECD1E4733B200AA7E55 /* CameraViewController.swift */; };
+		38D40ED01E4733E500AA7E55 /* DestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D40ECF1E4733E500AA7E55 /* DestinationViewController.swift */; };
+		38D40ED21E47340400AA7E55 /* ThingDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D40ED11E47340400AA7E55 /* ThingDetailsViewController.swift */; };
+		38D40ED41E4736C000AA7E55 /* AddPageViewController+UIPageViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D40ED31E4736C000AA7E55 /* AddPageViewController+UIPageViewDataSource.swift */; };
 		38EFC4CB1DAAB6370090E1DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EFC4CA1DAAB6370090E1DB /* AppDelegate.swift */; };
 		38EFC4D21DAAB6370090E1DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38EFC4D01DAAB6370090E1DB /* Main.storyboard */; };
 		38EFC4D71DAAB6380090E1DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38EFC4D51DAAB6380090E1DB /* LaunchScreen.storyboard */; };
@@ -160,6 +166,12 @@
 		38A469A61DCFEB98009CCF05 /* FeedViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FeedViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
 		38A469AA1DCFED2F009CCF05 /* FeedTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
 		38A469AD1DCFFB5A009CCF05 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		38D40EC91E472EB000AA7E55 /* AddStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddStoryboard.storyboard; sourceTree = "<group>"; };
+		38D40ECB1E472F4C00AA7E55 /* AddPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPageViewController.swift; sourceTree = "<group>"; };
+		38D40ECD1E4733B200AA7E55 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		38D40ECF1E4733E500AA7E55 /* DestinationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationViewController.swift; sourceTree = "<group>"; };
+		38D40ED11E47340400AA7E55 /* ThingDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThingDetailsViewController.swift; sourceTree = "<group>"; };
+		38D40ED31E4736C000AA7E55 /* AddPageViewController+UIPageViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AddPageViewController+UIPageViewDataSource.swift"; sourceTree = "<group>"; };
 		38EFC4C71DAAB6370090E1DB /* Thingy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thingy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38EFC4CA1DAAB6370090E1DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38EFC4D11DAAB6370090E1DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -309,6 +321,12 @@
 		387A6CBF1E2417F300834164 /* Add */ = {
 			isa = PBXGroup;
 			children = (
+				38D40EC91E472EB000AA7E55 /* AddStoryboard.storyboard */,
+				38D40ECB1E472F4C00AA7E55 /* AddPageViewController.swift */,
+				38D40ED31E4736C000AA7E55 /* AddPageViewController+UIPageViewDataSource.swift */,
+				38D40ECD1E4733B200AA7E55 /* CameraViewController.swift */,
+				38D40ECF1E4733E500AA7E55 /* DestinationViewController.swift */,
+				38D40ED11E47340400AA7E55 /* ThingDetailsViewController.swift */,
 			);
 			path = Add;
 			sourceTree = "<group>";
@@ -590,6 +608,7 @@
 				387A6CE31E245D8D00834164 /* StoryTableViewCell.xib in Resources */,
 				381CC45E1E381D7500D87FA0 /* AllCommentsViewController.xib in Resources */,
 				387A6CDF1E244A5200834164 /* UserTableViewCell.xib in Resources */,
+				38D40ECA1E472EB000AA7E55 /* AddStoryboard.storyboard in Resources */,
 				38A469AC1DCFED2F009CCF05 /* FeedTableViewCell.xib in Resources */,
 				38019B581E422E44003AFFE6 /* UserStoryboard.storyboard in Resources */,
 				385D6E7D1E2ADCF100E8F1A5 /* CommentTableViewCell.xib in Resources */,
@@ -761,7 +780,9 @@
 				388D63FA1E426F0600B4D28F /* AllCommentsViewController+ShowUserProfileDelegate.swift in Sources */,
 				385D6E621E26A35300E8F1A5 /* UserDetailTableViewCell.swift in Sources */,
 				3825DDC21DCFE2E400F6D8F8 /* Thing+API.swift in Sources */,
+				38D40ED21E47340400AA7E55 /* ThingDetailsViewController.swift in Sources */,
 				387A6CD91E24439000834164 /* FeedItem+Mock.swift in Sources */,
+				38D40ED41E4736C000AA7E55 /* AddPageViewController+UIPageViewDataSource.swift in Sources */,
 				387A6CD51E24437600834164 /* Thing+Mock.swift in Sources */,
 				381CC4601E381ECC00D87FA0 /* AllCommentsViewController+UITableViewDataSource.swift in Sources */,
 				387A6CC31E2418D000834164 /* UserProfileViewController.swift in Sources */,
@@ -774,6 +795,8 @@
 				388D63F81E4258CE00B4D28F /* AllCommentsViewController+UITextViewDelegate.swift in Sources */,
 				38EFC4CB1DAAB6370090E1DB /* AppDelegate.swift in Sources */,
 				387A6CE21E245D8D00834164 /* StoryTableViewCell.swift in Sources */,
+				38D40ED01E4733E500AA7E55 /* DestinationViewController.swift in Sources */,
+				38D40ECE1E4733B200AA7E55 /* CameraViewController.swift in Sources */,
 				387A6CD01E2441F900834164 /* ExploreViewController+UITableViewDelegate.swift in Sources */,
 				385D6E6A1E26B7C900E8F1A5 /* ThingViewController.swift in Sources */,
 				385D6E751E28676000E8F1A5 /* ThingViewController+UITableViewDataSource.swift in Sources */,
@@ -785,6 +808,7 @@
 				3825DDC11DCFE2E400F6D8F8 /* Feed+API.swift in Sources */,
 				38A469A71DCFEB98009CCF05 /* FeedViewController+UITableViewDataSource.swift in Sources */,
 				387A6CDE1E244A5200834164 /* UserTableViewCell.swift in Sources */,
+				38D40ECC1E472F4C00AA7E55 /* AddPageViewController.swift in Sources */,
 				385D6E7C1E2ADCF100E8F1A5 /* CommentTableViewCell.swift in Sources */,
 				38A469A51DCFEB34009CCF05 /* FeedViewController+UITableViewDelegate.swift in Sources */,
 				385D6E711E2840AC00E8F1A5 /* ThingViewController+UIPageViewControllerDataSource.swift in Sources */,
