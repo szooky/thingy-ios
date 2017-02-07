@@ -1,5 +1,5 @@
 //
-//  AddPageViewController+UIPageViewDataSource.swift
+//  OnboardingPageViewController+UIPageViewControllerDataSource.swift
 //  Thingy
 //
 //  Created by Filip Szukala on 05/02/2017.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension AddPageViewController: UIPageViewControllerDataSource {
+extension OnboardingPageViewController: UIPageViewControllerDataSource {
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         guard let viewControllerIndex = allViewControllers.index(of: viewController) else {
@@ -41,6 +41,10 @@ extension AddPageViewController: UIPageViewControllerDataSource {
         }
         
         guard orderedViewControllersCount > nextIndex else {
+            return nil
+        }
+        
+        if self.flowType == .Login && nextIndex == 3 {
             return nil
         }
         

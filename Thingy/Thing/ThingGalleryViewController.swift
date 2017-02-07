@@ -20,8 +20,7 @@ class ThingGalleryViewController: UIViewController {
             }
         }
     }
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         imageView!.image = UIImage(named: imageName)

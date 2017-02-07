@@ -13,6 +13,7 @@ class UserProfileViewController: UIViewController {
     @IBOutlet weak var tableViewUserProfile: UITableView!
     
     var user: User?
+    var ownProfile = true
     var refreshControl: UIRefreshControl!
 
     override func viewDidLoad() {
@@ -25,6 +26,10 @@ class UserProfileViewController: UIViewController {
         configurePullToRefresh()
         
         self.automaticallyAdjustsScrollViewInsets = false
+        
+        if ownProfile {
+            setToOwnProfile()
+        }
         
     }
     
@@ -53,6 +58,26 @@ class UserProfileViewController: UIViewController {
         refreshControl.endRefreshing()
     }
     
-
-
+    private func addLogoutToViewController() {
+        let buttonLogout = UIBarButtonItem()
+        
+        buttonLogout.style  = .plain
+        buttonLogout.title = "logout"
+        buttonLogout.action = #selector(buttonLogoutClicked)
+        buttonLogout.target = self
+        
+        self.navigationItem.rightBarButtonItem = buttonLogout
+    }
+    
+    func buttonLogoutClicked() {
+        let onboardingStoryboard = UIStoryboard(name: "Onboarding", bundle: nil)
+        if let loginRegisterVC = onboardingStoryboard.instantiateInitialViewController() as? OnboardingPageViewController {
+            self.present(loginRegisterVC, animated: true, completion: nil)
+        }
+    }
+    
+    func setToOwnProfile() {
+        self.addLogoutToViewController()
+    }
+    
 }

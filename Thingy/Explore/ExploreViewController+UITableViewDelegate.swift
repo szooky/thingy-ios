@@ -39,6 +39,7 @@ extension ExploreViewController: UITableViewDelegate {
         case 2:
             let userStoryboard = UIStoryboard(name: "UserStoryboard", bundle: nil)
             if let userVC = userStoryboard.instantiateViewController(withIdentifier: "UserProfileViewController") as? UserProfileViewController {
+                                
                 if searchController.isActive && searchController.searchBar.text != "" {
                     userVC.user = filteredUsers[indexPath.row]
                 } else {
