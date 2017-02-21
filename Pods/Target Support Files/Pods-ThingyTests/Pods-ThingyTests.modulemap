@@ -1,0 +1,6 @@
+framework module Pods_ThingyTests {
+  umbrella header "Pods-ThingyTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
