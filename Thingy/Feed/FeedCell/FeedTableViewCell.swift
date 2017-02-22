@@ -26,7 +26,7 @@ class FeedTableViewCell: UITableViewCell {
             setUser(user: user)
         }
         
-        if let updateType = item.type {
+        if let updateType = item.type { 
             setUpdateType(action: updateType)
         }
         
@@ -49,6 +49,7 @@ class FeedTableViewCell: UITableViewCell {
         
         if let imageName = thing.profileImageURL {
             imageViewBackground.image = UIImage(named: imageName)
+
         }
     }
     
@@ -58,4 +59,6 @@ class FeedTableViewCell: UITableViewCell {
             default: labelAction.text = "updated:"
         }
     }
+    
+
 }

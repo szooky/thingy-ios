@@ -31,6 +31,7 @@
 		3825DDDA1DCFE31100F6D8F8 /* ThingyColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3825DDD71DCFE31100F6D8F8 /* ThingyColors.swift */; };
 		3825DDE01DCFE4E500F6D8F8 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3825DDDE1DCFE4E500F6D8F8 /* FeedViewController.swift */; };
 		383397A11E20274F005C1EFA /* Story+API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383397A01E20274F005C1EFA /* Story+API.swift */; };
+		385B1A251E5CC7F400F808BC /* Gradients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385B1A241E5CC7F400F808BC /* Gradients.swift */; };
 		385D6E621E26A35300E8F1A5 /* UserDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385D6E601E26A35300E8F1A5 /* UserDetailTableViewCell.swift */; };
 		385D6E631E26A35300E8F1A5 /* UserDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 385D6E611E26A35300E8F1A5 /* UserDetailTableViewCell.xib */; };
 		385D6E651E26A96700E8F1A5 /* UserProfileViewController+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385D6E641E26A96700E8F1A5 /* UserProfileViewController+UITableViewDelegate.swift */; };
@@ -137,6 +138,7 @@
 		3825DDD71DCFE31100F6D8F8 /* ThingyColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThingyColors.swift; sourceTree = "<group>"; };
 		3825DDDE1DCFE4E500F6D8F8 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		383397A01E20274F005C1EFA /* Story+API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Story+API.swift"; sourceTree = "<group>"; };
+		385B1A241E5CC7F400F808BC /* Gradients.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gradients.swift; sourceTree = "<group>"; };
 		385D6E601E26A35300E8F1A5 /* UserDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailTableViewCell.swift; sourceTree = "<group>"; };
 		385D6E611E26A35300E8F1A5 /* UserDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserDetailTableViewCell.xib; sourceTree = "<group>"; };
 		385D6E641E26A96700E8F1A5 /* UserProfileViewController+UITableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserProfileViewController+UITableViewDelegate.swift"; sourceTree = "<group>"; };
@@ -309,6 +311,7 @@
 			isa = PBXGroup;
 			children = (
 				3825DDD71DCFE31100F6D8F8 /* ThingyColors.swift */,
+				385B1A241E5CC7F400F808BC /* Gradients.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -847,6 +850,7 @@
 				38D40ED41E4736C000AA7E55 /* AddPageViewController+UIPageViewDataSource.swift in Sources */,
 				387A6CD51E24437600834164 /* Thing+Mock.swift in Sources */,
 				381CC4601E381ECC00D87FA0 /* AllCommentsViewController+UITableViewDataSource.swift in Sources */,
+				385B1A251E5CC7F400F808BC /* Gradients.swift in Sources */,
 				387A6CC31E2418D000834164 /* UserProfileViewController.swift in Sources */,
 				385D6E811E2AF07E00E8F1A5 /* Database+Mock.swift in Sources */,
 				383397A11E20274F005C1EFA /* Story+API.swift in Sources */,

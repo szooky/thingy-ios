@@ -18,5 +18,16 @@ extension FeedViewController: UITableViewDelegate {
             self.navigationController?.pushViewController(thingVC, animated: true)
         }
     }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        
+        self.applyGradient(for: cell)
+    }
+    
+    private func applyGradient(for cell: UITableViewCell) {
+        if let feedCell = cell as? FeedTableViewCell {
+            feedCell.imageViewBackground.applyThingyGradient(ofSize: feedCell.bounds)
+        }
+    }
 }
 
