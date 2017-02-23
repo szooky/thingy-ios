@@ -74,9 +74,9 @@
 		38A469A71DCFEB98009CCF05 /* FeedViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A469A61DCFEB98009CCF05 /* FeedViewController+UITableViewDataSource.swift */; };
 		38A469AC1DCFED2F009CCF05 /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38A469AA1DCFED2F009CCF05 /* FeedTableViewCell.xib */; };
 		38A469AE1DCFFB5A009CCF05 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A469AD1DCFFB5A009CCF05 /* FeedTableViewCell.swift */; };
+		38D13D721E5F276600E29145 /* AddPageViewController+PhotoPickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D13D711E5F276600E29145 /* AddPageViewController+PhotoPickerDelegate.swift */; };
 		38D40ECA1E472EB000AA7E55 /* AddStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38D40EC91E472EB000AA7E55 /* AddStoryboard.storyboard */; };
 		38D40ECC1E472F4C00AA7E55 /* AddPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D40ECB1E472F4C00AA7E55 /* AddPageViewController.swift */; };
-		38D40ECE1E4733B200AA7E55 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D40ECD1E4733B200AA7E55 /* CameraViewController.swift */; };
 		38D40ED21E47340400AA7E55 /* ThingDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D40ED11E47340400AA7E55 /* ThingDetailsViewController.swift */; };
 		38D40ED41E4736C000AA7E55 /* AddPageViewController+UIPageViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D40ED31E4736C000AA7E55 /* AddPageViewController+UIPageViewDataSource.swift */; };
 		38D40ED61E47420300AA7E55 /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D40ED51E47420300AA7E55 /* OnboardingPageViewController.swift */; };
@@ -181,9 +181,9 @@
 		38A469A61DCFEB98009CCF05 /* FeedViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FeedViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
 		38A469AA1DCFED2F009CCF05 /* FeedTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
 		38A469AD1DCFFB5A009CCF05 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		38D13D711E5F276600E29145 /* AddPageViewController+PhotoPickerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AddPageViewController+PhotoPickerDelegate.swift"; sourceTree = "<group>"; };
 		38D40EC91E472EB000AA7E55 /* AddStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddStoryboard.storyboard; sourceTree = "<group>"; };
 		38D40ECB1E472F4C00AA7E55 /* AddPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPageViewController.swift; sourceTree = "<group>"; };
-		38D40ECD1E4733B200AA7E55 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		38D40ED11E47340400AA7E55 /* ThingDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThingDetailsViewController.swift; sourceTree = "<group>"; };
 		38D40ED31E4736C000AA7E55 /* AddPageViewController+UIPageViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AddPageViewController+UIPageViewDataSource.swift"; sourceTree = "<group>"; };
 		38D40ED51E47420300AA7E55 /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
@@ -387,8 +387,8 @@
 				381DA5651E4BEA2A008E5D73 /* Destination */,
 				381DA5671E4BEA99008E5D73 /* ThingDetails */,
 				38D40ECB1E472F4C00AA7E55 /* AddPageViewController.swift */,
+				38D13D711E5F276600E29145 /* AddPageViewController+PhotoPickerDelegate.swift */,
 				38D40ED31E4736C000AA7E55 /* AddPageViewController+UIPageViewDataSource.swift */,
-				38D40ECD1E4733B200AA7E55 /* CameraViewController.swift */,
 				38D40ED11E47340400AA7E55 /* ThingDetailsViewController.swift */,
 			);
 			path = Add;
@@ -859,12 +859,12 @@
 				385D6E771E2867D100E8F1A5 /* ThingViewController+UITableViewDelegate.swift in Sources */,
 				385D6E671E26A98700E8F1A5 /* UserProfileViewController+UITableViewDataSource.swift in Sources */,
 				387A6CCE1E2441E300834164 /* ExploreViewController.swift in Sources */,
+				38D13D721E5F276600E29145 /* AddPageViewController+PhotoPickerDelegate.swift in Sources */,
 				388D63F81E4258CE00B4D28F /* AllCommentsViewController+UITextViewDelegate.swift in Sources */,
 				38EFC4CB1DAAB6370090E1DB /* AppDelegate.swift in Sources */,
 				381DA5691E4BEAB6008E5D73 /* DestinationViewController.swift in Sources */,
 				387A6CE21E245D8D00834164 /* StoryTableViewCell.swift in Sources */,
 				38D40EE01E4A1C3F00AA7E55 /* OnboardingFlowType.swift in Sources */,
-				38D40ECE1E4733B200AA7E55 /* CameraViewController.swift in Sources */,
 				387A6CD01E2441F900834164 /* ExploreViewController+UITableViewDelegate.swift in Sources */,
 				385D6E6A1E26B7C900E8F1A5 /* ThingViewController.swift in Sources */,
 				381DA56E1E4CB837008E5D73 /* DestinationViewController+UITableViewDelegate.swift in Sources */,

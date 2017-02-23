@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import YangMingShan
 
 class AddPageViewController: UIPageViewController {
     
@@ -26,14 +27,17 @@ class AddPageViewController: UIPageViewController {
     private func loadViewControllers() {
         let addStoryboard = UIStoryboard(name: "AddStoryboard", bundle: nil)
         
-        let cameraViewController = addStoryboard.instantiateViewController(withIdentifier: "CameraViewController") as! CameraViewController
+        let pickerViewController = YMSPhotoPickerViewController.init()
+        self.setPhotoPicker(pickerViewController)
+
         let destinationViewController = addStoryboard.instantiateViewController(withIdentifier: "DestinationViewController") as! DestinationViewController
         let thingDetailsViewController = addStoryboard.instantiateViewController(withIdentifier: "ThingDetailsViewController") as! ThingDetailsViewController
         
-        allViewControllers = [cameraViewController, destinationViewController, thingDetailsViewController]
+        allViewControllers = [pickerViewController, destinationViewController, thingDetailsViewController]
         
         setViewControllers([allViewControllers[0]], direction: .forward, animated: true, completion: nil)
     }
+    
 }
 
 

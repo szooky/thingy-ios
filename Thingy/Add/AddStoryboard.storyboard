@@ -27,6 +27,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zvw-hN-UHI">
+                                <rect key="frame" x="159" y="352" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="FEH-cH-yTB" eventType="touchUpInside" id="yBC-p4-prK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -34,6 +42,9 @@
                             <constraint firstItem="cjI-qG-eyc" firstAttribute="centerY" secondItem="A67-oy-gu7" secondAttribute="centerY" id="uUe-li-vWA"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttonClick" destination="zvw-hN-UHI" id="TTB-h0-BjU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Apd-9Y-Uqf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -7,6 +7,8 @@ target 'Thingy' do
 
   # Pods for Thingy
       pod 'Alamofire', '~> 4.0'
+      pod 'YangMingShan'
+
 
 
   target 'ThingyTests' do
