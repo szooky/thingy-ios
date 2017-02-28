@@ -30,6 +30,23 @@
 		3825DDD31DCFE2FF00F6D8F8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3825DDCE1DCFE2FF00F6D8F8 /* User.swift */; };
 		3825DDDA1DCFE31100F6D8F8 /* ThingyColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3825DDD71DCFE31100F6D8F8 /* ThingyColors.swift */; };
 		3825DDE01DCFE4E500F6D8F8 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3825DDDE1DCFE4E500F6D8F8 /* FeedViewController.swift */; };
+		38333A7E1E6589DA0096D909 /* UIScrollView+YMSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 38333A631E6589DA0096D909 /* UIScrollView+YMSAdditions.m */; };
+		38333A7F1E6589DA0096D909 /* UITableViewCell+YMSConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 38333A651E6589DA0096D909 /* UITableViewCell+YMSConfig.m */; };
+		38333A801E6589DA0096D909 /* YMSAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 38333A671E6589DA0096D909 /* YMSAlbumCell.m */; };
+		38333A811E6589DA0096D909 /* YMSAlbumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38333A681E6589DA0096D909 /* YMSAlbumCell.xib */; };
+		38333A821E6589DA0096D909 /* YMSAlbumPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38333A6A1E6589DA0096D909 /* YMSAlbumPickerViewController.m */; };
+		38333A831E6589DA0096D909 /* YMSAlbumPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38333A6B1E6589DA0096D909 /* YMSAlbumPickerViewController.xib */; };
+		38333A841E6589DA0096D909 /* YMSCameraCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 38333A6D1E6589DA0096D909 /* YMSCameraCell.m */; };
+		38333A851E6589DA0096D909 /* YMSCameraCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38333A6E1E6589DA0096D909 /* YMSCameraCell.xib */; };
+		38333A861E6589DA0096D909 /* YMSPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 38333A701E6589DA0096D909 /* YMSPhotoCell.m */; };
+		38333A871E6589DA0096D909 /* YMSPhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38333A711E6589DA0096D909 /* YMSPhotoCell.xib */; };
+		38333A881E6589DA0096D909 /* YMSSinglePhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38333A731E6589DA0096D909 /* YMSSinglePhotoViewController.m */; };
+		38333A891E6589DA0096D909 /* YMSSinglePhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38333A741E6589DA0096D909 /* YMSSinglePhotoViewController.xib */; };
+		38333A8A1E6589DA0096D909 /* UIViewController+YMSPhotoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 38333A771E6589DA0096D909 /* UIViewController+YMSPhotoHelper.m */; };
+		38333A8B1E6589DA0096D909 /* YMSPhotoPickerTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 38333A791E6589DA0096D909 /* YMSPhotoPickerTheme.m */; };
+		38333A8C1E6589DA0096D909 /* YMSPhotoPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38333A7B1E6589DA0096D909 /* YMSPhotoPickerViewController.m */; };
+		38333A8D1E6589DA0096D909 /* YMSPhotoPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38333A7C1E6589DA0096D909 /* YMSPhotoPickerViewController.xib */; };
+		38333A8E1E6589DA0096D909 /* YMSPhotoPickerAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38333A7D1E6589DA0096D909 /* YMSPhotoPickerAssets.xcassets */; };
 		383397A11E20274F005C1EFA /* Story+API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383397A01E20274F005C1EFA /* Story+API.swift */; };
 		385B1A251E5CC7F400F808BC /* Gradients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385B1A241E5CC7F400F808BC /* Gradients.swift */; };
 		385D6E621E26A35300E8F1A5 /* UserDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385D6E601E26A35300E8F1A5 /* UserDetailTableViewCell.swift */; };
@@ -137,6 +154,34 @@
 		3825DDCE1DCFE2FF00F6D8F8 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3825DDD71DCFE31100F6D8F8 /* ThingyColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThingyColors.swift; sourceTree = "<group>"; };
 		3825DDDE1DCFE4E500F6D8F8 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		38333A621E6589DA0096D909 /* UIScrollView+YMSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+YMSAdditions.h"; sourceTree = "<group>"; };
+		38333A631E6589DA0096D909 /* UIScrollView+YMSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+YMSAdditions.m"; sourceTree = "<group>"; };
+		38333A641E6589DA0096D909 /* UITableViewCell+YMSConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+YMSConfig.h"; sourceTree = "<group>"; };
+		38333A651E6589DA0096D909 /* UITableViewCell+YMSConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+YMSConfig.m"; sourceTree = "<group>"; };
+		38333A661E6589DA0096D909 /* YMSAlbumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMSAlbumCell.h; sourceTree = "<group>"; };
+		38333A671E6589DA0096D909 /* YMSAlbumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMSAlbumCell.m; sourceTree = "<group>"; };
+		38333A681E6589DA0096D909 /* YMSAlbumCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMSAlbumCell.xib; sourceTree = "<group>"; };
+		38333A691E6589DA0096D909 /* YMSAlbumPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMSAlbumPickerViewController.h; sourceTree = "<group>"; };
+		38333A6A1E6589DA0096D909 /* YMSAlbumPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMSAlbumPickerViewController.m; sourceTree = "<group>"; };
+		38333A6B1E6589DA0096D909 /* YMSAlbumPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMSAlbumPickerViewController.xib; sourceTree = "<group>"; };
+		38333A6C1E6589DA0096D909 /* YMSCameraCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMSCameraCell.h; sourceTree = "<group>"; };
+		38333A6D1E6589DA0096D909 /* YMSCameraCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMSCameraCell.m; sourceTree = "<group>"; };
+		38333A6E1E6589DA0096D909 /* YMSCameraCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMSCameraCell.xib; sourceTree = "<group>"; };
+		38333A6F1E6589DA0096D909 /* YMSPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMSPhotoCell.h; sourceTree = "<group>"; };
+		38333A701E6589DA0096D909 /* YMSPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMSPhotoCell.m; sourceTree = "<group>"; };
+		38333A711E6589DA0096D909 /* YMSPhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMSPhotoCell.xib; sourceTree = "<group>"; };
+		38333A721E6589DA0096D909 /* YMSSinglePhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMSSinglePhotoViewController.h; sourceTree = "<group>"; };
+		38333A731E6589DA0096D909 /* YMSSinglePhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMSSinglePhotoViewController.m; sourceTree = "<group>"; };
+		38333A741E6589DA0096D909 /* YMSSinglePhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMSSinglePhotoViewController.xib; sourceTree = "<group>"; };
+		38333A761E6589DA0096D909 /* UIViewController+YMSPhotoHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YMSPhotoHelper.h"; sourceTree = "<group>"; };
+		38333A771E6589DA0096D909 /* UIViewController+YMSPhotoHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YMSPhotoHelper.m"; sourceTree = "<group>"; };
+		38333A781E6589DA0096D909 /* YMSPhotoPickerTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMSPhotoPickerTheme.h; sourceTree = "<group>"; };
+		38333A791E6589DA0096D909 /* YMSPhotoPickerTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMSPhotoPickerTheme.m; sourceTree = "<group>"; };
+		38333A7A1E6589DA0096D909 /* YMSPhotoPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMSPhotoPickerViewController.h; sourceTree = "<group>"; };
+		38333A7B1E6589DA0096D909 /* YMSPhotoPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMSPhotoPickerViewController.m; sourceTree = "<group>"; };
+		38333A7C1E6589DA0096D909 /* YMSPhotoPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMSPhotoPickerViewController.xib; sourceTree = "<group>"; };
+		38333A7D1E6589DA0096D909 /* YMSPhotoPickerAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = YMSPhotoPickerAssets.xcassets; sourceTree = "<group>"; };
+		38333A8F1E65AAAE0096D909 /* Thingy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Thingy-Bridging-Header.h"; sourceTree = "<group>"; };
 		383397A01E20274F005C1EFA /* Story+API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Story+API.swift"; sourceTree = "<group>"; };
 		385B1A241E5CC7F400F808BC /* Gradients.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gradients.swift; sourceTree = "<group>"; };
 		385D6E601E26A35300E8F1A5 /* UserDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailTableViewCell.swift; sourceTree = "<group>"; };
@@ -253,6 +298,7 @@
 		381DA5661E4BEA8D008E5D73 /* PhotoGallery */ = {
 			isa = PBXGroup;
 			children = (
+				38333A5F1E6589DA0096D909 /* YangMingShan */,
 			);
 			path = PhotoGallery;
 			sourceTree = "<group>";
@@ -339,6 +385,64 @@
 				38A469A81DCFED18009CCF05 /* FeedCell */,
 			);
 			path = Feed;
+			sourceTree = "<group>";
+		};
+		38333A5F1E6589DA0096D909 /* YangMingShan */ = {
+			isa = PBXGroup;
+			children = (
+				38333A601E6589DA0096D909 /* YMSPhotoPicker */,
+			);
+			path = YangMingShan;
+			sourceTree = "<group>";
+		};
+		38333A601E6589DA0096D909 /* YMSPhotoPicker */ = {
+			isa = PBXGroup;
+			children = (
+				38333A611E6589DA0096D909 /* Private */,
+				38333A751E6589DA0096D909 /* Public */,
+				38333A7D1E6589DA0096D909 /* YMSPhotoPickerAssets.xcassets */,
+			);
+			path = YMSPhotoPicker;
+			sourceTree = "<group>";
+		};
+		38333A611E6589DA0096D909 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				38333A621E6589DA0096D909 /* UIScrollView+YMSAdditions.h */,
+				38333A631E6589DA0096D909 /* UIScrollView+YMSAdditions.m */,
+				38333A641E6589DA0096D909 /* UITableViewCell+YMSConfig.h */,
+				38333A651E6589DA0096D909 /* UITableViewCell+YMSConfig.m */,
+				38333A661E6589DA0096D909 /* YMSAlbumCell.h */,
+				38333A671E6589DA0096D909 /* YMSAlbumCell.m */,
+				38333A681E6589DA0096D909 /* YMSAlbumCell.xib */,
+				38333A691E6589DA0096D909 /* YMSAlbumPickerViewController.h */,
+				38333A6A1E6589DA0096D909 /* YMSAlbumPickerViewController.m */,
+				38333A6B1E6589DA0096D909 /* YMSAlbumPickerViewController.xib */,
+				38333A6C1E6589DA0096D909 /* YMSCameraCell.h */,
+				38333A6D1E6589DA0096D909 /* YMSCameraCell.m */,
+				38333A6E1E6589DA0096D909 /* YMSCameraCell.xib */,
+				38333A6F1E6589DA0096D909 /* YMSPhotoCell.h */,
+				38333A701E6589DA0096D909 /* YMSPhotoCell.m */,
+				38333A711E6589DA0096D909 /* YMSPhotoCell.xib */,
+				38333A721E6589DA0096D909 /* YMSSinglePhotoViewController.h */,
+				38333A731E6589DA0096D909 /* YMSSinglePhotoViewController.m */,
+				38333A741E6589DA0096D909 /* YMSSinglePhotoViewController.xib */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		38333A751E6589DA0096D909 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				38333A761E6589DA0096D909 /* UIViewController+YMSPhotoHelper.h */,
+				38333A771E6589DA0096D909 /* UIViewController+YMSPhotoHelper.m */,
+				38333A781E6589DA0096D909 /* YMSPhotoPickerTheme.h */,
+				38333A791E6589DA0096D909 /* YMSPhotoPickerTheme.m */,
+				38333A7A1E6589DA0096D909 /* YMSPhotoPickerViewController.h */,
+				38333A7B1E6589DA0096D909 /* YMSPhotoPickerViewController.m */,
+				38333A7C1E6589DA0096D909 /* YMSPhotoPickerViewController.xib */,
+			);
+			path = Public;
 			sourceTree = "<group>";
 		};
 		385D6E781E2ADCAF00E8F1A5 /* Comments */ = {
@@ -481,6 +585,7 @@
 			children = (
 				38EFC4D81DAAB6380090E1DB /* Info.plist */,
 				387A6CC41E241D9B00834164 /* Assets.xcassets */,
+				38333A8F1E65AAAE0096D909 /* Thingy-Bridging-Header.h */,
 				38EFC4CA1DAAB6370090E1DB /* AppDelegate.swift */,
 				38EFC4D01DAAB6370090E1DB /* Main.storyboard */,
 				38EFC4D51DAAB6380090E1DB /* LaunchScreen.storyboard */,
@@ -666,15 +771,22 @@
 				381DA5721E4CF1AD008E5D73 /* DestinationTableViewCell.xib in Resources */,
 				387A6CC91E243DDD00834164 /* ThingTableViewCell.xib in Resources */,
 				385D6E891E2CE1B800E8F1A5 /* StoryStoryboard.storyboard in Resources */,
+				38333A8E1E6589DA0096D909 /* YMSPhotoPickerAssets.xcassets in Resources */,
 				38EFC4D71DAAB6380090E1DB /* LaunchScreen.storyboard in Resources */,
+				38333A811E6589DA0096D909 /* YMSAlbumCell.xib in Resources */,
+				38333A851E6589DA0096D909 /* YMSCameraCell.xib in Resources */,
 				38A469A31DCFE6C8009CCF05 /* Onboarding.storyboard in Resources */,
 				387A6CE31E245D8D00834164 /* StoryTableViewCell.xib in Resources */,
 				381CC45E1E381D7500D87FA0 /* AllCommentsViewController.xib in Resources */,
+				38333A831E6589DA0096D909 /* YMSAlbumPickerViewController.xib in Resources */,
+				38333A871E6589DA0096D909 /* YMSPhotoCell.xib in Resources */,
 				387A6CDF1E244A5200834164 /* UserTableViewCell.xib in Resources */,
+				38333A8D1E6589DA0096D909 /* YMSPhotoPickerViewController.xib in Resources */,
 				38D40ECA1E472EB000AA7E55 /* AddStoryboard.storyboard in Resources */,
 				38A469AC1DCFED2F009CCF05 /* FeedTableViewCell.xib in Resources */,
 				38019B581E422E44003AFFE6 /* UserStoryboard.storyboard in Resources */,
 				385D6E7D1E2ADCF100E8F1A5 /* CommentTableViewCell.xib in Resources */,
+				38333A891E6589DA0096D909 /* YMSSinglePhotoViewController.xib in Resources */,
 				38EFC4D21DAAB6370090E1DB /* Main.storyboard in Resources */,
 				387A6CC51E241D9B00834164 /* Assets.xcassets in Resources */,
 			);
@@ -844,6 +956,7 @@
 				388D63FA1E426F0600B4D28F /* AllCommentsViewController+ShowUserProfileDelegate.swift in Sources */,
 				385D6E621E26A35300E8F1A5 /* UserDetailTableViewCell.swift in Sources */,
 				381DA56C1E4CB81B008E5D73 /* DestinationViewController+UITableViewDataSource.swift in Sources */,
+				38333A8C1E6589DA0096D909 /* YMSPhotoPickerViewController.m in Sources */,
 				3825DDC21DCFE2E400F6D8F8 /* Thing+API.swift in Sources */,
 				38D40ED21E47340400AA7E55 /* ThingDetailsViewController.swift in Sources */,
 				387A6CD91E24439000834164 /* FeedItem+Mock.swift in Sources */,
@@ -856,16 +969,21 @@
 				383397A11E20274F005C1EFA /* Story+API.swift in Sources */,
 				38D40ED61E47420300AA7E55 /* OnboardingPageViewController.swift in Sources */,
 				3825DDC71DCFE2F400F6D8F8 /* String+Extensions.swift in Sources */,
+				38333A841E6589DA0096D909 /* YMSCameraCell.m in Sources */,
 				385D6E771E2867D100E8F1A5 /* ThingViewController+UITableViewDelegate.swift in Sources */,
 				385D6E671E26A98700E8F1A5 /* UserProfileViewController+UITableViewDataSource.swift in Sources */,
 				387A6CCE1E2441E300834164 /* ExploreViewController.swift in Sources */,
+				38333A821E6589DA0096D909 /* YMSAlbumPickerViewController.m in Sources */,
 				38D13D721E5F276600E29145 /* AddPageViewController+PhotoPickerDelegate.swift in Sources */,
+				38333A801E6589DA0096D909 /* YMSAlbumCell.m in Sources */,
+				38333A7F1E6589DA0096D909 /* UITableViewCell+YMSConfig.m in Sources */,
 				388D63F81E4258CE00B4D28F /* AllCommentsViewController+UITextViewDelegate.swift in Sources */,
 				38EFC4CB1DAAB6370090E1DB /* AppDelegate.swift in Sources */,
 				381DA5691E4BEAB6008E5D73 /* DestinationViewController.swift in Sources */,
 				387A6CE21E245D8D00834164 /* StoryTableViewCell.swift in Sources */,
 				38D40EE01E4A1C3F00AA7E55 /* OnboardingFlowType.swift in Sources */,
 				387A6CD01E2441F900834164 /* ExploreViewController+UITableViewDelegate.swift in Sources */,
+				38333A881E6589DA0096D909 /* YMSSinglePhotoViewController.m in Sources */,
 				385D6E6A1E26B7C900E8F1A5 /* ThingViewController.swift in Sources */,
 				381DA56E1E4CB837008E5D73 /* DestinationViewController+UITableViewDelegate.swift in Sources */,
 				385D6E751E28676000E8F1A5 /* ThingViewController+UITableViewDataSource.swift in Sources */,
@@ -873,13 +991,16 @@
 				3825DDD01DCFE2FF00F6D8F8 /* FeedItem.swift in Sources */,
 				38D40ED81E47452300AA7E55 /* LoginRegisterViewController.swift in Sources */,
 				387A6CC81E243DDD00834164 /* ThingTableViewCell.swift in Sources */,
+				38333A861E6589DA0096D909 /* YMSPhotoCell.m in Sources */,
 				38D40EDE1E474BD800AA7E55 /* OnboardingTextInputType.swift in Sources */,
 				387A6CD71E24438300834164 /* Story+Mock.swift in Sources */,
 				38D40EDC1E47462400AA7E55 /* OnboardingTextInputViewController.swift in Sources */,
 				385D6E651E26A96700E8F1A5 /* UserProfileViewController+UITableViewDelegate.swift in Sources */,
 				3825DDC11DCFE2E400F6D8F8 /* Feed+API.swift in Sources */,
+				38333A8A1E6589DA0096D909 /* UIViewController+YMSPhotoHelper.m in Sources */,
 				38A469A71DCFEB98009CCF05 /* FeedViewController+UITableViewDataSource.swift in Sources */,
 				387A6CDE1E244A5200834164 /* UserTableViewCell.swift in Sources */,
+				38333A7E1E6589DA0096D909 /* UIScrollView+YMSAdditions.m in Sources */,
 				38D40ECC1E472F4C00AA7E55 /* AddPageViewController.swift in Sources */,
 				385D6E7C1E2ADCF100E8F1A5 /* CommentTableViewCell.swift in Sources */,
 				38A469A51DCFEB34009CCF05 /* FeedViewController+UITableViewDelegate.swift in Sources */,
@@ -901,6 +1022,7 @@
 				381CC45D1E381D7500D87FA0 /* AllCommentsViewController.swift in Sources */,
 				3825DDE01DCFE4E500F6D8F8 /* FeedViewController.swift in Sources */,
 				3825DDD11DCFE2FF00F6D8F8 /* Story.swift in Sources */,
+				38333A8B1E6589DA0096D909 /* YMSPhotoPickerTheme.m in Sources */,
 				387A6CD21E24420C00834164 /* ExploreViewController+UITableViewDataSource.swift in Sources */,
 				38D40EDA1E4745F300AA7E55 /* OnboardingPageViewController+UIPageViewControllerDataSource.swift in Sources */,
 			);
@@ -1061,6 +1183,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fs.Thingy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/$(PROJECT_NAME)-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -1076,6 +1199,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fs.Thingy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/$(PROJECT_NAME)-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import YangMingShan
+//import YangMingShan
 
 extension AddPageViewController: YMSPhotoPickerViewControllerDelegate {
     
@@ -28,7 +28,6 @@ extension AddPageViewController: YMSPhotoPickerViewControllerDelegate {
         let fontSize = picker.theme.albumNameLabelFont.pointSize
         picker.theme.albumNameLabelFont = UIFont(name: "HelveticaNeue-Thin", size: fontSize)
         
-    
     }
     
     func photoPickerViewControllerDidReceivePhotoAlbumAccessDenied(_ picker: YMSPhotoPickerViewController!) {
