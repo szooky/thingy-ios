@@ -58,6 +58,7 @@ extension AddPageViewController: YMSPhotoPickerViewControllerDelegate {
     
     func photoPickerViewController(_ picker: YMSPhotoPickerViewController!, didFinishPickingImages photoAssets: [PHAsset]!) {
         // Remember images you get here is PHAsset array, you need to implement PHImageManager to get UIImage data by yourself
+        print("next")
         picker.dismiss(animated: true) {
             let imageManager = PHImageManager.init()
             let options = PHImageRequestOptions.init()

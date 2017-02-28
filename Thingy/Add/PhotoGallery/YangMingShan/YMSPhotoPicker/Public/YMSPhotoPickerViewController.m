@@ -87,11 +87,14 @@ static const CGFloat YMSPhotoFetchScaleResizingRatio = 0.75;
     [self fetchCollections];
 
     UINavigationItem *navigationItem = [[UINavigationItem alloc] init];
-    navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(dismiss:)];
-
+    navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Clear" style:UIBarButtonItemStylePlain
+                                                    target:self
+                                                    action:@selector(dismiss:)];
     if (self.allowsMultipleSelection) {
         // Add done button for multiple selections
-        self.doneItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(finishPickingPhotos:)];
+        self.doneItem = [[UIBarButtonItem alloc] initWithTitle:@"Next" style:UIBarButtonItemStyleDone
+                                                    target:self
+                                                    action:@selector(finishPickingPhotos:)];
         self.doneItem.enabled = NO;
         navigationItem.rightBarButtonItem = self.doneItem;
     }
