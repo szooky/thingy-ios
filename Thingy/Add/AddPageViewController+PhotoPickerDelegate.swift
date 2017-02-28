@@ -12,21 +12,23 @@ import YangMingShan
 extension AddPageViewController: YMSPhotoPickerViewControllerDelegate {
     
     func setPhotoPicker(_ picker: YMSPhotoPickerViewController) {
-        picker.numberOfPhotoToSelect = 10
         
-        let themeColor = UIColor.thingyOrange()
-        let cameraColor = UIColor.thingyOrange()
+        picker.delegate = self
+        picker.numberOfPhotoToSelect = 10
         
         picker.theme.titleLabelTextColor = UIColor.white
         picker.theme.navigationBarBackgroundColor = UIColor.thingyGrey()
-        picker.navigationController?.navigationBar.barStyle = .blackTranslucent
         
         picker.theme.tintColor = UIColor.white
-        picker.theme.orderTintColor = cameraColor
-        picker.theme.cameraVeilColor = cameraColor
+        picker.theme.orderTintColor = UIColor.thingyOrange()
+        picker.theme.cameraVeilColor = UIColor.thingyOrange()
         picker.theme.cameraIconColor = UIColor.white
         picker.theme.statusBarStyle = .lightContent
         
+        let fontSize = picker.theme.albumNameLabelFont.pointSize
+        picker.theme.albumNameLabelFont = UIFont(name: "HelveticaNeue-Thin", size: fontSize)
+        
+    
     }
     
     func photoPickerViewControllerDidReceivePhotoAlbumAccessDenied(_ picker: YMSPhotoPickerViewController!) {
@@ -66,17 +68,23 @@ extension AddPageViewController: YMSPhotoPickerViewControllerDelegate {
             
             let mutableImages: NSMutableArray! = []
             
-            //            for asset: PHAsset in photoAssets
-            //            {
-            //                let scale = UIScreen.main.scale
-            //                let targetSize = CGSize(width: (self.collectionView.bounds.width - 20*2) * scale, height: (self.collectionView.bounds.height - 20*2) * scale)
-            //                imageManager.requestImage(for: asset, targetSize: targetSize, contentMode: .aspectFill, options: options, resultHandler: { (image, info) in
-            //                    mutableImages.add(image!)
-            //                })
-            //            }
-            //            // Assign to Array with images
-            //            self.images = mutableImages.copy() as? NSArray
+            for asset: PHAsset in photoAssets
+            {
+                //let scale = UIScreen.main.scale
+                //let targetSize = CGSize(width: (self.collectionView.bounds.width - 20*2) * scale, height: (self.collectionView.bounds.height - 20*2) * scale)
+                let targetSize = CGSize(width: 1000, height: 1000)
+                
+                imageManager.requestImage(for: asset, targetSize: targetSize, contentMode: .aspectFill, options: options, resultHandler: { (image, info) in
+                    mutableImages.add(image!)
+                })
+            }
+            // Assign to Array with images
+            self.pickedImages = mutableImages.copy() as? NSArray
         }
+    }
+    
+    func photoPickerViewControllerDidCancel(_ picker: YMSPhotoPickerViewController!) {
+        print("didCancel")
     }
 
 }

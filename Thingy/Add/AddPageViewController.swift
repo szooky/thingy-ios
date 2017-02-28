@@ -12,12 +12,17 @@ import YangMingShan
 class AddPageViewController: UIPageViewController {
     
     var allViewControllers = Array<UIViewController>()
+    var pickedImages: NSArray! = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         loadViewControllers()
         configurePageViewController()
+    }
+    
+    override open var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
     
     private func configurePageViewController() {
@@ -39,5 +44,3 @@ class AddPageViewController: UIPageViewController {
     }
     
 }
-
-
