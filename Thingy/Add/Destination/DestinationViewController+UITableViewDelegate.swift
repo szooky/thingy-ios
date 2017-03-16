@@ -11,16 +11,29 @@ import UIKit
 extension DestinationViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-//        if indexPath.section == 0 { return }
-//        
-//        tableView.deselectRow(at: indexPath, animated: false)
-//        
-//        let thingStoryBoard = UIStoryboard(name: "ThingStoryboard", bundle: nil)
-//        if let thingVC = thingStoryBoard.instantiateInitialViewController() as? ThingViewController {
-//            thingVC.thing = user?.things?[indexPath.row]
-//            self.navigationController?.pushViewController(thingVC, animated: true)
-//        }
+        if indexPath.section == 0 {
+            //new thing
+            return
+        }
         
+        guard let cell = tableView.cellForRow(at: indexPath) as? DestinationTableViewCell
+            else { return }
+        
+        
+        cell.isExpanded = !cell.isExpanded
+        
+        self.tableViewDestination.beginUpdates()
+        self.tableViewDestination.endUpdates()
+    }
+    
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        guard let cell = tableView.cellForRow(at: indexPath) as? DestinationTableViewCell
+            else { return }
+        
+        cell.isExpanded = false
+        
+        self.tableViewDestination.beginUpdates()
+        self.tableViewDestination.endUpdates()
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -28,7 +41,7 @@ extension DestinationViewController: UITableViewDelegate {
         case 0:
             return 100.0
         case 1:
-            return 100.0 //automatic!
+            return UITableViewAutomaticDimension //automatic!
         default:
             return 0.0
         }
