@@ -41,7 +41,7 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                         <state key="normal" title="0 LIKES">
-                                            <color key="titleColor" red="1" green="0.59460680369999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" red="1" green="0.0" blue="0.2603232023" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                     </button>
                                     <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="9hm-Fi-KBm">
@@ -82,7 +82,7 @@ Multiline</string>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r7P-QJ-WsF">
                                         <rect key="frame" x="153" y="701" width="69" height="30"/>
                                         <state key="normal" title="See all (0)">
-                                            <color key="titleColor" red="1" green="0.59460680369999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" red="1" green="0.0" blue="0.2603232023" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="buttonSeeAllCommentsClicked:" destination="3Ic-OK-Bxw" eventType="touchUpInside" id="XEj-FW-aWR"/>

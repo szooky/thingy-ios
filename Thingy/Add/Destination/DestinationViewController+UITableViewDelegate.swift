@@ -16,6 +16,12 @@ extension DestinationViewController: UITableViewDelegate {
             return
         }
         
+        if expandedCellIndex == indexPath {
+            expandedCellIndex = nil
+        } else {
+            expandedCellIndex = indexPath
+        }
+        
         guard let cell = tableView.cellForRow(at: indexPath) as? DestinationTableViewCell
             else { return }
         
@@ -31,7 +37,8 @@ extension DestinationViewController: UITableViewDelegate {
             else { return }
         
         cell.isExpanded = false
-        
+        expandedCellIndex = nil
+
         self.tableViewDestination.beginUpdates()
         self.tableViewDestination.endUpdates()
     }
@@ -41,7 +48,12 @@ extension DestinationViewController: UITableViewDelegate {
         case 0:
             return 100.0
         case 1:
-            return UITableViewAutomaticDimension //automatic!
+            
+            if indexPath == expandedCellIndex {
+                return UITableViewAutomaticDimension
+            } else {
+                return 100.0
+            }
         default:
             return 0.0
         }

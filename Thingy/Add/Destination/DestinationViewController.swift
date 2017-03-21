@@ -13,21 +13,28 @@ class DestinationViewController: UIViewController {
     @IBOutlet weak var tableViewDestination: UITableView!
     
     var user: User?
+    var expandedCellIndex: IndexPath?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.loadUsersData()
+        self.configureView()
         self.configureTableView()
     }
     
     func loadUsersData() {
-        self.user = User.get(variant: 1)
+        self.user = User.get(variant: 2)
+    }
+    
+    func configureView() {
+        self.view.backgroundColor = UIColor.thingyGrey()
     }
     
     func configureTableView() {
         tableViewDestination.dataSource = self
         tableViewDestination.delegate = self
         tableViewDestination.rowHeight = 300.0
+        tableViewDestination.backgroundColor = UIColor.thingyGrey()
         
         tableViewDestination.register(UINib(nibName: DestinationTableViewCell.cellId, bundle: nil), forCellReuseIdentifier: DestinationTableViewCell.cellId)
     }

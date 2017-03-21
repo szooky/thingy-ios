@@ -21,6 +21,10 @@ extension UIColor {
         return UIColor(255, 152, 2)
     }
     
+    static func thingyRed() -> UIColor {
+        return UIColor(255, 0, 66)
+    }
+    
     static func thingyGrey() -> UIColor {
         return UIColor(49, 49, 49)
     }

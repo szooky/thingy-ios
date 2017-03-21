@@ -14,7 +14,6 @@ class DestinationTableViewCell: UITableViewCell {
     @IBOutlet weak var labelTitle: UILabel!
     @IBOutlet weak var stackViewMain: UIStackView!
     @IBOutlet weak var stackViewDetails: UIStackView!
-    @IBOutlet weak var stackViewStoryList: UIStackView!
     
     class var cellId: String {
         return "DestinationTableViewCell"
@@ -41,6 +40,7 @@ class DestinationTableViewCell: UITableViewCell {
 
     func set(thing: Thing) {
         stackViewDetails.isHidden = true
+        self.selectionStyle = .none
         
         if let thingTitle = thing.name {
             labelTitle.text = thingTitle
@@ -54,7 +54,9 @@ class DestinationTableViewCell: UITableViewCell {
             for story in stories {
                 let button = UIButton()
                 button.setTitle(story.title, for: .normal)
-                stackViewStoryList.addArrangedSubview(button)
+                button.titleLabel?.font = UIFont(name: "HelveticaNeue-Light", size: 15.0)
+                button.addSquareBorder(color: UIColor.white)
+                stackViewDetails.addArrangedSubview(button)
             }
         }
         

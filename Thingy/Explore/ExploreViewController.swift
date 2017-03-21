@@ -66,7 +66,7 @@ class ExploreViewController: UIViewController {
         searchController.searchBar.searchBarStyle = .minimal
         searchController.searchBar.prompt = nil
         searchController.searchBar.keyboardAppearance = .dark
-        searchController.searchBar.tintColor = UIColor.thingyOrange()
+        searchController.searchBar.tintColor = UIColor.thingyRed()
      
     }
     

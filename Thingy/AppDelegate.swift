@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if let font = UIFont(name: "HelveticaNeue-UltraLight", size: 25) {
             UINavigationBar.appearance().titleTextAttributes = [NSFontAttributeName: font]
-            UINavigationBar.appearance().tintColor = UIColor.thingyOrange()
+            UINavigationBar.appearance().tintColor = UIColor.thingyRed()
         }
     
         return true

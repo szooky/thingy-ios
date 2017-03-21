@@ -109,6 +109,7 @@
 		38EFC4ED1DAAB6380090E1DB /* ThingyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EFC4EC1DAAB6380090E1DB /* ThingyUITests.swift */; };
 		50833C010CA8FB6826BA8EF1 /* Pods_ThingyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C934C0ED6EDA32A71DA650D8 /* Pods_ThingyTests.framework */; };
 		7FCA6247C67727D0529F63E4 /* Pods_Thingy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9AEC49298F6C08A966574E7 /* Pods_Thingy.framework */; };
+		9E9879B11E7B51D0000F756F /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9879B01E7B51D0000F756F /* UIButton+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -250,6 +251,7 @@
 		38EFC4EE1DAAB6380090E1DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		407FD10B0E4631A5B28DFA65 /* Pods-ThingyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThingyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThingyTests/Pods-ThingyTests.release.xcconfig"; sourceTree = "<group>"; };
 		7408342CA01D5419321DA893 /* Pods_ThingyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThingyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E9879B01E7B51D0000F756F /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		B5FA5DEF0980D9B7D38C415F /* Pods-Thingy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thingy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Thingy/Pods-Thingy.debug.xcconfig"; sourceTree = "<group>"; };
 		B9AEC49298F6C08A966574E7 /* Pods_Thingy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Thingy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C934C0ED6EDA32A71DA650D8 /* Pods_ThingyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThingyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -337,6 +339,7 @@
 				3825DDC61DCFE2F400F6D8F8 /* UIImageView+Extensions.swift */,
 				385D6E821E2C4E1F00E8F1A5 /* Int+Extensions.swift */,
 				385D6E8A1E2E6D6500E8F1A5 /* UIImage+Extensions.swift */,
+				9E9879B01E7B51D0000F756F /* UIButton+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -959,6 +962,7 @@
 				38333A8C1E6589DA0096D909 /* YMSPhotoPickerViewController.m in Sources */,
 				3825DDC21DCFE2E400F6D8F8 /* Thing+API.swift in Sources */,
 				38D40ED21E47340400AA7E55 /* ThingDetailsViewController.swift in Sources */,
+				9E9879B11E7B51D0000F756F /* UIButton+Extension.swift in Sources */,
 				387A6CD91E24439000834164 /* FeedItem+Mock.swift in Sources */,
 				38D40ED41E4736C000AA7E55 /* AddPageViewController+UIPageViewDataSource.swift in Sources */,
 				387A6CD51E24437600834164 /* Thing+Mock.swift in Sources */,

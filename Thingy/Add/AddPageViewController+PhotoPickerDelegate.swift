@@ -20,8 +20,8 @@ extension AddPageViewController: YMSPhotoPickerViewControllerDelegate {
         picker.theme.navigationBarBackgroundColor = UIColor.thingyGrey()
         
         picker.theme.tintColor = UIColor.white
-        picker.theme.orderTintColor = UIColor.thingyOrange()
-        picker.theme.cameraVeilColor = UIColor.thingyOrange()
+        picker.theme.orderTintColor = UIColor.thingyRed()
+        picker.theme.cameraVeilColor = UIColor.thingyRed()
         picker.theme.cameraIconColor = UIColor.white
         picker.theme.statusBarStyle = .lightContent
         

@@ -43,7 +43,6 @@ extension DestinationViewController: UITableViewDataSource {
         case 1:
            let destinationCell = self.tableViewDestination.dequeueReusableCell(withIdentifier: DestinationTableViewCell.cellId) as! DestinationTableViewCell
             destinationCell.set(thing: user!.things![indexPath.row])
-            
             return destinationCell
         default:
             return UITableViewCell()
