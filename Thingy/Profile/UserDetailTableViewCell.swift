@@ -16,7 +16,7 @@ class UserDetailTableViewCell: UITableViewCell {
     @IBOutlet weak var labelUsername: UILabel!
     @IBOutlet weak var labelDescription: UILabel!
     
-    @IBOutlet weak var buttonFollow: UIButton!
+    @IBOutlet weak var buttonFollow: ThingyButton!
     @IBOutlet weak var buttonFollowers: UIButton!
     @IBOutlet weak var buttonFollowing: UIButton!
     
@@ -25,8 +25,7 @@ class UserDetailTableViewCell: UITableViewCell {
     }
     
     func set(forUser user: User) {
-        
-        self.selectionStyle = .none
+        setApperance()
         
         if let imageName = user.profileImageURL {
             imageViewBackground.image = UIImage(named: imageName)
@@ -50,4 +49,20 @@ class UserDetailTableViewCell: UITableViewCell {
             buttonFollowing.setTitle("\(followingCount) following", for: .normal)
         }
     }
+    
+    func setApperance() {
+        self.selectionStyle = .none
+        self.buttonFollow.selectedTextColor = .black
+    }
+    
+    @IBAction func buttonFollowClicked(_ sender: ThingyButton) {
+        sender.isClicked = !sender.isClicked
+        
+        if sender.isClicked {
+            sender.setTitle("followed", for: .normal)
+        } else {
+            sender.setTitle("follow", for: .normal)
+        }
+    }
+    
 }

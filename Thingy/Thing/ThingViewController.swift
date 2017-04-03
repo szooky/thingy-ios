@@ -13,7 +13,8 @@ class ThingViewController: UIViewController {
     @IBOutlet weak var labelTitle: UILabel!
     @IBOutlet weak var labelDetails: UILabel!
     
-    @IBOutlet weak var buttonLikes: UIButton!
+
+    @IBOutlet weak var buttonLikes: ThingyButton!
     @IBOutlet weak var buttonSeeAllComments: UIButton!
     
     @IBOutlet weak var tableViewStories: UITableView!
@@ -122,6 +123,24 @@ class ThingViewController: UIViewController {
         pageControl.currentPage = 0
     }
     
+    @IBAction func buttonLikesClicked(_ sender: ThingyButton) {
+        if sender.isClicked {
+            self.thing?.likes = 0
+        } else {
+            self.thing?.likes = 1
+        }
+        
+        if let likesCount = thing?.likes {
+            var emoji = "😞"
+            if likesCount > 0 {
+                emoji = "😎"
+            }
+            self.buttonLikes.setTitle("\(likesCount) \(emoji) liked", for: .normal)
+        }
+        
+        sender.isClicked = !sender.isClicked
+    }
+ 
     @IBAction func buttonSeeAllCommentsClicked(_ sender: UIButton) {
         let vcAllComments = AllCommentsViewController(nibName: "AllCommentsViewController", bundle: nil)
         self.navigationController?.pushViewController(vcAllComments, animated: true)

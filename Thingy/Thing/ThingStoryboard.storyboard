@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3Ic-OK-Bxw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3Ic-OK-Bxw">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -33,16 +33,19 @@
                                             <segue destination="96g-Ox-ORI" kind="embed" id="T93-ga-eha"/>
                                         </connections>
                                     </containerView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aS9-j4-CmI">
-                                        <rect key="frame" x="134" y="323" width="107" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aS9-j4-CmI" customClass="ThingyButton" customModule="Thingy" customModuleProvider="target">
+                                        <rect key="frame" x="112.5" y="323" width="150" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="FCg-l5-epM"/>
-                                            <constraint firstAttribute="width" constant="107" id="lhf-ca-bgh"/>
+                                            <constraint firstAttribute="width" constant="150" id="lhf-ca-bgh"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
-                                        <state key="normal" title="0 LIKES">
+                                        <state key="normal" title="0 😞 liked">
                                             <color key="titleColor" red="1" green="0.0" blue="0.2603232023" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="buttonLikesClicked:" destination="3Ic-OK-Bxw" eventType="touchUpInside" id="Tzc-p9-RQr"/>
+                                        </connections>
                                     </button>
                                     <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="9hm-Fi-KBm">
                                         <rect key="frame" x="168" y="303" width="39" height="10"/>
@@ -50,7 +53,7 @@
                                             <constraint firstAttribute="height" constant="10" id="x44-8S-Cie"/>
                                         </constraints>
                                         <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <color key="currentPageIndicatorTintColor" red="1" green="0.59460680369999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="currentPageIndicatorTintColor" red="1" green="0.0" blue="0.2603232023" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </pageControl>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="7sJ-TX-Dfz">
                                         <rect key="frame" x="10" y="361" width="355" height="40.5"/>
@@ -147,7 +150,7 @@ Multiline</string>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="1000"/>
                     <connections>
-                        <outlet property="buttonLikes" destination="aS9-j4-CmI" id="Qmj-2N-v07"/>
+                        <outlet property="buttonLikes" destination="aS9-j4-CmI" id="88g-k2-K7d"/>
                         <outlet property="buttonSeeAllComments" destination="r7P-QJ-WsF" id="KJ7-sk-cKq"/>
                         <outlet property="constraintTableViewCommentsHeight" destination="jFC-wW-vfA" id="cFJ-PO-Roj"/>
                         <outlet property="constraintTableViewStoriesHeight" destination="JXs-Sq-Bh2" id="eA8-tL-oL6"/>
