@@ -14,6 +14,8 @@ class DestinationTableViewCell: UITableViewCell {
     @IBOutlet weak var labelTitle: UILabel!
     @IBOutlet weak var stackViewMain: UIStackView!
     @IBOutlet weak var stackViewDetails: UIStackView!
+    @IBOutlet weak var buttonGallery: UIButton!
+    @IBOutlet weak var buttonNewStory: UIButton!
     
     class var cellId: String {
         return "DestinationTableViewCell"
@@ -29,6 +31,7 @@ class DestinationTableViewCell: UITableViewCell {
         }
     }
     
+  
     func setAsNewThing(with image: UIImage?) {
         labelTitle.text = "+ add new thing"
         stackViewDetails.isHidden = true
@@ -37,10 +40,17 @@ class DestinationTableViewCell: UITableViewCell {
             imageViewBackground.image = image
         }
     }
+    
+    func configureButtons() {
+        buttonGallery.addSquareBorder(color: UIColor.thingyRed())
+        buttonNewStory.addSquareBorder(color: UIColor.thingyRed())
+    }
 
     func set(thing: Thing) {
         stackViewDetails.isHidden = true
         self.selectionStyle = .none
+        
+        self.configureButtons()
         
         if let thingTitle = thing.name {
             labelTitle.text = thingTitle

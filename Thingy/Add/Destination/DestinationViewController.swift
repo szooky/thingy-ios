@@ -33,7 +33,8 @@ class DestinationViewController: UIViewController {
     func configureTableView() {
         tableViewDestination.dataSource = self
         tableViewDestination.delegate = self
-        tableViewDestination.rowHeight = 300.0
+        tableViewDestination.rowHeight = UITableViewAutomaticDimension
+        tableViewDestination.estimatedRowHeight = 2
         tableViewDestination.backgroundColor = UIColor.thingyGrey()
         
         tableViewDestination.register(UINib(nibName: DestinationTableViewCell.cellId, bundle: nil), forCellReuseIdentifier: DestinationTableViewCell.cellId)
