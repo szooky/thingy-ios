@@ -12,9 +12,11 @@ class Database {
     static let sharedInstance = Database()
     
     let users: [User]?
+    let appUser: User?
 
     private init() {
         users = User.getAll()
+        appUser = User.get(variant: 0)
         
         attachAuthorsToComments()
     }

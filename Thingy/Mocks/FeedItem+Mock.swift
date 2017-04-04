@@ -13,12 +13,23 @@ extension FeedItem {
     class func get(variant: Int) -> FeedItem {
         let feedItem = FeedItem()
         
-        let users = Database.sharedInstance.users!
+        if let users = Database.sharedInstance.users {
+            feedItem.user = users[variant - 1]
+        }
         
-        feedItem.user = users[variant - 1]
-        feedItem.thing = feedItem.user!.things?.first
-        feedItem.type = .ThingAdd
-
+        switch variant {
+        case 1:
+            feedItem.thing = feedItem.user!.things?.first
+            feedItem.type = .ThingAdd
+        case 2:
+            feedItem.thing = feedItem.user!.things?.first
+            feedItem.type = .StoryAdd
+            
+        default:
+            feedItem.thing = feedItem.user!.things?.first
+            feedItem.type = .StoryUpdate
+        }
+        
         return feedItem
     }
     

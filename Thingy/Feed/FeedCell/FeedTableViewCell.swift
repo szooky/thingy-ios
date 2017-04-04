@@ -26,13 +26,7 @@ class FeedTableViewCell: UITableViewCell {
             setUser(user: user)
         }
         
-        if let updateType = item.type { 
-            setUpdateType(action: updateType)
-        }
-        
-        if let thing = item.thing {
-            setThing(thing: thing)
-        }
+        setContent(content: item)
     }
     
     private func setUser(user: User) {
@@ -44,21 +38,39 @@ class FeedTableViewCell: UITableViewCell {
         }
     }
     
-    private func setThing(thing: Thing) {
-        labelTitle.text = thing.name
+    private func setContent(content: FeedItem) {
+        func setNewThing(thing: Thing) {
+            labelTitle.text = thing.name
+            
+            if let imageName = thing.profileImageURL {
+                imageViewBackground.image = UIImage(named: imageName)
+                
+            }
+        }
         
-        if let imageName = thing.profileImageURL {
-            imageViewBackground.image = UIImage(named: imageName)
+        func setNewStory(story: Story) {
+            labelTitle.text = story.title
+            
+            if let imageName = story.profileImageURL {
+                imageViewBackground.image = UIImage(named: imageName)
+                
+            }
+        }
+        
+        if let updateTypeText = content.type {
+            labelAction.text = updateTypeText.rawValue
+        }
+        
+        switch content.type! {
+            case .ThingAdd:
+                setNewThing(thing: content.thing!)
+            case .StoryAdd, .StoryUpdate:
+                setNewStory(story: content.thing!.stories!.first!)
 
+            default:
+                return
         }
+     
     }
-    
-    private func setUpdateType(action: FeedUpdateType) {
-        switch action {
-            case .ThingAdd: labelAction.text = "added new item:"
-            default: labelAction.text = "updated:"
-        }
-    }
-    
 
 }

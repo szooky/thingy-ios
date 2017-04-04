@@ -8,14 +8,14 @@
 
 import Foundation
 
-enum FeedUpdateType {
-    case StoryUpdate
-    case ThingUpdate
-    case ThingAdd
-    case StoryAdd
-    case StoryComment
-    case ThingComment
-    case followedUser
+enum FeedUpdateType: String {
+    case StoryUpdate = "updated story:"
+    case ThingUpdate = "updated thing:"
+    case ThingAdd = "added new thing:"
+    case StoryAdd = "added new story:"
+    case StoryComment = "commented story:"
+    case ThingComment = "commented thing:"
+    case followedUser = "followed user:"
 }
 
 class FeedItem {

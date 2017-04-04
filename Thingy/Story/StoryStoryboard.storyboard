@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="IWJ-Vj-51e">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="IWJ-Vj-51e">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -23,7 +23,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qtG-ra-Bey">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qtG-ra-Bey">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Tp2-mo-mwX">
@@ -94,8 +94,8 @@
                                     </button>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Qe4-7i-G2e" secondAttribute="bottom" constant="70" id="1xf-VJ-l4w"/>
                                     <constraint firstAttribute="trailing" secondItem="Tp2-mo-mwX" secondAttribute="trailing" id="3XF-iD-L4b"/>
-                                    <constraint firstAttribute="bottom" secondItem="Qe4-7i-G2e" secondAttribute="bottom" constant="15" id="JCY-TY-BLC"/>
                                     <constraint firstItem="Tp2-mo-mwX" firstAttribute="top" secondItem="Cp1-ny-HFE" secondAttribute="bottom" id="TNf-6p-cCe"/>
                                     <constraint firstItem="Tp2-mo-mwX" firstAttribute="leading" secondItem="qtG-ra-Bey" secondAttribute="leading" id="lsA-ix-bT3"/>
                                     <constraint firstItem="Qe4-7i-G2e" firstAttribute="top" secondItem="Tp2-mo-mwX" secondAttribute="bottom" constant="15" id="niO-1W-JhE"/>
@@ -109,11 +109,11 @@
                             <constraint firstItem="qtG-ra-Bey" firstAttribute="leading" secondItem="fE0-UY-Bmn" secondAttribute="leading" id="Khr-PZ-4wK"/>
                             <constraint firstAttribute="trailing" secondItem="Cp1-ny-HFE" secondAttribute="trailing" id="NHI-5y-2uc"/>
                             <constraint firstItem="qtG-ra-Bey" firstAttribute="top" secondItem="fE0-UY-Bmn" secondAttribute="top" id="TVk-Af-imr"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="qtG-ra-Bey" secondAttribute="bottom" id="cBS-Q9-LXF"/>
                             <constraint firstItem="Cp1-ny-HFE" firstAttribute="top" secondItem="fE0-UY-Bmn" secondAttribute="topMargin" id="gYp-ET-Iev"/>
                             <constraint firstAttribute="trailing" secondItem="Tp2-mo-mwX" secondAttribute="trailing" id="kX0-0Z-tFh"/>
                             <constraint firstAttribute="trailing" secondItem="qtG-ra-Bey" secondAttribute="trailing" id="kb3-GA-Cm5"/>
                             <constraint firstItem="Cp1-ny-HFE" firstAttribute="leading" secondItem="fE0-UY-Bmn" secondAttribute="leading" id="wUd-tV-t8Y"/>
-                            <constraint firstItem="NcW-cW-Uj9" firstAttribute="top" secondItem="qtG-ra-Bey" secondAttribute="bottom" id="z2I-8C-F3T"/>
                         </constraints>
                     </view>
                     <connections>

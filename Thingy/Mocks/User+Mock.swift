@@ -14,6 +14,13 @@ extension User {
         let user = User()
     
         switch variant {
+        case 0:
+            user.username = "szooky"
+            user.profileImageURL = "szooky"
+            user.things = [Thing.get(variant: 0)]
+            user.followersCount = 324
+            user.followingCount = 543
+            user.decription = "CEO of Thingy, iOS Developer, Petrolhead and Photographer. 🤓"
         case 1:
             user.username = "scarlettleithold"
             user.profileImageURL = "scarlett-selfie"

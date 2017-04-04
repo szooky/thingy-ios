@@ -19,7 +19,9 @@ class UserProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        user = User.get(variant: 2)
+        if let appUser = Database.sharedInstance.appUser {
+            self.user = appUser
+        }
         
         configureView()
         configureTableView()

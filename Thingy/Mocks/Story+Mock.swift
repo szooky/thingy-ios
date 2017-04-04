@@ -14,6 +14,13 @@ extension Story {
         let story = Story()
         
         switch variant {
+        case 0:
+            story.title = "Team Vomit April Spot"
+            story.likesCount = 234
+            story.commentsCount = 32
+            story.profileImageURL = "vomit_spot_1"
+            story.storyImages = ["vomit_spot_2","vomit_spot_3","vomit_spot_4","vomit_spot_5","vomit_spot_6","vomit_spot_7","vomit_spot_8","vomit_spot_9"]
+            story.text = "New Lex showed up 🙌🏻 #PHOTO# CinemaCity Underground Parking as shooting location is 🔥 #PHOTO# #PHOTO# #PHOTO# #PHOTO# #PHOTO# #PHOTO# #PHOTO#"
         case 1:
             story.title = "2016 Summer trip to California"
             story.likesCount = 3

@@ -14,6 +14,14 @@ extension Thing {
         let thing = Thing()
         
         switch variant {
+        case 0:
+            thing.name = "Alfa Romeo GT Blackline"
+            thing.profileImageURL = "alfa1"
+            thing.gallery = ["alfa1", "alfa2", "alfa3"]
+            thing.stories = [Story.get(variant: 0)]
+            thing.comments = Comment.getAll()
+            thing.description = "Alfa Romeo GT, limited Blackline edition, original 18 inch Blackline III wheels, full Blackline Satin Chrome Package, Black&Red Interior with red stiching, blacked out reflectors, double pipes. Sadly diesel engine though."
+            
         case 1:
             thing.name = "Blacked out C63 AMG Coupe"
             thing.profileImageURL = "black_gold_amg"

@@ -26,7 +26,15 @@ class StoryViewController: UIViewController {
         
         loadStory()
         addImagesToText()
+        setTextApperance()
+    }
+    
+    func setTextApperance() {
         storyTextView.sizeToFit()
+        storyTextView.textAlignment = .center
+        storyTextView.font = UIFont(name: "HelveticaNeue-Light", size: 20.0)
+
+
     }
     
     func loadStory() {
@@ -39,6 +47,7 @@ class StoryViewController: UIViewController {
             }
             if let imageName = story.profileImageURL {
                 imageViewStoryBackground.image = UIImage(named: imageName)
+                imageViewStoryBackground.applyThingyGradient(ofSize: imageViewStoryBackground.bounds)
             }
             if let author = story.author {
                 if let authorImage = author.profileImageURL {
@@ -62,6 +71,10 @@ class StoryViewController: UIViewController {
                 textAttachment.image = UIImage(named: image)!.scaledTo(width: self.view.frame.width)
                 let attrStringWithImage = NSAttributedString(attachment: textAttachment)
                 
+                let imageBounds = textAttachment.bounds
+                imageBounds.insetBy(dx: 20.0, dy: 20.0)
+                textAttachment.bounds = imageBounds
+                
                 storyTextView.textContainer.lineFragmentPadding = 0
 
                 let range = (attributedString.string as NSString).range(of: "#PHOTO")
@@ -69,7 +82,6 @@ class StoryViewController: UIViewController {
             }
         }
         storyTextView.attributedText = attributedString
-        }
-  
+    }
 
 }
