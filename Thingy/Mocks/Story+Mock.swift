@@ -20,7 +20,7 @@ extension Story {
             story.commentsCount = 32
             story.profileImageURL = "vomit_spot_1"
             story.storyImages = ["vomit_spot_2","vomit_spot_3","vomit_spot_4","vomit_spot_5","vomit_spot_6","vomit_spot_7","vomit_spot_8","vomit_spot_9"]
-            story.text = "New Lex showed up 🙌🏻 #PHOTO# CinemaCity Underground Parking as shooting location is 🔥 #PHOTO# #PHOTO# #PHOTO# #PHOTO# #PHOTO# #PHOTO# #PHOTO#"
+            story.text = "New Lex showed up 🙌🏻 #PHOTO# CinemaCity Underground Parking as shooting location is 🔥 #PHOTO# On H&R Suspension's stage, Rusty sits front-and-center at SEMA 2015, eagerly awaiting the mass of onlookers as the show officially opens tomorrow morning. While the build itself encompasses a list of details far too long to list, we're anxious to touch upon the details that help to make Rusty whole again. #PHOTO# #PHOTO# #PHOTO# #PHOTO# #PHOTO# #PHOTO#"
         case 1:
             story.title = "2016 Summer trip to California"
             story.likesCount = 3

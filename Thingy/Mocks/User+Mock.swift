@@ -47,7 +47,7 @@ extension User {
     class func getAll() -> [User] {
         var users = [User]()
         
-        for index in 1...3 {
+        for index in 0...3 {
             users.append(User.get(variant: index))
         }
         

@@ -22,7 +22,7 @@ class StoryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        automaticallyAdjustsScrollViewInsets = false
+        //automaticallyAdjustsScrollViewInsets = false
         
         loadStory()
         addImagesToText()
@@ -30,11 +30,9 @@ class StoryViewController: UIViewController {
     }
     
     func setTextApperance() {
-        storyTextView.sizeToFit()
+       // storyTextView.sizeToFit()
         storyTextView.textAlignment = .center
-        storyTextView.font = UIFont(name: "HelveticaNeue-Light", size: 20.0)
-
-
+        storyTextView.font = UIFont(name: "HelveticaNeue-Thin", size: 20.0)
     }
     
     func loadStory() {
@@ -66,19 +64,33 @@ class StoryViewController: UIViewController {
         let attributedString = NSMutableAttributedString(string: storyTextView.text)
 
         if let story = self.story, let images = story.storyImages {
-            for image in images {
+            for imageName in images {
                 let textAttachment = NSTextAttachment()
-                textAttachment.image = UIImage(named: image)!.scaledTo(width: self.view.frame.width)
-                let attrStringWithImage = NSAttributedString(attachment: textAttachment)
+                if let image = UIImage(named: imageName) {
                 
-                let imageBounds = textAttachment.bounds
-                imageBounds.insetBy(dx: 20.0, dy: 20.0)
-                textAttachment.bounds = imageBounds
-                
-                storyTextView.textContainer.lineFragmentPadding = 0
+                    textAttachment.image = image.scaledTo(width: self.view.frame.width)
+                    
+                    let emptyLine = NSAttributedString(string: "\n")
+                    
+                    let finalString = NSMutableAttributedString(attributedString: emptyLine)
+                    let stringWithImage = NSAttributedString(attachment: textAttachment)
+                    
+                    finalString.append(stringWithImage)
+                    finalString.append(emptyLine)
+                    
+                    let paragraphStyle = NSMutableParagraphStyle()
+    
+                    paragraphStyle.paragraphSpacing = 20.0
+                    paragraphStyle.paragraphSpacingBefore = 20.0
 
-                let range = (attributedString.string as NSString).range(of: "#PHOTO")
-                attributedString.replaceCharacters(in: range, with: attrStringWithImage)
+                    let imageRange = NSRange(location: 0, length: finalString.length)
+                    finalString.addAttribute(NSParagraphStyleAttributeName, value: paragraphStyle, range: imageRange)
+                
+                    storyTextView.textContainer.lineFragmentPadding = 0
+
+                    let range = (attributedString.string as NSString).range(of: "#PHOTO#")
+                    attributedString.replaceCharacters(in: range, with: finalString)
+                }
             }
         }
         storyTextView.attributedText = attributedString

@@ -27,7 +27,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Tp2-mo-mwX">
-                                        <rect key="frame" x="0.0" y="375" width="375" height="197.5"/>
+                                        <rect key="frame" x="0.0" y="390" width="375" height="197.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
@@ -86,7 +86,7 @@
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qe4-7i-G2e">
-                                        <rect key="frame" x="112.5" y="587.5" width="150" height="33"/>
+                                        <rect key="frame" x="112.5" y="602.5" width="150" height="33"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
                                         <state key="normal" title="SEE COMMENTS (0)">
                                             <color key="titleColor" red="1" green="0.0" blue="0.2603232023" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -96,7 +96,7 @@
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="Qe4-7i-G2e" secondAttribute="bottom" constant="70" id="1xf-VJ-l4w"/>
                                     <constraint firstAttribute="trailing" secondItem="Tp2-mo-mwX" secondAttribute="trailing" id="3XF-iD-L4b"/>
-                                    <constraint firstItem="Tp2-mo-mwX" firstAttribute="top" secondItem="Cp1-ny-HFE" secondAttribute="bottom" id="TNf-6p-cCe"/>
+                                    <constraint firstItem="Tp2-mo-mwX" firstAttribute="top" secondItem="Cp1-ny-HFE" secondAttribute="bottom" constant="15" id="TNf-6p-cCe"/>
                                     <constraint firstItem="Tp2-mo-mwX" firstAttribute="leading" secondItem="qtG-ra-Bey" secondAttribute="leading" id="lsA-ix-bT3"/>
                                     <constraint firstItem="Qe4-7i-G2e" firstAttribute="top" secondItem="Tp2-mo-mwX" secondAttribute="bottom" constant="15" id="niO-1W-JhE"/>
                                     <constraint firstItem="Qe4-7i-G2e" firstAttribute="centerX" secondItem="qtG-ra-Bey" secondAttribute="centerX" id="oS7-Ad-hkt"/>
