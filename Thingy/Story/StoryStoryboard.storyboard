@@ -40,14 +40,14 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dsF-V8-kNh">
-                                                <rect key="frame" x="162" y="201" width="50" height="50"/>
+                                                <rect key="frame" x="162" y="209" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="KGG-0Y-h23"/>
                                                     <constraint firstAttribute="width" constant="50" id="bff-qu-FC8"/>
                                                 </constraints>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Yv-FT-yYl">
-                                                <rect key="frame" x="151.5" y="251" width="71" height="33"/>
+                                                <rect key="frame" x="151.5" y="259" width="71" height="33"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
                                                 <state key="normal" title="username">
                                                     <color key="titleColor" red="1" green="0.0" blue="0.2603232023" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -76,7 +76,7 @@
                                             <constraint firstAttribute="width" secondItem="Cp1-ny-HFE" secondAttribute="height" multiplier="1:1" id="LId-Wk-j2E"/>
                                             <constraint firstItem="mRA-tS-F0V" firstAttribute="top" secondItem="Cp1-ny-HFE" secondAttribute="top" id="QYw-hF-5OT"/>
                                             <constraint firstItem="mRA-tS-F0V" firstAttribute="leading" secondItem="Cp1-ny-HFE" secondAttribute="leading" id="SdY-8i-rse"/>
-                                            <constraint firstItem="lgv-bY-ogr" firstAttribute="top" secondItem="1Yv-FT-yYl" secondAttribute="bottom" constant="10" id="VP9-Cv-MoM"/>
+                                            <constraint firstItem="lgv-bY-ogr" firstAttribute="top" secondItem="1Yv-FT-yYl" secondAttribute="bottom" constant="2" id="VP9-Cv-MoM"/>
                                             <constraint firstItem="1Yv-FT-yYl" firstAttribute="centerX" secondItem="Cp1-ny-HFE" secondAttribute="centerX" id="eC8-td-EwZ"/>
                                             <constraint firstItem="lgv-bY-ogr" firstAttribute="leading" secondItem="Cp1-ny-HFE" secondAttribute="leading" constant="10" id="ifd-HV-YXb"/>
                                             <constraint firstItem="1Yv-FT-yYl" firstAttribute="top" secondItem="dsF-V8-kNh" secondAttribute="bottom" id="tnZ-NB-R2r"/>
@@ -86,19 +86,22 @@
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qe4-7i-G2e">
-                                        <rect key="frame" x="112.5" y="602.5" width="150" height="33"/>
+                                        <rect key="frame" x="112.5" y="597.5" width="150" height="33"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
                                         <state key="normal" title="SEE COMMENTS (0)">
                                             <color key="titleColor" red="1" green="0.0" blue="0.2603232023" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="buttonSeeCommentsClicked:" destination="IWJ-Vj-51e" eventType="touchUpInside" id="2rx-h1-XaU"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="Qe4-7i-G2e" secondAttribute="bottom" constant="70" id="1xf-VJ-l4w"/>
+                                    <constraint firstAttribute="bottom" secondItem="Qe4-7i-G2e" secondAttribute="bottom" constant="10" id="1xf-VJ-l4w"/>
                                     <constraint firstAttribute="trailing" secondItem="Tp2-mo-mwX" secondAttribute="trailing" id="3XF-iD-L4b"/>
                                     <constraint firstItem="Tp2-mo-mwX" firstAttribute="top" secondItem="Cp1-ny-HFE" secondAttribute="bottom" constant="15" id="TNf-6p-cCe"/>
                                     <constraint firstItem="Tp2-mo-mwX" firstAttribute="leading" secondItem="qtG-ra-Bey" secondAttribute="leading" id="lsA-ix-bT3"/>
-                                    <constraint firstItem="Qe4-7i-G2e" firstAttribute="top" secondItem="Tp2-mo-mwX" secondAttribute="bottom" constant="15" id="niO-1W-JhE"/>
+                                    <constraint firstItem="Qe4-7i-G2e" firstAttribute="top" secondItem="Tp2-mo-mwX" secondAttribute="bottom" constant="10" id="niO-1W-JhE"/>
                                     <constraint firstItem="Qe4-7i-G2e" firstAttribute="centerX" secondItem="qtG-ra-Bey" secondAttribute="centerX" id="oS7-Ad-hkt"/>
                                 </constraints>
                             </scrollView>
@@ -117,6 +120,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="buttonSeeComments" destination="Qe4-7i-G2e" id="boU-6W-MxS"/>
                         <outlet property="buttonUsername" destination="1Yv-FT-yYl" id="1YX-f0-qfS"/>
                         <outlet property="imageViewStoryBackground" destination="mRA-tS-F0V" id="HeH-uv-udM"/>
                         <outlet property="imageViewUserProfile" destination="dsF-V8-kNh" id="Vng-cn-d3G"/>
