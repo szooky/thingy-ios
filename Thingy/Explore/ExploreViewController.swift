@@ -25,6 +25,11 @@ class ExploreViewController: UIViewController {
     
     let searchController = UISearchController(searchResultsController: nil)
     
+    class var storyboardID: String {
+        return "ExploreViewController"
+    }
+    
+    var type: ExploreType = .Things
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +38,7 @@ class ExploreViewController: UIViewController {
         self.configurePullToRefresh()
         self.configureSearch()
         
-        self.automaticallyAdjustsScrollViewInsets = false
+        self.automaticallyAdjustsScrollViewInsets = true
         
         things = Thing.getAll()
         users = User.getAll()

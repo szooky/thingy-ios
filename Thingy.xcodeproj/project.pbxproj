@@ -111,6 +111,10 @@
 		7FCA6247C67727D0529F63E4 /* Pods_Thingy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9AEC49298F6C08A966574E7 /* Pods_Thingy.framework */; };
 		9E1A42361E92931B00ED163B /* ThingyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1A42351E92931B00ED163B /* ThingyButton.swift */; };
 		9E1A42381E96914B00ED163B /* StoryViewController+UIImagePickerControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1A42371E96914B00ED163B /* StoryViewController+UIImagePickerControllerDelegate.swift */; };
+		9E1A42451E96A14B00ED163B /* Explore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E1A42411E96A14B00ED163B /* Explore.storyboard */; };
+		9E1A42461E96A14B00ED163B /* ExplorePageVC+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1A42421E96A14B00ED163B /* ExplorePageVC+DataSource.swift */; };
+		9E1A42471E96A14B00ED163B /* ExplorePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1A42431E96A14B00ED163B /* ExplorePageViewController.swift */; };
+		9E1A42481E96A14B00ED163B /* ExploreType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1A42441E96A14B00ED163B /* ExploreType.swift */; };
 		9E9879B11E7B51D0000F756F /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9879B01E7B51D0000F756F /* UIButton+Extension.swift */; };
 /* End PBXBuildFile section */
 
@@ -255,6 +259,10 @@
 		7408342CA01D5419321DA893 /* Pods_ThingyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThingyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E1A42351E92931B00ED163B /* ThingyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThingyButton.swift; sourceTree = "<group>"; };
 		9E1A42371E96914B00ED163B /* StoryViewController+UIImagePickerControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StoryViewController+UIImagePickerControllerDelegate.swift"; sourceTree = "<group>"; };
+		9E1A42411E96A14B00ED163B /* Explore.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Explore.storyboard; sourceTree = "<group>"; };
+		9E1A42421E96A14B00ED163B /* ExplorePageVC+DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExplorePageVC+DataSource.swift"; sourceTree = "<group>"; };
+		9E1A42431E96A14B00ED163B /* ExplorePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExplorePageViewController.swift; sourceTree = "<group>"; };
+		9E1A42441E96A14B00ED163B /* ExploreType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreType.swift; sourceTree = "<group>"; };
 		9E9879B01E7B51D0000F756F /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		B5FA5DEF0980D9B7D38C415F /* Pods-Thingy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thingy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Thingy/Pods-Thingy.debug.xcconfig"; sourceTree = "<group>"; };
 		B9AEC49298F6C08A966574E7 /* Pods_Thingy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Thingy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -536,6 +544,10 @@
 		387A6CCC1E2441D500834164 /* Explore */ = {
 			isa = PBXGroup;
 			children = (
+				9E1A42411E96A14B00ED163B /* Explore.storyboard */,
+				9E1A42431E96A14B00ED163B /* ExplorePageViewController.swift */,
+				9E1A42421E96A14B00ED163B /* ExplorePageVC+DataSource.swift */,
+				9E1A42441E96A14B00ED163B /* ExploreType.swift */,
 				387A6CCD1E2441E300834164 /* ExploreViewController.swift */,
 				387A6CCF1E2441F900834164 /* ExploreViewController+UITableViewDelegate.swift */,
 				387A6CD11E24420C00834164 /* ExploreViewController+UITableViewDataSource.swift */,
@@ -799,6 +811,7 @@
 				38333A871E6589DA0096D909 /* YMSPhotoCell.xib in Resources */,
 				387A6CDF1E244A5200834164 /* UserTableViewCell.xib in Resources */,
 				38333A8D1E6589DA0096D909 /* YMSPhotoPickerViewController.xib in Resources */,
+				9E1A42451E96A14B00ED163B /* Explore.storyboard in Resources */,
 				38D40ECA1E472EB000AA7E55 /* AddStoryboard.storyboard in Resources */,
 				38A469AC1DCFED2F009CCF05 /* FeedTableViewCell.xib in Resources */,
 				38019B581E422E44003AFFE6 /* UserStoryboard.storyboard in Resources */,
@@ -981,6 +994,7 @@
 				38D40ED41E4736C000AA7E55 /* AddPageViewController+UIPageViewDataSource.swift in Sources */,
 				387A6CD51E24437600834164 /* Thing+Mock.swift in Sources */,
 				381CC4601E381ECC00D87FA0 /* AllCommentsViewController+UITableViewDataSource.swift in Sources */,
+				9E1A42481E96A14B00ED163B /* ExploreType.swift in Sources */,
 				385B1A251E5CC7F400F808BC /* Gradients.swift in Sources */,
 				387A6CC31E2418D000834164 /* UserProfileViewController.swift in Sources */,
 				385D6E811E2AF07E00E8F1A5 /* Database+Mock.swift in Sources */,
@@ -1038,10 +1052,12 @@
 				387A6CE91E246EC700834164 /* ExploreViewController+UISearchResultsUpdating.swift in Sources */,
 				3825DDC31DCFE2E400F6D8F8 /* User+API.swift in Sources */,
 				9E1A42381E96914B00ED163B /* StoryViewController+UIImagePickerControllerDelegate.swift in Sources */,
+				9E1A42461E96A14B00ED163B /* ExplorePageVC+DataSource.swift in Sources */,
 				9E1A42361E92931B00ED163B /* ThingyButton.swift in Sources */,
 				381CC45D1E381D7500D87FA0 /* AllCommentsViewController.swift in Sources */,
 				3825DDE01DCFE4E500F6D8F8 /* FeedViewController.swift in Sources */,
 				3825DDD11DCFE2FF00F6D8F8 /* Story.swift in Sources */,
+				9E1A42471E96A14B00ED163B /* ExplorePageViewController.swift in Sources */,
 				38333A8B1E6589DA0096D909 /* YMSPhotoPickerTheme.m in Sources */,
 				387A6CD21E24420C00834164 /* ExploreViewController+UITableViewDataSource.swift in Sources */,
 				38D40EDA1E4745F300AA7E55 /* OnboardingPageViewController+UIPageViewControllerDataSource.swift in Sources */,

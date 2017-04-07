@@ -14,21 +14,19 @@ extension ExploreViewController: UISearchResultsUpdating {
         
         let lowercasedText = text.lowercased()
         
-        switch segmentControl.selectedSegmentIndex {
-        case 0:
+        switch self.type {
+        case .Things:
             filteredThings = things.filter { thing in
                 return thing.name!.lowercased().contains(lowercasedText)
             }
-        case 1:
+        case .Stories:
             filteredStories = stories.filter { story in
                 return story.title!.lowercased().contains(lowercasedText)
             }
-        case 2:
+        case .Users:
             filteredUsers = users.filter { user in
                 return user.username!.lowercased().contains(lowercasedText)
             }
-        default:
-            return
         }
         
         tableViewExplore.reloadData()

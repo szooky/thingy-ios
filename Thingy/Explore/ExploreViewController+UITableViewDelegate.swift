@@ -13,8 +13,8 @@ extension ExploreViewController: UITableViewDelegate {
         
         tableView.deselectRow(at: indexPath, animated: true)
         
-        switch segmentControl.selectedSegmentIndex {
-        case 0:
+        switch self.type {
+        case .Things:
             let thingStoryBoard = UIStoryboard(name: "ThingStoryboard", bundle: nil)
             if let thingVC = thingStoryBoard.instantiateInitialViewController() as? ThingViewController {
                 if searchController.isActive && searchController.searchBar.text != "" {
@@ -25,7 +25,7 @@ extension ExploreViewController: UITableViewDelegate {
                 self.navigationController?.pushViewController(thingVC, animated: true)
             }
             
-        case 1:
+        case .Stories:
             let storyStoryBoard = UIStoryboard(name: "StoryStoryboard", bundle: nil)
             if let storyVC = storyStoryBoard.instantiateInitialViewController() as? StoryViewController {
                 if searchController.isActive && searchController.searchBar.text != "" {
@@ -36,7 +36,7 @@ extension ExploreViewController: UITableViewDelegate {
                 self.navigationController?.pushViewController(storyVC, animated: true)
             }
             
-        case 2:
+        case .Users:
             let userStoryboard = UIStoryboard(name: "UserStoryboard", bundle: nil)
             if let userVC = userStoryboard.instantiateViewController(withIdentifier: "UserProfileViewController") as? UserProfileViewController {
                                 
@@ -47,9 +47,6 @@ extension ExploreViewController: UITableViewDelegate {
                 }
                 self.navigationController?.pushViewController(userVC, animated: true)
             }
-            
-        default:
-            return
         }
     
     }

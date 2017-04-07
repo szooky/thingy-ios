@@ -16,34 +16,30 @@ extension ExploreViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if searchController.isActive && searchController.searchBar.text != "" {
-            switch segmentControl.selectedSegmentIndex {
-                case 0:
+            switch self.type {
+                case .Things:
                     return filteredThings.count
-                case 1:
+                case .Stories:
                     return filteredStories.count
-                case 2:
+                case .Users:
                     return filteredUsers.count
-                default:
-                    return 0
             }
         } else {
-            switch segmentControl.selectedSegmentIndex {
-                case 0:
+            switch self.type {
+                case .Things:
                     return things.count
-                case 1:
+                case .Stories:
                     return stories.count
-                case 2:
+                case .Users:
                     return users.count
-                default:
-                    return 0
             }
         }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        switch segmentControl.selectedSegmentIndex {
-        case 0:
+        switch self.type {
+        case .Things:
             let thingCell = self.tableViewExplore.dequeueReusableCell(withIdentifier: ThingTableViewCell.cellId) as! ThingTableViewCell
             
             if searchController.isActive && searchController.searchBar.text != "" {
@@ -54,7 +50,7 @@ extension ExploreViewController: UITableViewDataSource {
             
             return thingCell
             
-        case 1:
+        case .Stories:
             let storyCell = self.tableViewExplore.dequeueReusableCell(withIdentifier: StoryTableViewCell.cellId) as! StoryTableViewCell
             
             if searchController.isActive && searchController.searchBar.text != "" {
@@ -65,7 +61,7 @@ extension ExploreViewController: UITableViewDataSource {
         
             return storyCell
             
-        case 2:
+        case .Users:
             let userCell = self.tableViewExplore.dequeueReusableCell(withIdentifier: UserTableViewCell.cellId) as! UserTableViewCell
             
             if searchController.isActive && searchController.searchBar.text != "" {
@@ -75,9 +71,6 @@ extension ExploreViewController: UITableViewDataSource {
             }
             
             return userCell
-            
-        default:
-            return UITableViewCell()
             
         }
         
