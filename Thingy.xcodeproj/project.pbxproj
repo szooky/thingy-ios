@@ -115,6 +115,7 @@
 		9E1A42461E96A14B00ED163B /* ExplorePageVC+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1A42421E96A14B00ED163B /* ExplorePageVC+DataSource.swift */; };
 		9E1A42471E96A14B00ED163B /* ExplorePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1A42431E96A14B00ED163B /* ExplorePageViewController.swift */; };
 		9E1A42481E96A14B00ED163B /* ExploreType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1A42441E96A14B00ED163B /* ExploreType.swift */; };
+		9E65405C1E9848B000B86278 /* ExplorePageVC+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E65405B1E9848B000B86278 /* ExplorePageVC+Delegate.swift */; };
 		9E9879B11E7B51D0000F756F /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9879B01E7B51D0000F756F /* UIButton+Extension.swift */; };
 /* End PBXBuildFile section */
 
@@ -263,6 +264,7 @@
 		9E1A42421E96A14B00ED163B /* ExplorePageVC+DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExplorePageVC+DataSource.swift"; sourceTree = "<group>"; };
 		9E1A42431E96A14B00ED163B /* ExplorePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExplorePageViewController.swift; sourceTree = "<group>"; };
 		9E1A42441E96A14B00ED163B /* ExploreType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreType.swift; sourceTree = "<group>"; };
+		9E65405B1E9848B000B86278 /* ExplorePageVC+Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExplorePageVC+Delegate.swift"; sourceTree = "<group>"; };
 		9E9879B01E7B51D0000F756F /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		B5FA5DEF0980D9B7D38C415F /* Pods-Thingy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thingy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Thingy/Pods-Thingy.debug.xcconfig"; sourceTree = "<group>"; };
 		B9AEC49298F6C08A966574E7 /* Pods_Thingy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Thingy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -547,6 +549,7 @@
 				9E1A42411E96A14B00ED163B /* Explore.storyboard */,
 				9E1A42431E96A14B00ED163B /* ExplorePageViewController.swift */,
 				9E1A42421E96A14B00ED163B /* ExplorePageVC+DataSource.swift */,
+				9E65405B1E9848B000B86278 /* ExplorePageVC+Delegate.swift */,
 				9E1A42441E96A14B00ED163B /* ExploreType.swift */,
 				387A6CCD1E2441E300834164 /* ExploreViewController.swift */,
 				387A6CCF1E2441F900834164 /* ExploreViewController+UITableViewDelegate.swift */,
@@ -1002,6 +1005,7 @@
 				38D40ED61E47420300AA7E55 /* OnboardingPageViewController.swift in Sources */,
 				3825DDC71DCFE2F400F6D8F8 /* String+Extensions.swift in Sources */,
 				38333A841E6589DA0096D909 /* YMSCameraCell.m in Sources */,
+				9E65405C1E9848B000B86278 /* ExplorePageVC+Delegate.swift in Sources */,
 				385D6E771E2867D100E8F1A5 /* ThingViewController+UITableViewDelegate.swift in Sources */,
 				385D6E671E26A98700E8F1A5 /* UserProfileViewController+UITableViewDataSource.swift in Sources */,
 				387A6CCE1E2441E300834164 /* ExploreViewController.swift in Sources */,

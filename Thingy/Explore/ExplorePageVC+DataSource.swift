@@ -25,8 +25,6 @@ extension ExplorePageViewController: UIPageViewControllerDataSource {
             return nil
         }
         
-        segmentControl.selectedSegmentIndex -= 1
-        
         return allViewControllers[previousIndex]
     }
     
@@ -45,9 +43,7 @@ extension ExplorePageViewController: UIPageViewControllerDataSource {
         guard orderedViewControllersCount > nextIndex else {
             return nil
         }
-        
-        segmentControl.selectedSegmentIndex += 1
-        
+                
         return allViewControllers[nextIndex]
     }
     

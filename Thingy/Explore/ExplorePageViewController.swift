@@ -18,11 +18,13 @@ class ExplorePageViewController: UIPageViewController {
         
         loadViewControllers()
         configurePageViewController()
+        
+        automaticallyAdjustsScrollViewInsets = false
     }
     
     private func configurePageViewController() {
         dataSource = self
-        
+        delegate = self
     }
     
     private func loadViewControllers() {
@@ -37,15 +39,20 @@ class ExplorePageViewController: UIPageViewController {
         let usersTableVC = mainStoryboard.instantiateViewController(withIdentifier: ExploreViewController.storyboardID) as! ExploreViewController
         usersTableVC.type = .Users
         
-        
         allViewControllers = [thingsTableVC,storiesTableVC, usersTableVC]
         
         setViewControllers([allViewControllers[0]], direction: .forward, animated: true, completion: nil)
     }
 
     @IBAction func segmentControlValueChanged(_ sender: UISegmentedControl) {
-       setViewControllers([allViewControllers[segmentControl.selectedSegmentIndex]], direction: .forward, animated: true, completion: nil)
-        print("ibaction")
+        var direction = UIPageViewControllerNavigationDirection.forward
+        if let currentVC = self.viewControllers?.last, let currentVCIndex = allViewControllers.index(of: currentVC) {
+            if segmentControl.selectedSegmentIndex < currentVCIndex {
+                direction = UIPageViewControllerNavigationDirection.reverse
+            }
+        }
+    
+       setViewControllers([allViewControllers[segmentControl.selectedSegmentIndex]], direction: direction, animated: true, completion: nil)
     }
-
+    
 }
