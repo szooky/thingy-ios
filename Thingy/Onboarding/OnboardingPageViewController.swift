@@ -13,15 +13,25 @@ class OnboardingPageViewController: UIPageViewController {
     var allViewControllers = Array<UIViewController>()
     var flowType = OnboardingFlowType.NotSet
     
+    override open var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         loadViewControllers()
         configurePageViewController()
+        
+//        let textField = UITextField()
+        
+        //self.disablesAutomaticKeyboardDismissal = true
+//        textField.becomeFirstResponder()
     }
     
     private func configurePageViewController() {
         dataSource = self
+        delegate = self
     }
     
     private func loadViewControllers() {

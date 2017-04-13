@@ -8,6 +8,11 @@
 
 import UIKit
 
+protocol UserDetailTableViewCellDelegate: class {
+    func didClickedFollowingButton()
+    func didClickedFollowersButton()
+}
+
 class UserDetailTableViewCell: UITableViewCell {
 
     @IBOutlet weak var imageViewBackground: UIImageView!
@@ -23,6 +28,8 @@ class UserDetailTableViewCell: UITableViewCell {
     class var cellId: String {
         return "UserDetailTableViewCell"
     }
+    
+    weak var userDetailDelegate: UserDetailTableViewCellDelegate?
     
     func set(forUser user: User) {
         setApperance()
@@ -64,5 +71,14 @@ class UserDetailTableViewCell: UITableViewCell {
             sender.setTitle("follow", for: .normal)
         }
     }
+    
+    @IBAction func buttonFollowersClicked(_ sender: Any) {
+        userDetailDelegate?.didClickedFollowersButton()
+    }
+    
+    @IBAction func buttonFollowingClicked(_ sender: Any) {
+        userDetailDelegate?.didClickedFollowingButton()
+    }
+    
     
 }

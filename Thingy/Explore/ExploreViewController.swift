@@ -35,10 +35,11 @@ class ExploreViewController: UIViewController {
         super.viewDidLoad()
         
         self.configureTableView()
-        self.configurePullToRefresh()
         self.configureSearch()
+        self.configurePullToRefresh()
+
         
-        self.automaticallyAdjustsScrollViewInsets = true
+        self.automaticallyAdjustsScrollViewInsets = false
         
         things = Thing.getAll()
         users = User.getAll()
@@ -53,11 +54,11 @@ class ExploreViewController: UIViewController {
         tableViewExplore.register(UINib(nibName: ThingTableViewCell.cellId, bundle: nil), forCellReuseIdentifier: ThingTableViewCell.cellId)
         tableViewExplore.register(UINib(nibName: UserTableViewCell.cellId, bundle: nil), forCellReuseIdentifier: UserTableViewCell.cellId)
         tableViewExplore.register(UINib(nibName: StoryTableViewCell.cellId, bundle: nil), forCellReuseIdentifier: StoryTableViewCell.cellId)
-        
     }
     
     func configurePullToRefresh() {
         refreshControl = UIRefreshControl()
+        refreshControl.backgroundColor = UIColor.thingyGrey()
         refreshControl.addTarget(self, action: #selector(refresh(sender:)), for: .valueChanged)
         tableViewExplore.addSubview(refreshControl)
     }
@@ -72,7 +73,6 @@ class ExploreViewController: UIViewController {
         searchController.searchBar.prompt = nil
         searchController.searchBar.keyboardAppearance = .dark
         searchController.searchBar.tintColor = UIColor.thingyRed()
-     
     }
     
     func refresh(sender:AnyObject) {
@@ -82,7 +82,5 @@ class ExploreViewController: UIViewController {
     @IBAction func segmentControlValueChanged(_ sender: UISegmentedControl) {
         tableViewExplore.reloadData()
     }
-
-
 
 }

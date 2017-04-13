@@ -109,6 +109,15 @@
 		38EFC4ED1DAAB6380090E1DB /* ThingyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EFC4EC1DAAB6380090E1DB /* ThingyUITests.swift */; };
 		50833C010CA8FB6826BA8EF1 /* Pods_ThingyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C934C0ED6EDA32A71DA650D8 /* Pods_ThingyTests.framework */; };
 		7FCA6247C67727D0529F63E4 /* Pods_Thingy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9AEC49298F6C08A966574E7 /* Pods_Thingy.framework */; };
+		9E070E221E9FCE390020F57F /* OnboardingPageVC+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E070E211E9FCE390020F57F /* OnboardingPageVC+Delegate.swift */; };
+		9E070E2A1E9FDF710020F57F /* UsersListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E070E281E9FDF710020F57F /* UsersListTableViewCell.swift */; };
+		9E070E2B1E9FDF710020F57F /* UsersListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E070E291E9FDF710020F57F /* UsersListTableViewCell.xib */; };
+		9E070E2D1E9FE0100020F57F /* UsersListVC+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E070E2C1E9FE0100020F57F /* UsersListVC+TableViewDelegate.swift */; };
+		9E070E2F1E9FE0200020F57F /* UsersList+TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E070E2E1E9FE0200020F57F /* UsersList+TableViewDataSource.swift */; };
+		9E070E321E9FE0690020F57F /* UsersListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E070E301E9FE0690020F57F /* UsersListVC.swift */; };
+		9E070E331E9FE0690020F57F /* UsersListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E070E311E9FE0690020F57F /* UsersListVC.xib */; };
+		9E070E351E9FE6D50020F57F /* UsersListType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E070E341E9FE6D50020F57F /* UsersListType.swift */; };
+		9E070E371E9FECC40020F57F /* UserProfileVC+DetailsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E070E361E9FECC40020F57F /* UserProfileVC+DetailsDelegate.swift */; };
 		9E1A42361E92931B00ED163B /* ThingyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1A42351E92931B00ED163B /* ThingyButton.swift */; };
 		9E1A42381E96914B00ED163B /* StoryViewController+UIImagePickerControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1A42371E96914B00ED163B /* StoryViewController+UIImagePickerControllerDelegate.swift */; };
 		9E1A42451E96A14B00ED163B /* Explore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E1A42411E96A14B00ED163B /* Explore.storyboard */; };
@@ -258,6 +267,15 @@
 		38EFC4EE1DAAB6380090E1DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		407FD10B0E4631A5B28DFA65 /* Pods-ThingyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThingyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThingyTests/Pods-ThingyTests.release.xcconfig"; sourceTree = "<group>"; };
 		7408342CA01D5419321DA893 /* Pods_ThingyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThingyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E070E211E9FCE390020F57F /* OnboardingPageVC+Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OnboardingPageVC+Delegate.swift"; sourceTree = "<group>"; };
+		9E070E281E9FDF710020F57F /* UsersListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersListTableViewCell.swift; sourceTree = "<group>"; };
+		9E070E291E9FDF710020F57F /* UsersListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UsersListTableViewCell.xib; sourceTree = "<group>"; };
+		9E070E2C1E9FE0100020F57F /* UsersListVC+TableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UsersListVC+TableViewDelegate.swift"; sourceTree = "<group>"; };
+		9E070E2E1E9FE0200020F57F /* UsersList+TableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UsersList+TableViewDataSource.swift"; sourceTree = "<group>"; };
+		9E070E301E9FE0690020F57F /* UsersListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersListVC.swift; sourceTree = "<group>"; };
+		9E070E311E9FE0690020F57F /* UsersListVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UsersListVC.xib; sourceTree = "<group>"; };
+		9E070E341E9FE6D50020F57F /* UsersListType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersListType.swift; sourceTree = "<group>"; };
+		9E070E361E9FECC40020F57F /* UserProfileVC+DetailsDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserProfileVC+DetailsDelegate.swift"; sourceTree = "<group>"; };
 		9E1A42351E92931B00ED163B /* ThingyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThingyButton.swift; sourceTree = "<group>"; };
 		9E1A42371E96914B00ED163B /* StoryViewController+UIImagePickerControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StoryViewController+UIImagePickerControllerDelegate.swift"; sourceTree = "<group>"; };
 		9E1A42411E96A14B00ED163B /* Explore.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Explore.storyboard; sourceTree = "<group>"; };
@@ -385,6 +403,7 @@
 				38A469A21DCFE6C8009CCF05 /* Onboarding.storyboard */,
 				38D40ED51E47420300AA7E55 /* OnboardingPageViewController.swift */,
 				38D40ED91E4745F300AA7E55 /* OnboardingPageViewController+UIPageViewControllerDataSource.swift */,
+				9E070E211E9FCE390020F57F /* OnboardingPageVC+Delegate.swift */,
 				38D40ED71E47452300AA7E55 /* LoginRegisterViewController.swift */,
 				38D40EDB1E47462400AA7E55 /* OnboardingTextInputViewController.swift */,
 				38D40EDD1E474BD800AA7E55 /* OnboardingTextInputType.swift */,
@@ -489,6 +508,7 @@
 			isa = PBXGroup;
 			children = (
 				387A6CC21E2418D000834164 /* UserProfileViewController.swift */,
+				9E070E361E9FECC40020F57F /* UserProfileVC+DetailsDelegate.swift */,
 				385D6E641E26A96700E8F1A5 /* UserProfileViewController+UITableViewDelegate.swift */,
 				385D6E661E26A98700E8F1A5 /* UserProfileViewController+UITableViewDataSource.swift */,
 				385D6E611E26A35300E8F1A5 /* UserDetailTableViewCell.xib */,
@@ -621,6 +641,7 @@
 				387A6CBF1E2417F300834164 /* Add */,
 				387A6CC01E24180C00834164 /* Story */,
 				387A6CC11E24181300834164 /* Thing */,
+				9E070E231E9FDF270020F57F /* UsersList */,
 				385D6E781E2ADCAF00E8F1A5 /* Comments */,
 				9E1A42341E9292F400ED163B /* Controls */,
 				3825DDD41DCFE31100F6D8F8 /* Utilities */,
@@ -646,6 +667,20 @@
 				38EFC4EE1DAAB6380090E1DB /* Info.plist */,
 			);
 			path = ThingyUITests;
+			sourceTree = "<group>";
+		};
+		9E070E231E9FDF270020F57F /* UsersList */ = {
+			isa = PBXGroup;
+			children = (
+				9E070E2C1E9FE0100020F57F /* UsersListVC+TableViewDelegate.swift */,
+				9E070E2E1E9FE0200020F57F /* UsersList+TableViewDataSource.swift */,
+				9E070E281E9FDF710020F57F /* UsersListTableViewCell.swift */,
+				9E070E291E9FDF710020F57F /* UsersListTableViewCell.xib */,
+				9E070E301E9FE0690020F57F /* UsersListVC.swift */,
+				9E070E311E9FE0690020F57F /* UsersListVC.xib */,
+				9E070E341E9FE6D50020F57F /* UsersListType.swift */,
+			);
+			path = UsersList;
 			sourceTree = "<group>";
 		};
 		9E1A42341E9292F400ED163B /* Controls */ = {
@@ -817,8 +852,10 @@
 				9E1A42451E96A14B00ED163B /* Explore.storyboard in Resources */,
 				38D40ECA1E472EB000AA7E55 /* AddStoryboard.storyboard in Resources */,
 				38A469AC1DCFED2F009CCF05 /* FeedTableViewCell.xib in Resources */,
+				9E070E331E9FE0690020F57F /* UsersListVC.xib in Resources */,
 				38019B581E422E44003AFFE6 /* UserStoryboard.storyboard in Resources */,
 				385D6E7D1E2ADCF100E8F1A5 /* CommentTableViewCell.xib in Resources */,
+				9E070E2B1E9FDF710020F57F /* UsersListTableViewCell.xib in Resources */,
 				38333A891E6589DA0096D909 /* YMSSinglePhotoViewController.xib in Resources */,
 				38EFC4D21DAAB6370090E1DB /* Main.storyboard in Resources */,
 				387A6CC51E241D9B00834164 /* Assets.xcassets in Resources */,
@@ -989,6 +1026,7 @@
 				388D63FA1E426F0600B4D28F /* AllCommentsViewController+ShowUserProfileDelegate.swift in Sources */,
 				385D6E621E26A35300E8F1A5 /* UserDetailTableViewCell.swift in Sources */,
 				381DA56C1E4CB81B008E5D73 /* DestinationViewController+UITableViewDataSource.swift in Sources */,
+				9E070E351E9FE6D50020F57F /* UsersListType.swift in Sources */,
 				38333A8C1E6589DA0096D909 /* YMSPhotoPickerViewController.m in Sources */,
 				3825DDC21DCFE2E400F6D8F8 /* Thing+API.swift in Sources */,
 				38D40ED21E47340400AA7E55 /* ThingDetailsViewController.swift in Sources */,
@@ -1024,6 +1062,7 @@
 				381DA56E1E4CB837008E5D73 /* DestinationViewController+UITableViewDelegate.swift in Sources */,
 				385D6E751E28676000E8F1A5 /* ThingViewController+UITableViewDataSource.swift in Sources */,
 				3825DDD21DCFE2FF00F6D8F8 /* Thing.swift in Sources */,
+				9E070E2D1E9FE0100020F57F /* UsersListVC+TableViewDelegate.swift in Sources */,
 				3825DDD01DCFE2FF00F6D8F8 /* FeedItem.swift in Sources */,
 				38D40ED81E47452300AA7E55 /* LoginRegisterViewController.swift in Sources */,
 				387A6CC81E243DDD00834164 /* ThingTableViewCell.swift in Sources */,
@@ -1031,6 +1070,7 @@
 				38D40EDE1E474BD800AA7E55 /* OnboardingTextInputType.swift in Sources */,
 				387A6CD71E24438300834164 /* Story+Mock.swift in Sources */,
 				38D40EDC1E47462400AA7E55 /* OnboardingTextInputViewController.swift in Sources */,
+				9E070E2A1E9FDF710020F57F /* UsersListTableViewCell.swift in Sources */,
 				385D6E651E26A96700E8F1A5 /* UserProfileViewController+UITableViewDelegate.swift in Sources */,
 				3825DDC11DCFE2E400F6D8F8 /* Feed+API.swift in Sources */,
 				38333A8A1E6589DA0096D909 /* UIViewController+YMSPhotoHelper.m in Sources */,
@@ -1040,15 +1080,19 @@
 				38D40ECC1E472F4C00AA7E55 /* AddPageViewController.swift in Sources */,
 				385D6E7C1E2ADCF100E8F1A5 /* CommentTableViewCell.swift in Sources */,
 				38A469A51DCFEB34009CCF05 /* FeedViewController+UITableViewDelegate.swift in Sources */,
+				9E070E371E9FECC40020F57F /* UserProfileVC+DetailsDelegate.swift in Sources */,
 				385D6E711E2840AC00E8F1A5 /* ThingViewController+UIPageViewControllerDataSource.swift in Sources */,
 				385D6E831E2C4E1F00E8F1A5 /* Int+Extensions.swift in Sources */,
 				385D6E861E2C5C4100E8F1A5 /* StoryViewController.swift in Sources */,
+				9E070E221E9FCE390020F57F /* OnboardingPageVC+Delegate.swift in Sources */,
 				38A469AE1DCFFB5A009CCF05 /* FeedTableViewCell.swift in Sources */,
 				381CC4621E381EE400D87FA0 /* AllCommentsViewController+UITableViewDelegate.swift in Sources */,
+				9E070E2F1E9FE0200020F57F /* UsersList+TableViewDataSource.swift in Sources */,
 				387A6CDB1E24439A00834164 /* User+Mock.swift in Sources */,
 				385D6E6F1E282D9B00E8F1A5 /* ThingGalleryViewController.swift in Sources */,
 				3825DDC81DCFE2F400F6D8F8 /* UIImageView+Extensions.swift in Sources */,
 				3825DDCF1DCFE2FF00F6D8F8 /* Comment.swift in Sources */,
+				9E070E321E9FE0690020F57F /* UsersListVC.swift in Sources */,
 				385D6E7F1E2AE49D00E8F1A5 /* Comment+Mock.swift in Sources */,
 				3825DDDA1DCFE31100F6D8F8 /* ThingyColors.swift in Sources */,
 				385D6E731E28517A00E8F1A5 /* ThingViewController+UIPageViewControllerDelegate.swift in Sources */,

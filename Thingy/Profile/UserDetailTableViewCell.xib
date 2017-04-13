@@ -68,6 +68,9 @@
                                 <state key="normal" title="0 followers">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonFollowersClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="vhx-E9-yfn"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bZ-9H-cYl">
                                 <rect key="frame" x="82.5" y="52.5" width="79" height="25"/>
@@ -75,6 +78,9 @@
                                 <state key="normal" title="0 following">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonFollowingClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="zY9-Gh-shK"/>
+                                </connections>
                             </button>
                         </subviews>
                     </stackView>

@@ -21,7 +21,7 @@
         <!--Login Register View Controller-->
         <scene sceneID="fPT-DB-aJ8">
             <objects>
-                <viewController storyboardIdentifier="LoginRegisterViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XrY-PX-7So" customClass="LoginRegisterViewController" customModule="Thingy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginRegisterViewController" definesPresentationContext="YES" providesPresentationContextTransitionStyle="YES" modalPresentationStyle="formSheet" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XrY-PX-7So" customClass="LoginRegisterViewController" customModule="Thingy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="k1J-eO-kaf"/>
                         <viewControllerLayoutGuide type="bottom" id="ulh-jD-8yJ"/>

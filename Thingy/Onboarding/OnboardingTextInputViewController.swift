@@ -26,8 +26,17 @@ class OnboardingTextInputViewController: UIViewController {
             setViewControllerFor(type)
         }
         
+       // self.disablesAutomaticKeyboardDismissal = true
+        
         textfield.becomeFirstResponder()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+         super.viewDidAppear(animated)
+        
+//        textfield.becomeFirstResponder()
+    }
+
     
     func setViewControllerFor(_ type: OnboardingTextInputType) {
         

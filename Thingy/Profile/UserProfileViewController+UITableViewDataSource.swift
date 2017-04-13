@@ -35,6 +35,7 @@ extension UserProfileViewController: UITableViewDataSource {
             let userDetailsCell = self.tableViewUserProfile.dequeueReusableCell(withIdentifier: UserDetailTableViewCell.cellId) as! UserDetailTableViewCell
             
             userDetailsCell.set(forUser: user!)
+            userDetailsCell.userDetailDelegate = self
             
             return userDetailsCell
             
