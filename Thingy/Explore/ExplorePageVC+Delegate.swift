@@ -15,5 +15,5 @@ extension ExplorePageViewController: UIPageViewControllerDelegate {
                 segmentControl.selectedSegmentIndex = index
         }
     }
-    
+
 }

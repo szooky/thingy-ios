@@ -19,6 +19,7 @@ class UsersListVC: UIViewController {
         
         configureTableView()
         self.users = User.getAll()
+        self.navigationItem.title = type.rawValue
     }
     
     func configureTableView() {
@@ -31,7 +32,5 @@ class UsersListVC: UIViewController {
         
         usersTableView.register(UINib(nibName: UsersListTableViewCell.cellId, bundle: nil), forCellReuseIdentifier: UsersListTableViewCell.cellId)
     }
-
-
-
+    
 }

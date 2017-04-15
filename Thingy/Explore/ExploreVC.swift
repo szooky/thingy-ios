@@ -38,7 +38,6 @@ class ExploreViewController: UIViewController {
         self.configureSearch()
         self.configurePullToRefresh()
 
-        
         self.automaticallyAdjustsScrollViewInsets = false
         
         things = Thing.getAll()
@@ -64,15 +63,22 @@ class ExploreViewController: UIViewController {
     }
     
     func configureSearch() {
+        self.definesPresentationContext = true
+        
+        tableViewExplore.tableHeaderView = searchController.searchBar
+
         searchController.searchResultsUpdater = self
         searchController.dimsBackgroundDuringPresentation = false
-        definesPresentationContext = true
-        tableViewExplore.tableHeaderView = searchController.searchBar
+        searchController.hidesNavigationBarDuringPresentation = false
         searchController.searchBar.barStyle = .blackTranslucent
         searchController.searchBar.searchBarStyle = .minimal
-        searchController.searchBar.prompt = nil
         searchController.searchBar.keyboardAppearance = .dark
         searchController.searchBar.tintColor = UIColor.thingyRed()
+        
+        for view in tableViewExplore.subviews {
+            view.backgroundColor = UIColor.thingyGrey() // fix for Apple's bug in TableViewWrapperView white color
+        }
+
     }
     
     func refresh(sender:AnyObject) {

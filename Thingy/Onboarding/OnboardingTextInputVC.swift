@@ -34,7 +34,7 @@ class OnboardingTextInputViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
          super.viewDidAppear(animated)
         
-//        textfield.becomeFirstResponder()
+        textfield.becomeFirstResponder()
     }
 
     

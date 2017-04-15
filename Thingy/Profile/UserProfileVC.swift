@@ -44,7 +44,7 @@ class UserProfileViewController: UIViewController {
     func configureTableView() {
         tableViewUserProfile.dataSource = self
         tableViewUserProfile.delegate = self
-        tableViewUserProfile.rowHeight = 300.0
+        tableViewUserProfile.estimatedRowHeight = 300.0
         
         tableViewUserProfile.register(UINib(nibName: UserDetailTableViewCell.cellId, bundle: nil), forCellReuseIdentifier: UserDetailTableViewCell.cellId)
         tableViewUserProfile.register(UINib(nibName: ThingTableViewCell.cellId, bundle: nil), forCellReuseIdentifier: ThingTableViewCell.cellId)

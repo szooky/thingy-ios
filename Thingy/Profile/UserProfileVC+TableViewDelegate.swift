@@ -26,7 +26,7 @@ extension UserProfileViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch indexPath.section {
         case 0:
-            return 300.0
+            return UITableViewAutomaticDimension
         case 1:
             return 100.0
         default:

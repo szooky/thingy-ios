@@ -41,7 +41,8 @@ class ThingyButton: UIButton {
         }
         
         self.layer.cornerRadius = self.frame.height / 2
-        self.layer.borderColor = UIColor.thingyRed().cgColor
+        self.layer.borderColor = color.cgColor
+        self.titleLabel?.textColor  = color
         self.layer.borderWidth = 0.5
     }
     

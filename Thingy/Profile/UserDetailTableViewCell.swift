@@ -22,8 +22,8 @@ class UserDetailTableViewCell: UITableViewCell {
     @IBOutlet weak var labelDescription: UILabel!
     
     @IBOutlet weak var buttonFollow: ThingyButton!
-    @IBOutlet weak var buttonFollowers: UIButton!
-    @IBOutlet weak var buttonFollowing: UIButton!
+    @IBOutlet weak var buttonFollowers: ThingyButton!
+    @IBOutlet weak var buttonFollowing: ThingyButton!
     
     class var cellId: String {
         return "UserDetailTableViewCell"
@@ -60,6 +60,10 @@ class UserDetailTableViewCell: UITableViewCell {
     func setApperance() {
         self.selectionStyle = .none
         self.buttonFollow.selectedTextColor = .black
+        self.buttonFollowers.color = .white
+        self.buttonFollowing.color = .white
+        self.buttonFollowing.setApperance()
+        self.buttonFollowers.setApperance()
     }
     
     @IBAction func buttonFollowClicked(_ sender: ThingyButton) {
