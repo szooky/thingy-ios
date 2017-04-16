@@ -11,5 +11,11 @@ import Foundation
 enum OnboardingFlowType {
     case Login
     case Register
+    case LoginTwitter
+    case LoginFacebook
+    case LoginGoogle
+    case RegisterTwitter
+    case RegisterFacebook
+    case RegisterGoogle
     case NotSet
 }

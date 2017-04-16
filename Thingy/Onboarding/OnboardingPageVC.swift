@@ -1,5 +1,5 @@
 //
-//  OnboardingPageViewController.swift
+//  OnboardingPageVC.swift
 //  Thingy
 //
 //  Created by Filip Szukala on 05/02/2017.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class OnboardingPageViewController: UIPageViewController {
+class OnboardingPageVC: UIPageViewController {
 
     var allViewControllers = Array<UIViewController>()
     var flowType = OnboardingFlowType.NotSet
@@ -20,51 +20,51 @@ class OnboardingPageViewController: UIPageViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        loadViewControllers()
-        configurePageViewController()
-        
-//        let textField = UITextField()
-        
-        //self.disablesAutomaticKeyboardDismissal = true
-//        textField.becomeFirstResponder()
+        loadVCs()
+        configurePageVC()
     }
     
-    private func configurePageViewController() {
+    private func configurePageVC() {
         dataSource = self
         delegate = self
     }
     
-    private func loadViewControllers() {
+    private func loadVCs() {
         let onboardingStoryboard = UIStoryboard(name: "Onboarding", bundle: nil)
         
-        let loginRegisterViewController = onboardingStoryboard.instantiateViewController(withIdentifier: "LoginRegisterViewController") as! LoginRegisterViewController
+        let loginRegisterVC = onboardingStoryboard.instantiateViewController(withIdentifier: LoginRegisterVC.storyboardID) as! LoginRegisterVC
         
-        let usernameViewController = onboardingStoryboard.instantiateViewController(withIdentifier: OnboardingTextInputViewController.storyboardID) as! OnboardingTextInputViewController
-        usernameViewController.type = .username
+        let loginRegisterTypeVC = onboardingStoryboard.instantiateViewController(withIdentifier: LoginRegisterTypeVC.storyboardID) as! LoginRegisterTypeVC
         
-        let passwordViewController = onboardingStoryboard.instantiateViewController(withIdentifier: OnboardingTextInputViewController.storyboardID) as! OnboardingTextInputViewController
-        passwordViewController.type = .password
+        let usernameVC = onboardingStoryboard.instantiateViewController(withIdentifier: OnboardingTextInputVC.storyboardID) as! OnboardingTextInputVC
+        usernameVC.type = .Username
         
-        let retypePasswordViewController = onboardingStoryboard.instantiateViewController(withIdentifier: OnboardingTextInputViewController.storyboardID) as! OnboardingTextInputViewController
-        retypePasswordViewController.type = .passwordAgain
+        let passwordVC = onboardingStoryboard.instantiateViewController(withIdentifier: OnboardingTextInputVC.storyboardID) as! OnboardingTextInputVC
+        passwordVC.type = .Password
         
-        let nameViewController = onboardingStoryboard.instantiateViewController(withIdentifier: OnboardingTextInputViewController.storyboardID) as! OnboardingTextInputViewController
-        nameViewController.type = .name
+        let retypePasswordVC = onboardingStoryboard.instantiateViewController(withIdentifier: OnboardingTextInputVC.storyboardID) as! OnboardingTextInputVC
+        retypePasswordVC.type = .PasswordAgain
         
-        let surenameViewController = onboardingStoryboard.instantiateViewController(withIdentifier: OnboardingTextInputViewController.storyboardID) as! OnboardingTextInputViewController
-        surenameViewController.type = .surename
+        let mailVC = onboardingStoryboard.instantiateViewController(withIdentifier: OnboardingTextInputVC.storyboardID) as! OnboardingTextInputVC
+        mailVC.type = .Mail
         
-        let mailViewController = onboardingStoryboard.instantiateViewController(withIdentifier: OnboardingTextInputViewController.storyboardID) as! OnboardingTextInputViewController
-        mailViewController.type = .mail
+        let onboardingDoneVC = onboardingStoryboard.instantiateViewController(withIdentifier: OnboardingDoneVC.storyboardID) as! OnboardingDoneVC
         
-        allViewControllers = [loginRegisterViewController,
-                              usernameViewController,
-                              passwordViewController,
-                              retypePasswordViewController,
-                              nameViewController,
-                              surenameViewController,
-                              mailViewController]
+        allViewControllers = [loginRegisterVC,
+                              loginRegisterTypeVC,
+                              usernameVC,
+                              passwordVC,
+                              retypePasswordVC,
+                              mailVC,
+                              onboardingDoneVC]
         
         setViewControllers([allViewControllers[0]], direction: .forward, animated: true, completion: nil)
+    }
+    
+    func goTo(onboardingScreen: OnboardingScreensType) {
+        self.setViewControllers([self.allViewControllers[onboardingScreen.rawValue]],
+                                              direction: .forward,
+                                              animated: true,
+                                              completion: nil)
     }
 }

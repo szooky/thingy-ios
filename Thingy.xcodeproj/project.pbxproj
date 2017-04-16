@@ -100,7 +100,7 @@
 		38D40ED81E47452300AA7E55 /* LoginRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D40ED71E47452300AA7E55 /* LoginRegisterVC.swift */; };
 		38D40EDA1E4745F300AA7E55 /* OnboardingPageVC+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D40ED91E4745F300AA7E55 /* OnboardingPageVC+DataSource.swift */; };
 		38D40EDC1E47462400AA7E55 /* OnboardingTextInputVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D40EDB1E47462400AA7E55 /* OnboardingTextInputVC.swift */; };
-		38D40EDE1E474BD800AA7E55 /* OnboardingTextInputType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D40EDD1E474BD800AA7E55 /* OnboardingTextInputType.swift */; };
+		38D40EDE1E474BD800AA7E55 /* OnboardingScreensType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D40EDD1E474BD800AA7E55 /* OnboardingScreensType.swift */; };
 		38D40EE01E4A1C3F00AA7E55 /* OnboardingFlowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D40EDF1E4A1C3F00AA7E55 /* OnboardingFlowType.swift */; };
 		38EFC4CB1DAAB6370090E1DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EFC4CA1DAAB6370090E1DB /* AppDelegate.swift */; };
 		38EFC4D21DAAB6370090E1DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38EFC4D01DAAB6370090E1DB /* Main.storyboard */; };
@@ -118,6 +118,8 @@
 		9E070E331E9FE0690020F57F /* UsersListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E070E311E9FE0690020F57F /* UsersListVC.xib */; };
 		9E070E351E9FE6D50020F57F /* UsersListType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E070E341E9FE6D50020F57F /* UsersListType.swift */; };
 		9E070E371E9FECC40020F57F /* UserProfileVC+DetailsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E070E361E9FECC40020F57F /* UserProfileVC+DetailsDelegate.swift */; };
+		9E070E391EA2E2EB0020F57F /* LoginRegisterTypeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E070E381EA2E2EB0020F57F /* LoginRegisterTypeVC.swift */; };
+		9E070E3B1EA2E3030020F57F /* OnboardingDoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E070E3A1EA2E3030020F57F /* OnboardingDoneVC.swift */; };
 		9E1A42361E92931B00ED163B /* ThingyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1A42351E92931B00ED163B /* ThingyButton.swift */; };
 		9E1A42381E96914B00ED163B /* StoryVC+ImagePickerControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1A42371E96914B00ED163B /* StoryVC+ImagePickerControllerDelegate.swift */; };
 		9E1A42451E96A14B00ED163B /* Explore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E1A42411E96A14B00ED163B /* Explore.storyboard */; };
@@ -252,7 +254,7 @@
 		38D40ED71E47452300AA7E55 /* LoginRegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRegisterVC.swift; sourceTree = "<group>"; };
 		38D40ED91E4745F300AA7E55 /* OnboardingPageVC+DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OnboardingPageVC+DataSource.swift"; sourceTree = "<group>"; };
 		38D40EDB1E47462400AA7E55 /* OnboardingTextInputVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingTextInputVC.swift; sourceTree = "<group>"; };
-		38D40EDD1E474BD800AA7E55 /* OnboardingTextInputType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingTextInputType.swift; sourceTree = "<group>"; };
+		38D40EDD1E474BD800AA7E55 /* OnboardingScreensType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingScreensType.swift; sourceTree = "<group>"; };
 		38D40EDF1E4A1C3F00AA7E55 /* OnboardingFlowType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingFlowType.swift; sourceTree = "<group>"; };
 		38EFC4C71DAAB6370090E1DB /* Thingy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thingy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38EFC4CA1DAAB6370090E1DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -276,6 +278,8 @@
 		9E070E311E9FE0690020F57F /* UsersListVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UsersListVC.xib; sourceTree = "<group>"; };
 		9E070E341E9FE6D50020F57F /* UsersListType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersListType.swift; sourceTree = "<group>"; };
 		9E070E361E9FECC40020F57F /* UserProfileVC+DetailsDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserProfileVC+DetailsDelegate.swift"; sourceTree = "<group>"; };
+		9E070E381EA2E2EB0020F57F /* LoginRegisterTypeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRegisterTypeVC.swift; sourceTree = "<group>"; };
+		9E070E3A1EA2E3030020F57F /* OnboardingDoneVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingDoneVC.swift; sourceTree = "<group>"; };
 		9E1A42351E92931B00ED163B /* ThingyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThingyButton.swift; sourceTree = "<group>"; };
 		9E1A42371E96914B00ED163B /* StoryVC+ImagePickerControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StoryVC+ImagePickerControllerDelegate.swift"; sourceTree = "<group>"; };
 		9E1A42411E96A14B00ED163B /* Explore.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Explore.storyboard; sourceTree = "<group>"; };
@@ -405,9 +409,11 @@
 				38D40ED91E4745F300AA7E55 /* OnboardingPageVC+DataSource.swift */,
 				9E070E211E9FCE390020F57F /* OnboardingPageVC+Delegate.swift */,
 				38D40ED71E47452300AA7E55 /* LoginRegisterVC.swift */,
-				38D40EDB1E47462400AA7E55 /* OnboardingTextInputVC.swift */,
-				38D40EDD1E474BD800AA7E55 /* OnboardingTextInputType.swift */,
+				9E070E381EA2E2EB0020F57F /* LoginRegisterTypeVC.swift */,
 				38D40EDF1E4A1C3F00AA7E55 /* OnboardingFlowType.swift */,
+				38D40EDB1E47462400AA7E55 /* OnboardingTextInputVC.swift */,
+				38D40EDD1E474BD800AA7E55 /* OnboardingScreensType.swift */,
+				9E070E3A1EA2E3030020F57F /* OnboardingDoneVC.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -1034,6 +1040,7 @@
 				387A6CD91E24439000834164 /* FeedItem+Mock.swift in Sources */,
 				38D40ED41E4736C000AA7E55 /* AddPageViewController+UIPageViewDataSource.swift in Sources */,
 				387A6CD51E24437600834164 /* Thing+Mock.swift in Sources */,
+				9E070E3B1EA2E3030020F57F /* OnboardingDoneVC.swift in Sources */,
 				381CC4601E381ECC00D87FA0 /* AllCommentsViewController+UITableViewDataSource.swift in Sources */,
 				9E1A42481E96A14B00ED163B /* ExploreType.swift in Sources */,
 				385B1A251E5CC7F400F808BC /* Gradients.swift in Sources */,
@@ -1067,7 +1074,7 @@
 				38D40ED81E47452300AA7E55 /* LoginRegisterVC.swift in Sources */,
 				387A6CC81E243DDD00834164 /* ThingTableViewCell.swift in Sources */,
 				38333A861E6589DA0096D909 /* YMSPhotoCell.m in Sources */,
-				38D40EDE1E474BD800AA7E55 /* OnboardingTextInputType.swift in Sources */,
+				38D40EDE1E474BD800AA7E55 /* OnboardingScreensType.swift in Sources */,
 				387A6CD71E24438300834164 /* Story+Mock.swift in Sources */,
 				38D40EDC1E47462400AA7E55 /* OnboardingTextInputVC.swift in Sources */,
 				9E070E2A1E9FDF710020F57F /* UsersListTableViewCell.swift in Sources */,
@@ -1096,6 +1103,7 @@
 				385D6E7F1E2AE49D00E8F1A5 /* Comment+Mock.swift in Sources */,
 				3825DDDA1DCFE31100F6D8F8 /* ThingyColors.swift in Sources */,
 				385D6E731E28517A00E8F1A5 /* ThingViewController+UIPageViewControllerDelegate.swift in Sources */,
+				9E070E391EA2E2EB0020F57F /* LoginRegisterTypeVC.swift in Sources */,
 				385D6E8B1E2E6D6500E8F1A5 /* UIImage+Extensions.swift in Sources */,
 				387A6CE91E246EC700834164 /* ExploreVC+SearchResultsUpdating.swift in Sources */,
 				3825DDC31DCFE2E400F6D8F8 /* User+API.swift in Sources */,

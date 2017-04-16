@@ -2,15 +2,16 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "10599144_10202280531325765_6120135717206170394_n.jpg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "googleLogo@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
+      "filename" : "googleLogo@3x.png",
       "scale" : "3x"
     }
   ],

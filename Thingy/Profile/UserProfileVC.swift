@@ -73,8 +73,8 @@ class UserProfileViewController: UIViewController {
     
     func buttonLogoutClicked() {
         let onboardingStoryboard = UIStoryboard(name: "Onboarding", bundle: nil)
-        if let loginRegisterVC = onboardingStoryboard.instantiateInitialViewController() as? OnboardingPageViewController {
-            self.present(loginRegisterVC, animated: true, completion: nil)
+        if let onboardingVC = onboardingStoryboard.instantiateInitialViewController() as? OnboardingPageVC {
+            self.present(onboardingVC, animated: true, completion: nil)
         }
     }
     

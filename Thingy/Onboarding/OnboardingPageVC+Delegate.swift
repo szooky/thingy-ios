@@ -8,13 +8,12 @@
 
 import UIKit
 
-extension OnboardingPageViewController: UIPageViewControllerDelegate {
+extension OnboardingPageVC: UIPageViewControllerDelegate {
     
     func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
-        if completed && finished, let currentVC = pageViewController.viewControllers?.last as? OnboardingTextInputViewController {
+        if completed && finished, let currentVC = pageViewController.viewControllers?.last as? OnboardingTextInputVC {
             currentVC.textfield.becomeFirstResponder()
         }
-      
     }
     
 }

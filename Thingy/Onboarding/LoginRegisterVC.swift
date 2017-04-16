@@ -8,27 +8,32 @@
 
 import UIKit
 
-class LoginRegisterViewController: UIViewController {
+class LoginRegisterVC: UIViewController {
 
+    class var storyboardID: String {
+        return "LoginRegisterVC"
+    }
+    
     @IBAction func buttonLoginClicked(_ sender: UIButton) {
-        if let pageViewController = self.parent as? OnboardingPageViewController {
-            pageViewController.flowType = .Login
-            nextPage(in: pageViewController)
+        if let pageVC = self.parent as? OnboardingPageVC {
+            pageVC.flowType = .Login
+            nextPage(in: pageVC)
         }
     }
  
     @IBAction func buttonRegisterClicked(_ sender: UIButton) {
-        if let pageViewController = self.parent as? OnboardingPageViewController {
-            pageViewController.flowType = .Register
-            nextPage(in: pageViewController)
+        if let pageVC = self.parent as? OnboardingPageVC {
+            pageVC.flowType = .Register
+            nextPage(in: pageVC)
         }
     }
     
-    func nextPage(in pageViewController: OnboardingPageViewController) {
+    func nextPage(in pageViewController: OnboardingPageVC) {
         pageViewController.setViewControllers([pageViewController.allViewControllers[1]],
                                               direction: .forward,
                                               animated: true,
                                               completion: nil)
     }
+
     
 }

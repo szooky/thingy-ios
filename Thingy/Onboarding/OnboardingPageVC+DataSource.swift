@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension OnboardingPageViewController: UIPageViewControllerDataSource {
+extension OnboardingPageVC: UIPageViewControllerDataSource {
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         guard let viewControllerIndex = allViewControllers.index(of: viewController) else {
@@ -44,8 +44,8 @@ extension OnboardingPageViewController: UIPageViewControllerDataSource {
             return nil
         }
         
-        if self.flowType == .Login && nextIndex == 3 {
-            return nil
+        if self.flowType == .Login && nextIndex == 4 {
+            return allViewControllers[OnboardingScreensType.Done.rawValue]
         }
         
         return allViewControllers[nextIndex]

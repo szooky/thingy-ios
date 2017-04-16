@@ -8,16 +8,16 @@
 
 import UIKit
 
-class OnboardingTextInputViewController: UIViewController {
+class OnboardingTextInputVC: UIViewController {
 
     @IBOutlet weak var labelTitle: UILabel!
     @IBOutlet weak var textfield: UITextField!
     
     class var storyboardID: String {
-        return "OnboardingTextInputViewController"
+        return "OnboardingTextInputVC"
     }
     
-    var type: OnboardingTextInputType?
+    var type: OnboardingScreensType?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,27 +25,15 @@ class OnboardingTextInputViewController: UIViewController {
         if let type = self.type {
             setViewControllerFor(type)
         }
-        
-       // self.disablesAutomaticKeyboardDismissal = true
-        
-        textfield.becomeFirstResponder()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-         super.viewDidAppear(animated)
-        
-        textfield.becomeFirstResponder()
-    }
-
-    
-    func setViewControllerFor(_ type: OnboardingTextInputType) {
-        
-        labelTitle.text = type.rawValue
+    func setViewControllerFor(_ type: OnboardingScreensType) {
+        labelTitle.text = type.title
         
         switch type {
-        case .password, .passwordAgain:
+        case .Password, .PasswordAgain:
             textfield.isSecureTextEntry = true
-        case .mail:
+        case .Mail:
             textfield.keyboardType = .emailAddress
         default:
             return

@@ -10,18 +10,18 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Onboarding Page View Controller-->
+        <!--Onboarding PageVC-->
         <scene sceneID="nfw-Yx-IiF">
             <objects>
-                <pageViewController storyboardIdentifier="OnboardingPageViewController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="7mI-TZ-pdB" customClass="OnboardingPageViewController" customModule="Thingy" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="OnboardingPageVC" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="7mI-TZ-pdB" customClass="OnboardingPageVC" customModule="Thingy" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b2d-2x-7Xn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-342" y="-55"/>
+            <point key="canvasLocation" x="-473" y="-56"/>
         </scene>
-        <!--Login Register View Controller-->
+        <!--Login RegisterVC-->
         <scene sceneID="fPT-DB-aJ8">
             <objects>
-                <viewController storyboardIdentifier="LoginRegisterViewController" definesPresentationContext="YES" providesPresentationContextTransitionStyle="YES" modalPresentationStyle="formSheet" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XrY-PX-7So" customClass="LoginRegisterViewController" customModule="Thingy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginRegisterVC" definesPresentationContext="YES" providesPresentationContextTransitionStyle="YES" modalPresentationStyle="formSheet" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XrY-PX-7So" customClass="LoginRegisterVC" customModule="Thingy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="k1J-eO-kaf"/>
                         <viewControllerLayoutGuide type="bottom" id="ulh-jD-8yJ"/>
@@ -84,12 +84,85 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Stt-VX-HwJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="517.60000000000002" y="-52.623688155922046"/>
+            <point key="canvasLocation" x="206" y="-57"/>
         </scene>
-        <!--Onboarding Text Input View Controller-->
+        <!--Login Register TypeVC-->
+        <scene sceneID="JEY-Dw-nNY">
+            <objects>
+                <viewController storyboardIdentifier="LoginRegisterTypeVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dU1-rr-ZIB" customClass="LoginRegisterTypeVC" customModule="Thingy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AG2-KZ-B7Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="QMH-YY-4yc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GtF-LK-FOS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="ykT-hx-8Op">
+                                <rect key="frame" x="87" y="206" width="203" height="256"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="register with:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GES-JV-I6P">
+                                        <rect key="frame" x="0.0" y="0.0" width="203" height="44"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="37"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kcL-PO-n5h">
+                                        <rect key="frame" x="0.0" y="61" width="203" height="37"/>
+                                        <state key="normal" title="Facebook" image="facebookLogo"/>
+                                        <connections>
+                                            <action selector="facebookButtonClicked:" destination="dU1-rr-ZIB" eventType="touchUpInside" id="kCq-F3-9al"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Se0-kr-Dhc">
+                                        <rect key="frame" x="0.0" y="115" width="203" height="37"/>
+                                        <state key="normal" title="Twitter" image="twitterLogo"/>
+                                        <connections>
+                                            <action selector="twitterButtonClicked:" destination="dU1-rr-ZIB" eventType="touchUpInside" id="WFQ-7Q-yDz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zon-Fe-jdq">
+                                        <rect key="frame" x="0.0" y="169" width="203" height="37"/>
+                                        <state key="normal" title="Google" image="googleLogo"/>
+                                        <connections>
+                                            <action selector="googleButtonClicked:" destination="dU1-rr-ZIB" eventType="touchUpInside" id="gLn-or-rar"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YGm-3l-wy0">
+                                        <rect key="frame" x="0.0" y="223" width="203" height="33"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="...just casual way">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="normalWayButtonClicked:" destination="dU1-rr-ZIB" eventType="touchUpInside" id="RXw-rk-Vyd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.18430194259999999" green="0.18432193990000001" blue="0.18428516389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ykT-hx-8Op" firstAttribute="centerX" secondItem="GtF-LK-FOS" secondAttribute="centerX" id="X3V-3S-X4n"/>
+                            <constraint firstItem="ykT-hx-8Op" firstAttribute="centerY" secondItem="GtF-LK-FOS" secondAttribute="centerY" id="bOf-YX-2Oc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="facebookButton" destination="kcL-PO-n5h" id="KR9-Lh-icT"/>
+                        <outlet property="googleButton" destination="Zon-Fe-jdq" id="6Mo-Wd-3hl"/>
+                        <outlet property="normalWayButton" destination="YGm-3l-wy0" id="xEM-Vx-awe"/>
+                        <outlet property="titleLabel" destination="GES-JV-I6P" id="GF1-hw-Od2"/>
+                        <outlet property="twitterButton" destination="Se0-kr-Dhc" id="nld-QS-vzV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bVa-8o-Ndq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="860" y="-58"/>
+        </scene>
+        <!--Onboarding Text InputVC-->
         <scene sceneID="pb4-pU-6R1">
             <objects>
-                <viewController storyboardIdentifier="OnboardingTextInputViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6p6-TW-d1E" customClass="OnboardingTextInputViewController" customModule="Thingy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OnboardingTextInputVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6p6-TW-d1E" customClass="OnboardingTextInputVC" customModule="Thingy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SBC-LS-D7S"/>
                         <viewControllerLayoutGuide type="bottom" id="N7s-xK-Ohv"/>
@@ -134,61 +207,49 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wtu-AX-mpz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1277.5999999999999" y="-55.322338830584712"/>
+            <point key="canvasLocation" x="1508" y="-56"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="1DE-4B-LCt">
+        <!--Onboarding DoneVC-->
+        <scene sceneID="oZH-rn-NWB">
             <objects>
-                <viewController storyboardIdentifier="ProfileImagePickerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JPz-xe-bI4" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OnboardingDoneVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ANp-NQ-ead" customClass="OnboardingDoneVC" customModule="Thingy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="IK9-0F-7E2"/>
-                        <viewControllerLayoutGuide type="bottom" id="I5L-Ar-7GI"/>
+                        <viewControllerLayoutGuide type="top" id="pU0-sF-7SJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hq0-z6-xaz"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="N3F-dM-ACP">
+                    <view key="view" contentMode="scaleToFill" id="szE-Ui-Lhp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0cm-Yi-Lq0">
-                                <rect key="frame" x="55" y="119" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pa7-ii-zfr">
-                                <rect key="frame" x="104" y="305" width="143" height="89"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Choose from gallery"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAX-TA-vU3">
+                                <rect key="frame" x="107.5" y="310.5" width="160" height="46"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="28"/>
+                                <state key="normal" title="You're all set!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneButtonClicked:" destination="ANp-NQ-ead" eventType="touchUpInside" id="J55-AH-VMc"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.18430194259999999" green="0.18432193990000001" blue="0.18428516389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gAX-TA-vU3" firstAttribute="centerY" secondItem="szE-Ui-Lhp" secondAttribute="centerY" id="TWm-fL-QvU"/>
+                            <constraint firstItem="gAX-TA-vU3" firstAttribute="centerX" secondItem="szE-Ui-Lhp" secondAttribute="centerX" id="UBs-ho-7ie"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="doneButton" destination="gAX-TA-vU3" id="1Qw-Ud-2rM"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Bin-vi-rjw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c9p-Wg-7Z1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2015" y="-53"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="xJX-Gf-zMz">
-            <objects>
-                <viewController storyboardIdentifier="DoneViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="H4x-SS-nOJ" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="f1E-Nk-fRH"/>
-                        <viewControllerLayoutGuide type="bottom" id="Sbb-9c-nCd"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="0BC-D9-cj4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hww-3R-wQm">
-                                <rect key="frame" x="139" y="318" width="96" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Register"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FtC-uC-HSA" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2737" y="-55"/>
+            <point key="canvasLocation" x="2172" y="-58"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="facebookLogo" width="37" height="37"/>
+        <image name="googleLogo" width="37" height="37"/>
+        <image name="twitterLogo" width="37" height="37"/>
+    </resources>
 </document>
